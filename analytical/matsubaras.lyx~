@@ -1,0 +1,315 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{\beta}\sum_{\bm{k}'}\sum_{\boldsymbol{q}}\sum_{i\nu_{n}}\delta\left(\boldsymbol{k}-\left(\boldsymbol{k}'+\boldsymbol{q}\right)\right)D\left(\boldsymbol{q},i\nu_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\omega_{n}-i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bosonic 
+\end_layout
+
+\begin_layout Standard
+asd
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{\beta}\sum_{\bm{q}}\sum_{i\nu_{n}}D\left(\boldsymbol{q},i\nu_{n}\right)\mathcal{G}\left(\boldsymbol{k}-\boldsymbol{q},i\omega_{n}-i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \frac{1}{\beta}\sum_{\omega_{n}}\frac{1}{(i\omega_{n}-\xi_{1})(i\omega_{n}-\xi_{2})}=}-\eta\frac{n_{\eta}\left(\xi_{1}\right)-n_{\eta}\left(\xi_{2}\right)}{\xi_{1}-\xi_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the spectral reps
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D\left(\boldsymbol{q},i\nu_{n}\right)=\int\frac{d\nu}{\pi}\frac{B\left(\boldsymbol{k}',\nu\right)}{i\nu_{n}-\nu},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{G}\left(\boldsymbol{k}-\boldsymbol{q},i\nu_{n}\right)=\int\frac{d\epsilon}{\pi}\frac{A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)}{i\omega_{n}-i\nu_{n}-\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+plugging in 
+\begin_inset Formula 
+\begin{align*}
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right) & =\frac{1}{\beta}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\bm{q}}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-\nu}\frac{1}{i\omega_{n}-i\nu_{n}-\epsilon}\\
+ & =-\frac{1}{\beta}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\bm{q}}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-\nu}\frac{1}{i\nu_{n}-\left(i\omega_{n}-\epsilon\right)}\\
+ & =-\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\bm{q}}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\left[\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon-i\omega_{n}\right)}{\nu-\left(i\omega_{n}-\epsilon\right)}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using 
+\begin_inset Formula 
+\[
+n_{B}\left(\epsilon-i\omega_{n}\right)=-n_{F}\left(\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we get 
+\begin_inset Formula 
+\begin{align*}
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right) & =-\sum_{\bm{q}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\left[-\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}-\nu-\epsilon}\right]\\
+ & =\sum_{\bm{q}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}-\nu-\epsilon}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Imaginary part
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k},\omega\right) & =-\pi\sum_{\bm{q}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)\right]\delta\left(\omega-\nu-\epsilon\right)\\
+ & =-\pi\sum_{\bm{q}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{k}-\boldsymbol{q},\epsilon\right)B\left(\boldsymbol{q},\omega-\epsilon\right)\left[n_{B}\left(\omega-\epsilon\right)+n_{F}\left(\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Fermionic
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{\beta}\sum_{\bm{k}'}\sum_{i\nu_{n}}D\left(\boldsymbol{k}'-\boldsymbol{k},i\nu_{n}-i\omega_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \frac{1}{\beta}\sum_{\omega_{n}}\frac{1}{(i\omega_{n}-\xi_{1})(i\omega_{n}-\xi_{2})}=}-\eta\frac{n_{\eta}\left(\xi_{1}\right)-n_{\eta}\left(\xi_{2}\right)}{\xi_{1}-\xi_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the spectral reps
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D\left(\boldsymbol{k}'-\boldsymbol{k},i\omega_{n}-i\nu_{n}\right)=\int\frac{d\nu}{\pi}\frac{B\left(\boldsymbol{k}'-\boldsymbol{k},\nu\right)}{i\nu_{n}-i\omega_{n}-\nu},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{G}\left(\boldsymbol{k}',i\nu_{n}\right)=\int\frac{d\epsilon}{\pi}\frac{A\left(\bm{k}',\epsilon\right)}{i\nu_{n}-\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+plugging in 
+\begin_inset Formula 
+\begin{align*}
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right) & =\frac{1}{\beta}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\bm{k}'}A\left(\bm{k}',\epsilon\right)B\left(\boldsymbol{k}'-\boldsymbol{k},\nu\right)\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-i\omega_{n}-\nu}\frac{1}{i\nu_{n}-\epsilon}\\
+ & =\frac{1}{\beta}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\bm{k}'}A\left(\bm{k}',\epsilon\right)B\left(\boldsymbol{k}'-\boldsymbol{k},\nu\right)\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-\left(i\omega_{n}+\nu\right)}\frac{1}{i\nu_{n}-\epsilon}\\
+ & =\sum_{\bm{k}'}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\bm{k}',\epsilon\right)B\left(\boldsymbol{k}'-\boldsymbol{k},\nu\right)\left[+\frac{n_{F}\left(i\omega_{n}+\nu\right)-n_{F}\left(\epsilon\right)}{i\omega_{n}+\nu-\epsilon}\right]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the properties of the occupation functions
+\begin_inset Formula 
+\begin{align*}
+n_{F}\left(i\omega_{n}+\nu\right) & =-n_{B}\left(\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right) & =-\sum_{\bm{k}'}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}A\left(\bm{k}',\epsilon\right)B\left(\boldsymbol{k}-\boldsymbol{k}',\nu\right)\left[-\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}+\nu-\epsilon}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Matching the result in mahan
+\end_layout
+
+\begin_layout Section
+Fermionic Bosonic
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{\beta}\sum_{\bm{p}}\sum_{\bm{q}}\sum_{\bm{k}'}\sum_{i\nu_{n}}\delta\left(\boldsymbol{k}-\left(\boldsymbol{p}+\boldsymbol{k}'+\boldsymbol{q}\right)\right)D\left(\boldsymbol{p},i\nu_{n}-i\omega_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Fermionic Fermionic
+\end_layout
+
+\end_body
+\end_document

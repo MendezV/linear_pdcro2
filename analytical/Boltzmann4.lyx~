@@ -1,0 +1,237 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Boltzmann Calculation without form factors
+\end_layout
+
+\begin_layout Section
+Transition rate
+\end_layout
+
+\begin_layout Standard
+We start from the Hamiltonian 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4g^{2}}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}\left[1-\lambda\left(X_{ij}+X_{kj}\right)\right]p_{i\alpha}^{\dagger}(\vec{S}_{j}\cdot\vec{\sigma}_{\alpha\beta})p_{k\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4g^{2}}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}\left[1-\lambda\left(X_{ij}-X_{kj}\right)\right]p_{i\alpha}^{\dagger}(\vec{S}_{j}\cdot\vec{\sigma}_{\alpha\beta})p_{k\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we fourier transform the Hamiltonian using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{i\alpha}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{i\bm{k}\bm{R}_{i}}p_{\boldsymbol{k}\alpha}^{\dagger}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{S}_{j}=\frac{1}{\sqrt{N}}\sum_{\bm{q}}e^{-i\bm{q}\bm{R}_{j}}\vec{S}_{\boldsymbol{q}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first term in the interaction Hamiltonian, we have 
+\begin_inset Formula 
+\[
+H_{\text{int}}=H_{\text{int}}^{I}+H_{\text{int}}^{II}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}}^{I} & =\frac{1}{N^{3/2}}\frac{4g^{2}}{U}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}e^{-i\bm{q}\bm{R}_{j}+i\bm{k}\left(\bm{R}_{j}+\bm{R}_{i}\right)-i\bm{k}'\left(\bm{R}_{j}+\bm{R}_{k}\right)}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =\frac{1}{\sqrt{N}}\frac{4g^{2}}{U}\sum_{ik}\sum_{\substack{\bm{k}\bm{k}'\bm{q}\\
+\alpha\beta
+}
+}\delta\left(\boldsymbol{q}+\boldsymbol{k}'-\boldsymbol{k}\right)e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =\frac{1}{\sqrt{N}}K\sum_{\substack{\bm{k}\bm{k}'\bm{q}\\
+\alpha\beta
+}
+}\delta\left(\boldsymbol{q}+\boldsymbol{k}-\boldsymbol{k}'\right)\cos k_{z}\cos k_{z}'p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+K=16\frac{g^{2}}{U}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+f we do the same for the phonon part 
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}}^{II} & =-\lambda\frac{1}{N^{2}}\frac{4g^{2}}{U}\sum_{\bm{k}\bm{k}'\bm{q}\boldsymbol{q}'}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}\left(X_{i}\left(\boldsymbol{q}'\right)+X_{k}\left(\boldsymbol{q}'\right)\right)e^{-i\bm{q}\bm{R}_{j}+i\bm{k}\bm{R}_{i}-i\bm{k}'\bm{R}_{k}-i\bm{q}'\bm{R}_{j}}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =-\frac{\lambda K}{4N}\sum_{\bm{k}\bm{k}'\bm{q}\boldsymbol{q}'}\sum_{\substack{ik\\
+\alpha\beta
+}
+}e^{i\bm{k}\bm{R}_{i}-i\bm{k}'\bm{R}_{k}}\delta\left(\boldsymbol{q}+\boldsymbol{q}'+\boldsymbol{k}'-\boldsymbol{k}\right)\left(X_{i}\left(\boldsymbol{q}'\right)+X_{k}\left(\boldsymbol{q}'\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =-\frac{\lambda K}{4N}\sum_{\bm{k}\bm{k}'\bm{q}\boldsymbol{q}'}\sum_{\substack{ik\\
+\alpha\beta
+}
+}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}\left(X_{i}\left(\boldsymbol{q}\right)+X_{k}\left(\boldsymbol{q}\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Transition rate
+\end_layout
+
+\begin_layout Standard
+We start from the Hamiltonian 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4g^{2}}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}p_{i\alpha a}^{\dagger}(\vec{S}_{i,b}\cdot\vec{\sigma}_{\alpha\beta})p_{i\beta b}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

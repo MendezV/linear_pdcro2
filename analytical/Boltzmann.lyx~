@@ -1,0 +1,454 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Boltzmann Calculation
+\end_layout
+
+\begin_layout Standard
+We start from the Hamiltonian 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{ij}g_{kj}\left[1-\lambda(X_{ij}+X_{kj})\right]p_{i\alpha}^{\dagger}(\vec{S}_{j}\cdot\vec{\sigma}_{\alpha\beta})p_{k\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we fourier transform the Hamiltonian using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{i\alpha}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{-i\bm{k}\bm{R}_{i}}p_{\boldsymbol{k}\alpha}^{\dagger}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{S}_{j}=\frac{1}{\sqrt{N}}\sum_{\bm{q}}e^{-i\bm{q}\bm{R}_{j}}\vec{S}_{\boldsymbol{q}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first term in the interaction Hamiltonian, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}} & =\frac{1}{N^{3/2}}\frac{4}{U}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{i0}g_{k0}e^{-i\bm{q}\bm{R}_{j}-i\bm{k}\left(\bm{R}_{j}+\bm{R}_{i}\right)+i\bm{k}'\left(\bm{R}_{j}+\bm{R}_{k}\right)}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =\frac{1}{\sqrt{N}}\sum_{ik}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}g_{ik}^{I}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined the form factor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)=g_{i0}g_{k0}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we do the same for the phonon part 
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}} & =-\lambda\frac{1}{N^{2}}\frac{4}{U}\sum_{\bm{k}\bm{k}'\bm{q}\boldsymbol{q}'}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{ij}g_{kj}\left(X_{i}\left(\boldsymbol{q}'\right)+X_{k}\left(\boldsymbol{q}'\right)\right)e^{-i\bm{q}\bm{R}_{j}-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}-i\bm{q}'\bm{R}_{j}}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =-\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{ik\\
+\alpha\beta
+}
+}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now define 
+\begin_inset Formula 
+\begin{align}
+V_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta} & =\frac{1}{\sqrt{N}}\sum_{\bm{q}}\sum_{ik}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left(\delta\left(\boldsymbol{q}-\boldsymbol{k}+\boldsymbol{k}'\right)-\frac{1}{\sqrt{N}}\left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)\right)\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]\\
+ & =U_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}+W_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we have 
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\sum_{\bm{k}\bm{k}'\alpha\beta}V_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}p_{\boldsymbol{k}\alpha}^{\dagger}p_{\boldsymbol{k}'\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we can use usual time dependent perturbation theory to estimate the
+ decay rate from a state of momentum 
+\series bold
+
+\begin_inset Formula $\boldsymbol{k}$
+\end_inset
+
+ 
+\series default
+and spin 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to a state of momentum 
+\begin_inset Formula $\boldsymbol{k}'$
+\end_inset
+
+ and spin 
+\begin_inset Formula $\beta$
+\end_inset
+
+ as follows:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}\left(t\right) & \sim\int_{-\infty}^{t}dt'dt''\overline{V_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t'\right)}V_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t''\right)e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, we want the total transition probability when 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+.
+ Additionally, we take the thermal expextation value over the phonon and
+ the spin subsystems.
+ This reduces the number of terms to be evaluated since 
+\begin_inset Formula $\langle X\rangle=0.$
+\end_inset
+
+ As such we only have to consider 
+\begin_inset Formula 
+\begin{align}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta} & =\int_{-\infty}^{\infty}dt'dt''\left\langle \left\langle \overline{U_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t'\right)}U_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t''\right)\right\rangle \right\rangle e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & +\int_{-\infty}^{\infty}dt'dt''\left\langle \left\langle \overline{W_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t'\right)}W_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}\left(t''\right)\right\rangle \right\rangle e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{I}+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{II}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now evaluate the first line which does not involve phonon operators
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{I} & =\frac{1}{N}\sum_{iki'k'}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left\langle \left\langle \left[S_{\boldsymbol{k}-\boldsymbol{k}'}^{\mu}\left(t'\right)\sigma_{\alpha\beta}^{\mu}\right]\overline{\left[S_{\boldsymbol{k}-\boldsymbol{k}'}^{\nu}\left(t''\right)\sigma_{\alpha\beta}^{\nu}\right]}\right\rangle \right\rangle e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\frac{1}{N}\sum_{iki'k'}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left\langle \left\langle S_{\boldsymbol{k}-\boldsymbol{k}'}^{\mu}\left(t'\right)\overline{S_{\boldsymbol{k}-\boldsymbol{k}'}^{\nu}\left(t''\right)}\right\rangle \right\rangle \sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the ensemble average yields the dynamic structure factor:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{I} & =\frac{1}{N}\sum_{iki'k'}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)S^{\mu\nu}\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)\sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\frac{1}{N}\sum_{iki'k'}g_{ik}^{I}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)S^{\mu\nu}\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tracing over the spin we get 
+\begin_inset Formula 
+\[
+\text{tr}\sigma^{\mu}\sigma^{\nu}=\delta^{\mu\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which then yields the transition probability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}^{I} & =\frac{1}{N}\sum_{iki'k'}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\\
+ & =\Lambda_{I}\left(\boldsymbol{k},\boldsymbol{k}'\right)S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the second term we have 
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{II} & =\frac{1}{N^{2}}\sum_{iki'k'}\sum_{\bm{q}\bm{q}'}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & \left\langle \left\langle \left[\left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)\right)S_{\boldsymbol{q}}^{\mu}\left(t'\right)\right]\overline{\left[\left(X_{i'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}',t''\right)+X_{k'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}',t''\right)\right)S_{\boldsymbol{q}'}^{\nu}\left(t''\right)\right]}\right\rangle \right\rangle \\
+ & \sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\frac{1}{N^{2}}\sum_{iki'k'}\sum_{\bm{q}\bm{q}'}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & \left\langle \left\langle \left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)\right)\overline{\left(X_{i'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}',t''\right)+X_{k'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}',t''\right)\right)}\right\rangle \right\rangle \\
+ & \left\langle \left\langle S_{\boldsymbol{q}}^{\mu}\left(t'\right)\overline{S_{\boldsymbol{q}'}^{\nu}\left(t''\right)}\right\rangle \right\rangle \sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the leading order correlator for the phonons yields a delta function
+ in momentum that cancels one of the sums above:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\alpha\rightarrow\boldsymbol{k}'\beta}^{II} & =\frac{1}{N^{2}}\sum_{iki'k'}\sum_{\bm{q}}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & \left\langle \left\langle \left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)\right)\overline{\left(X_{i'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t''\right)+X_{k'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t''\right)\right)}\right\rangle \right\rangle \\
+ & S^{\mu\nu}\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)\sigma_{\alpha\beta}^{\mu}\sigma_{\beta\alpha}^{\nu}e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the trace over spin
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}^{II} & =\frac{1}{N^{2}}\sum_{iki'k'}\sum_{\bm{q}}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & \left\langle \left\langle \left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t'\right)\right)\overline{\left(X_{i'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t''\right)+X_{k'}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},t''\right)\right)}\right\rangle \right\rangle \\
+ & S\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can then use the finite temperature correlator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left\langle \left\langle X_{i}\left(\boldsymbol{q},t\right)\overline{X_{j}\left(\boldsymbol{q},t'\right)}\right\rangle \right\rangle  & =\frac{\hbar\delta_{ij}}{2M\omega_{\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{q}}\right)\right]e^{i\omega_{\boldsymbol{q}}\left(t-t'\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wehere we assumed that the oscillations along the different bond directions
+ have the same dispersion.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}^{II} & =\frac{1}{N^{2}}\sum_{iki'k'}\sum_{\bm{q}}\int_{-\infty}^{\infty}dt'dt''g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\overline{g_{i'k'}}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left(\delta_{ii'}+\delta_{ik'}+\delta_{ki'}+\delta_{kk'}\right)\frac{\hbar}{2M\omega_{\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{q}}\right)\right]e^{i\omega_{\boldsymbol{q}}\left(t-t'\right)}S\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\sum_{\bm{q}}\int_{-\infty}^{\infty}dt'dt''\Lambda_{II}\left(\boldsymbol{k},\boldsymbol{k}'\right)\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right]e^{i\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\left(t-t'\right)}S\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\sum_{\bm{q}}\int_{-\infty}^{\infty}dt'dt''\Lambda_{II}\left(\boldsymbol{k},\boldsymbol{k}'\right)\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right]e^{i\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\left(t-t'\right)}S\left(\boldsymbol{k}-\boldsymbol{k}',t'-t''\right)e^{i\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)\left(t'-t''\right)}\\
+ & =\sum_{\bm{q}}\Lambda_{II}\left(\boldsymbol{k},\boldsymbol{k}'\right)\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right]S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As such, we have 
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'} & =\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}^{I}+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}^{II}\\
+ & =\Lambda_{I}\left(\boldsymbol{k},\boldsymbol{k}'\right)S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)+\sum_{\bm{q}}\Lambda_{II}\left(\boldsymbol{k},\boldsymbol{k}'\right)\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\left[1+n_{B}\left(\hbar\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right]S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit where the phonons are in the equipartition
+ regime, we have a transition rate given by 
+\begin_inset Formula 
+\[
+\mathcal{P}_{\boldsymbol{k}\rightarrow\boldsymbol{k}'}=\Lambda_{I}\left(\boldsymbol{k},\boldsymbol{k}'\right)S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)+\frac{k_{b}T}{2}\sum_{\bm{q}}\Lambda_{II}\left(\boldsymbol{k},\boldsymbol{k}'\right)\frac{S\left(\boldsymbol{k}-\boldsymbol{k}',\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}{M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\lambda}^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

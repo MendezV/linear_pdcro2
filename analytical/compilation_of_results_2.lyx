@@ -1,0 +1,1682 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Compilation of results 
+\end_layout
+
+\begin_layout Standard
+We have the interaction hamiltonian given by 
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}}= & \frac{1}{\sqrt{N}}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}g\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & +\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the three current operators given by 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+\bm{J}_{N}^{0}\left(\omega_{n}\right) & =\sum_{\boldsymbol{k}\sigma i\nu_{n}}\boldsymbol{v}_{\boldsymbol{k}}p_{\boldsymbol{k}\sigma}^{\dagger}\left(i\nu_{n}\right)p_{\boldsymbol{k}\sigma}\left(\omega_{n}+\nu_{n}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{J}_{N}^{1}\left(\omega_{n}\right)=\frac{1}{\sqrt{N\beta}}\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\alpha\beta\\
+i\nu_{l},i\nu_{n}
+\end{array}}\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{k}-\boldsymbol{k}'}\left(i\nu_{l}-i\nu_{n}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{J}_{N}^{2}\left(\omega_{n}\right) & =\frac{1}{N\beta}\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\boldsymbol{q}\alpha\beta i\\
+i\nu_{l},i\mu_{m},i\nu_{n}
+\end{array}}\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i,\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\left(i\nu_{l}-i\mu_{m}-i\nu_{n}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{q}}\left(i\mu_{m}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coupling functions are given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+g\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\sum_{ik}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & =\frac{4g^{2}}{U}u\left(\boldsymbol{k}\right)u\left(\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{equation}
+\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\sum_{k}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as such the factorization of the coupling constant 
+\begin_inset Formula $g\left(\boldsymbol{k},\boldsymbol{k}'\right)$
+\end_inset
+
+ happens generically.
+\end_layout
+
+\begin_layout Standard
+The bare vertex functions are given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\sum_{ij}\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\sum_{j}\left(\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\boldsymbol{g}_{ji}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-i2\frac{g_{i0}g_{j0}}{U}\left(\bm{R}_{i}-\bm{R}_{j}\right)e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if there is no spatial dependence of the hybridization, we get
+\begin_inset Formula 
+\[
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}\frac{\left(\bm{R}_{i}-\bm{R}_{j}\right)}{2i}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the case where we only have nearest neigbour interactions between different
+ layers with atoms being directly on top of each other, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\left[2\cos\left(k_{z}'a_{z}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lambda_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\lambda_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda g\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{\Lambda}_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =-\frac{4g^{2}\lambda}{U}\left(2a_{z}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right)\\
+ & =\boldsymbol{\Lambda}_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Self Energy
+\end_layout
+
+\begin_layout Standard
+There are two leading order contributions to the self energy to leading
+ order in 
+\begin_inset Formula 
+\[
+\frac{4g^{2}}{U}>\frac{4g^{2}}{U}\lambda\left(\frac{\hbar}{M\omega_{0}}\right)^{1/2}\gg\left(\frac{4g^{2}}{U}\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+kondo
+\end_layout
+
+\begin_layout Standard
+The first contribution comes from the pure Kondo coupling and is given by
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma\left(\boldsymbol{k},i\omega_{n}\right)=-\frac{1}{\beta N}\sum_{\bm{k}'}\sum_{i\nu_{n}}\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}D\left(\boldsymbol{k}'-\boldsymbol{k},i\nu_{n}-i\omega_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carrying out the matsubara sumation we get 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{K}\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{N}\sum_{\bm{k}'}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}A\left(\bm{k}',\epsilon\right)\chi''\left(\boldsymbol{k}'-\boldsymbol{k},\nu\right)\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}+\nu-\epsilon}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit 
+\begin_inset Formula $T>J$
+\end_inset
+
+ the susceptibility becomes momentum independent and we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{K}\left(\boldsymbol{k},i\omega_{n}\right) & =\frac{1}{N}\sum_{\bm{k}'}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}A\left(\bm{k}',\epsilon\right)\chi''\left(\nu\right)\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}+\nu-\epsilon}\right]\\
+ & =\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\rho_{I\boldsymbol{k}}\left(\epsilon\right)\chi''\left(\nu\right)\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon\right)}{i\omega_{n}+\nu-\epsilon}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the integration over 
+\begin_inset Formula $\nu$
+\end_inset
+
+ is bounded by the spin bandwidth and we are in the high temperature limit
+ we can expand the bose distribution function.
+ We can also drop the fermi function since it is bounded by 1.
+ 
+\begin_inset Formula 
+\[
+\Sigma_{K}\left(\boldsymbol{k},\omega^{+}\right)=k_{b}T\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu}\int\frac{d\epsilon}{\pi}\frac{\rho_{\boldsymbol{k}}\left(\epsilon\right)}{\omega^{+}+\nu-\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No further progress can be made without the explicit structure of 
+\begin_inset Formula $g\left(\boldsymbol{k},\boldsymbol{k}'\right).$
+\end_inset
+
+ However if we use the factorization property, we get
+\begin_inset Formula 
+\begin{align*}
+\rho_{I\boldsymbol{k}}\left(\epsilon\right) & =\frac{1}{N}\sum_{\bm{k}'}\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}A\left(\bm{k}',\epsilon\right)\\
+ & =\left(\frac{4g^{2}}{U}\right)^{2}u\left(\boldsymbol{k}\right)^{2}\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}A\left(\bm{k}',\epsilon\right)\\
+ & =\left(\frac{4g^{2}}{U}\right)^{2}u\left(\boldsymbol{k}\right)^{2}\rho_{I}\left(\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we have 
+\begin_inset Formula 
+\[
+\Sigma_{K}\left(\boldsymbol{k},\omega^{+}\right)=k_{b}T\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu}\int\frac{d\epsilon}{\pi}\frac{\rho_{I}\left(\epsilon\right)}{\omega^{+}+\nu-\epsilon}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the susceptibility is itself proportional to 
+\begin_inset Formula $1/T$
+\end_inset
+
+ this contribution to the self energy is 
+\begin_inset Formula $T-$
+\end_inset
+
+independent in the high temperature limit.
+ 
+\end_layout
+
+\begin_layout Subsection
+imaginary part
+\end_layout
+
+\begin_layout Standard
+performing analytical continuation we have 
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{K}''\left(\boldsymbol{k},\omega\right) & =-k_{b}T\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu}\int d\epsilon\delta\left(\omega+\nu-\epsilon\right)\rho_{I}\left(\epsilon\right)\\
+ & =-k_{b}T\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu}\rho_{I}\left(\omega+\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+near the fermi surface we then have 
+\begin_inset Formula 
+\[
+\Sigma_{K}''\left(\boldsymbol{k},0\right)=-k_{b}T\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu}\rho_{I}\left(\nu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the phenomenological form of the susceptibility at high temperatures
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{K}''\left(\boldsymbol{k},0\right) & =-k_{b}T\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{d\nu}{\pi}\frac{\kappa}{J}\beta^{-1}\theta\left(\alpha\pi J-\left|\nu\right|\right)\rho_{I}\left(\nu\right)\\
+ & =-\frac{\kappa}{J}\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int_{-\alpha\pi J}^{\alpha\pi J}\frac{d\nu}{\pi}\rho_{I}\left(\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the scattering time, we have 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =-2\Sigma_{K}''\left(\boldsymbol{k},0\right)\\
+ & =\frac{2\kappa}{J}\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int_{-\alpha\pi J}^{\alpha\pi J}\frac{d\nu}{\pi}\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}A\left(\bm{k}',\epsilon\right)\\
+ & \approx\frac{2\kappa}{J}\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int_{-\alpha\pi J}^{\alpha\pi J}\frac{d\nu}{\pi}\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}\pi\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\\
+ & =2\pi\kappa\alpha\left(\frac{4g^{2}u\left(\boldsymbol{k}\right)}{U}\right)^{2}\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall we get 
+\begin_inset Formula 
+\[
+\frac{1}{\tau_{\boldsymbol{k}}}=2\pi\kappa\alpha\frac{1}{N}\sum_{\bm{k}'}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the average of the scatttering rate about the fermi suface, we get
+ 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau} & =2\pi\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{\left[\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\right]^{2}}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =2\pi\kappa\alpha\frac{\frac{1}{N^{2}}\sum_{\bm{k}'\boldsymbol{k}}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\delta\left(\varepsilon_{\boldsymbol{k}}\right)\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the limit of our previous model, with a momentum independent interaction,
+ we recover the scaling 
+\begin_inset Formula 
+\[
+\frac{1}{\tau}\propto\left(\frac{g^{2}}{U}\right)^{2}\alpha\kappa\nu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+without any dependence on the dynamics of the spins.
+ 
+\end_layout
+
+\begin_layout Standard
+We can reexpress this as 
+\begin_inset Formula 
+\[
+\frac{1}{\tau}=2\pi\nu_{0}^{-1}\lambda_{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align*}
+\lambda_{K} & =\kappa\alpha\frac{1}{N^{2}}\sum_{\bm{k}'\boldsymbol{k}}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\delta\left(\varepsilon_{\boldsymbol{k}}\right)\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}\\
+ & \sim\kappa\alpha\left(\frac{g^{2}}{U}\right)^{2}\nu_{0}^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+more precisely
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau} & =2\pi\kappa\alpha\frac{\frac{1}{N^{2}}\sum_{\bm{k}'\boldsymbol{k}}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\delta\left(\varepsilon_{\boldsymbol{k}}\right)\left|g\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =2\pi\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{\left[\frac{1}{N}\sum_{\bm{k}'}u\left(\boldsymbol{k}'\right)^{2}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\right]^{2}}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =2\pi\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{\left[\frac{1}{N}\sum_{\bm{k}'}4\cos^{2}\left(k_{z}'a_{z}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\right]^{2}}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{N}\sum_{\bm{k}'}\cos^{2}\left(k_{z}a_{z}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right) & =\nu_{0}a_{z}\int\frac{dk_{z}}{2\pi}\cos^{2}\left(k_{z}a_{z}\right)\\
+ & =\nu_{0}\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also have 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right) & =\nu_{0}a_{z}\int\frac{dk_{z}}{2\pi}\\
+ & =\nu_{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau} & =2\pi\kappa\alpha\left(\frac{16g^{2}}{U}\right)^{2}\frac{\left[\nu_{0}\frac{1}{2}\right]^{2}}{\nu_{0}}\\
+ & =2\pi\kappa\alpha\left(\frac{8g^{2}}{U}\right)^{2}\nu_{0}\\
+ & =2\pi\left(\frac{8g^{2}}{U}\right)\left(\kappa\alpha\left(\frac{8g^{2}}{U}\right)\nu_{0}\right)\\
+ & =2\pi\left(\frac{4g^{2}}{U}\right)\lambda_{K}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+\lambda_{K}=\kappa\alpha\left(\frac{16g^{2}}{U}\right)\nu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Magnetoelastic
+\end_layout
+
+\begin_layout Standard
+For the magnetoelastic coupling we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}\left(\boldsymbol{k},i\omega_{n}\right) & =\frac{1}{\beta^{2}N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{i\nu_{n}iz_{n}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}D_{\ell}\left(\boldsymbol{q},iz_{n}\right)S\left(\boldsymbol{p},i\nu_{n}\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},i\omega_{n}+i\nu_{n}+iz_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Performing the matsubara sumations, we get 
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},z\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(z\right)+n_{F}\left(\epsilon\right)\right]\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon-z\right)}{i\omega_{n}+z+\nu-\epsilon}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit the spin susceptibility is momentum independent,
+ we also have that for optical phonons, the spectral function 
+\begin_inset Formula $B\left(\boldsymbol{q},z\right)$
+\end_inset
+
+ is momentum independent.
+ We will assume all the out of plane optical modes have the same frequency
+ so that 
+\begin_inset Formula $B_{\ell}\left(\boldsymbol{q},z\right)=B\left(\boldsymbol{q},z\right).$
+\end_inset
+
+ Only the coupling constant and the electron spectral function enter the
+ momentum integrals and we get 
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},i\omega_{n}\right)=\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\rho_{II\boldsymbol{k}}\left(\epsilon\right)B\left(z\right)\chi''\left(\nu\right)\left[n_{B}\left(z\right)+n_{F}\left(\epsilon\right)\right]\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon-z\right)}{i\omega_{n}+z+\nu-\epsilon}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where we defined 
+\begin_inset Formula 
+\[
+\rho_{II\boldsymbol{k}}\left(\epsilon\right)=\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we take the high temperature limit in the bose functions, since we are
+ above the debye scale and the spin bandwith
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},\omega^{+}\right)=\left(k_{b}T\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\frac{B\left(z\right)}{z}\frac{\chi''\left(\nu\right)}{\nu}\frac{\rho_{II\boldsymbol{k}}\left(\epsilon\right)}{\omega^{+}+z+\nu-\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+again, since the susceptibility is proportional to 
+\begin_inset Formula $1/T$
+\end_inset
+
+ we have that the self energy overall scales linearly with the temperature.
+ 
+\end_layout
+
+\begin_layout Standard
+We can derive an additional propert
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\rho_{II\boldsymbol{k}}\left(\epsilon\right) & =\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\\
+ & =\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\\
+ & =2\left(\frac{4g^{2}}{U}\right)^{2}u\left(\boldsymbol{k}\right)^{2}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}u\left(\boldsymbol{q}+\boldsymbol{p}\right)^{2}A\left(\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\\
+ & =2\left(\frac{4g^{2}\lambda}{U}\right)^{2}u\left(\boldsymbol{k}\right)^{2}\rho_{II}\left(\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this case we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},\omega^{+}\right)=2\left(k_{b}T\right)^{2}\left(\frac{4g^{2}\lambda u\left(\boldsymbol{k}\right)}{U}\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\frac{B\left(z\right)}{z}\frac{\chi''\left(\nu\right)}{\nu}\frac{\rho_{II}\left(\epsilon\right)}{\omega^{+}+z+\nu-\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+imaginary part
+\end_layout
+
+\begin_layout Standard
+taking the imaginary part, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\left(k_{b}T\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\frac{B\left(z\right)}{z}\frac{\chi''\left(\nu\right)}{\nu}\pi\delta\left(\omega+z+\nu-\epsilon\right)\rho_{II\boldsymbol{k}}\left(\epsilon\right)\\
+ & =-\left(k_{b}T\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\frac{\chi''\left(\nu\right)}{\nu}\rho_{II\boldsymbol{k}}\left(\omega+z+\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+ we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},0\right) & =-\left(k_{b}T\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\frac{\chi''\left(\nu\right)}{\nu}\rho_{II\boldsymbol{k}}\left(z+\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit we then have 
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},0\right) & =-\left(k_{b}T\right)^{2}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\frac{\kappa}{J}\beta^{-1}\theta\left(\alpha\pi J-\left|\nu\right|\right)\rho_{II\boldsymbol{k}}\left(z+\nu\right)\\
+ & =-k_{b}T\frac{\kappa}{J}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\theta\left(\alpha\pi J-\left|\nu\right|\right)\rho_{II\boldsymbol{k}}\left(z+\nu\right)\\
+ & =-k_{b}T\frac{\kappa}{J}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\theta\left(\alpha\pi J-\left|\nu\right|\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(z+\nu-\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)\\
+ & \sim-k_{b}T\frac{\kappa}{J}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\theta\left(\alpha\pi J-\left|\nu\right|\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)\\
+ & \sim-\pi k_{b}T\frac{\kappa}{J}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\frac{B\left(z\right)}{z}\theta\left(\alpha\pi J-\left|\nu\right|\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)\\
+ & -\alpha\pi\kappa k_{b}T\int\frac{dz}{\pi}\frac{B\left(z\right)}{z}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now we use 
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dz}{\pi}\frac{B\left(z\right)}{z} & =\int\frac{dz}{\pi}\frac{\pi\hbar}{2M\omega_{0}z}\left(\delta\left(z-\omega_{0}\right)-\delta\left(z+\omega_{0}\right)\right)\\
+ & =\int\frac{dz}{\pi}\frac{\pi\hbar}{2M\omega_{0}^{2}}\left(\delta\left(z-\omega_{0}\right)+\delta\left(z+\omega_{0}\right)\right)\\
+ & =\frac{\hbar}{M\omega_{0}^{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},0\right)=-\alpha\pi\kappa k_{b}T\frac{\hbar}{M\omega_{0}^{2}}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then, we have the scattering rate by 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =-2\Sigma_{ME}''\left(\boldsymbol{k},0\right)\\
+ & =2\pi\kappa\alpha k_{b}T\frac{\hbar}{M\omega_{0}^{2}}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{q}+\boldsymbol{p}}\right)\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Shifting one of the momentum sums we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\tau_{\boldsymbol{k}}}=2\pi\kappa\alpha k_{b}T\frac{\hbar}{M\omega_{0}^{2}}\frac{1}{N}\sum_{\boldsymbol{k}'}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}',\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Averaging over the fermi surface we then get 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau} & =2\pi k_{b}T\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\frac{\frac{1}{N^{2}}\sum_{\boldsymbol{k}\boldsymbol{k}'}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}',\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right)}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =2\pi k_{b}T\lambda_{ME}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall 
+\begin_inset Formula 
+\[
+\frac{1}{\tau}=2\pi k_{b}T\lambda_{ME}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align*}
+\lambda_{ME} & =\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\frac{\frac{1}{N^{2}}\sum_{\boldsymbol{k}\boldsymbol{p}}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{p}}\right)\delta\left(\varepsilon_{\boldsymbol{k}}\right)}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & \sim\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\sum_{\ell}\left|\lambda_{\ell}\left(k_{F},k_{F}\right)\right|^{2}\nu_{0}\\
+ & \sim\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\left(\lambda\frac{g^{2}}{U}\right)^{2}\nu_{0}\sim\frac{\lambda_{K}}{\omega_{0}\nu_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+more precisely
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau} & =2\pi k_{b}T\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\frac{\frac{1}{N^{2}}\sum_{\boldsymbol{k}\boldsymbol{k}'}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}',\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right)}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =2\pi k_{b}T\lambda_{ME}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\frac{1}{N^{2}}\sum_{\boldsymbol{k}\boldsymbol{k}'}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}',\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right)}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+2\lambda^{2}\frac{\frac{1}{N^{2}}\sum_{\boldsymbol{k}\boldsymbol{k}'}\left|g\left(\boldsymbol{k}',\boldsymbol{k}\right)\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{k}'}\right)}{\frac{1}{N}\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+2\lambda^{2}\left(\frac{8g^{2}}{U}\right)^{2}\nu_{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\tau}=2\pi k_{b}T\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}2\lambda^{2}\left(\frac{8g^{2}}{U}\right)^{2}\nu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula 
+\[
+\lambda_{ME}=2\kappa\alpha\frac{\hbar\lambda^{2}}{M\omega_{0}^{2}}\left(\frac{8g^{2}}{U}\right)^{2}\nu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{ME}=2\frac{\hbar\lambda^{2}}{M\omega_{0}}\left(\frac{4g^{2}}{U\omega_{0}}\right)\lambda_{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bubble I
+\end_layout
+
+\begin_layout Standard
+The diagram we need to calculate for the first contribution is given by
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{k}}^{\alpha\alpha}\left(i\omega_{n}\right)=\frac{1}{\beta V}\left\langle JJ\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{k}}^{\alpha\alpha}\left(i\omega_{n}\right)=\frac{1}{\beta V}\frac{1}{\beta N}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{i\nu_{n}iz_{n}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{k}+\boldsymbol{q}\right)\right|^{2}S\left(\boldsymbol{p},iz_{n}\right)\mathcal{G}\left(\boldsymbol{p}+\boldsymbol{q},i\nu_{n}+iz_{n}\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\nu_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carrying out the matsubara sums we have 
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{k}}^{\alpha\alpha}\left(i\omega_{n}\right)=\frac{1}{V}\frac{1}{N}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{k}+\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{k}+\boldsymbol{q},\epsilon\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{i\omega_{n}-\epsilon+\nu-z}\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the 
+\begin_inset Formula $\boldsymbol{k}\rightarrow0$
+\end_inset
+
+ limit and performing analitical continuation, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi^{\alpha\alpha}\left(\omega\right)=\frac{1}{V}\frac{1}{N}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{\omega^{+}-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the imaginary part we have 
+\begin_inset Formula 
+\begin{align*}
+\Pi^{\alpha\alpha\prime\prime}\left(\omega\right) & =-\frac{1}{V}\frac{1}{N}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)\right)\delta\left(\omega-\epsilon+\nu-z\right)\\
+ & =-\frac{1}{V}\frac{1}{N}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\epsilon+z-\omega\right)\right)\left(n_{F}\left(\epsilon\right)-n_{F}\left(\epsilon-\omega\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the 
+\begin_inset Formula $\omega\rightarrow0$
+\end_inset
+
+ limit, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lim_{\omega\rightarrow0}\frac{\Pi^{\alpha\alpha\prime\prime}\left(\omega\right)}{\omega} & =-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\epsilon+z\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\epsilon+z\right)\right)\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\\
+ & =-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z-\epsilon\right)A\left(\boldsymbol{p}+\boldsymbol{q},z\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z-\epsilon\right)+n_{F}\left(z\right)\right)\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\\
+ & =\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},\epsilon-z\right)A\left(\boldsymbol{p}+\boldsymbol{q},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we take the high temperature limit while the electros are still in the
+ degenerate regime, this entails that
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},\epsilon-z\right)A\left(\boldsymbol{p}+\boldsymbol{q},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\\
+\sim A\left(\boldsymbol{p}+\boldsymbol{q},0\right)\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},0-z\right)\left(n_{B}\left(0-z\right)+n_{F}\left(-z\right)\right)\\
+A\left(\boldsymbol{p}+\boldsymbol{q},0\right)\int\frac{dz}{\pi}\chi''\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z\right)\right)\\
+2\kappa\alpha A\left(\boldsymbol{p}+\boldsymbol{q},0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which tields 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{11}^{\alpha}=2e^{2}\kappa\alpha\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}A\left(\boldsymbol{p}+\boldsymbol{q},0\right)\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+\sim\frac{2e^{2}\kappa\alpha}{\pi}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{2e^{2}\kappa\alpha}{\pi}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)
+\]
+
+\end_inset
+
+With the spectral function 
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p},0\right)=\pi\frac{\Gamma_{K}\left(\boldsymbol{p}\right)+\Gamma_{ME}\left(\boldsymbol{p}\right)}{\varepsilon_{\boldsymbol{p}}^{2}+\left(\Gamma_{K}\left(\boldsymbol{p}\right)+\Gamma_{ME}\left(\boldsymbol{p}\right)\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now analyze the relation between 
+\begin_inset Formula $\Gamma_{K}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Gamma_{ME}$
+\end_inset
+
+, taking the ratio of the coupling constants we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\lambda_{ME}}{\lambda_{K}} & \sim\frac{\frac{\hbar\kappa\alpha}{M\omega_{0}^{2}}\left(\lambda\frac{g^{2}}{U}\right)^{2}\nu_{0}}{\kappa\alpha\left(\frac{g^{2}}{U}\right)^{2}\nu_{0}^{2}}\\
+ & \sim\frac{\hbar\lambda^{2}}{M\omega_{0}}\frac{1}{\omega_{0}\nu_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which implies that the ratio of the scattering rates is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\Gamma_{ME}}{\Gamma_{K}}=\frac{\lambda_{ME}\nu_{0}T}{\lambda_{K}} & \sim\frac{\hbar\lambda^{2}}{M\omega_{0}}\frac{T}{\omega_{0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so we expect the domination of the linear in temperature single particle
+ decay rate over the Kondo rate at a scale set by 
+\begin_inset Formula 
+\[
+T\sim\frac{M\omega_{0}^{2}}{\hbar\lambda^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have 
+\begin_inset Formula 
+\[
+\Gamma_{ME}>\Gamma_{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that 
+\end_layout
+
+\begin_layout Standard
+Using the approximation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{\text{adv}}\left(\bm{k}'+\bm{q},\epsilon\right)G_{\text{ret}}\left(\bm{k}',\omega+\epsilon\right)=\frac{2i\pi\delta\left(\epsilon-\xi_{\bm{k}'}\right)}{\omega+\bm{q}\cdot\partial\xi_{\bm{k}'}/\partial\bm{k}'+i/\tau}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have 
+\begin_inset Formula 
+\begin{align*}
+A\left(\boldsymbol{p}+\boldsymbol{q},\epsilon\right)A\left(\boldsymbol{q},\epsilon+\omega\right) & \supset\frac{1}{4}\left(G_{\text{adv}}\left(\bm{p}+\bm{q},\epsilon\right)G_{\text{ret}}\left(\bm{p},\omega+\epsilon\right)+G_{\text{ret}}\left(\bm{p}+\bm{q},\epsilon\right)G_{\text{adv}}\left(\bm{p},\omega+\epsilon\right)\right)\\
+ & \sim\frac{1}{4}\left(\frac{2i\pi\delta\left(\epsilon-\xi_{\bm{p}}\right)}{\omega+\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}+i/\tau}-\frac{2i\pi\delta\left(\epsilon-\xi_{\bm{p}}\right)}{\omega+\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}-i/\tau}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then we have 
+\begin_inset Formula 
+\begin{align*}
+A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right) & =\frac{i\pi\delta\left(\xi_{\bm{p}}\right)}{2}\left(\frac{1}{\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}+i/\tau}-\frac{1}{\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}-i/\tau}\right)\\
+ & =\frac{i\pi\delta\left(\xi_{\bm{p}}\right)}{2}\left(\frac{-i/\tau}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)\\
+ & =\frac{\pi\delta\left(\xi_{\bm{p}}\right)}{2\tau}\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the above approximation is valid when 
+\begin_inset Formula $\boldsymbol{q}$
+\end_inset
+
+ is small so we have to prove that the vertex has support for only small
+ values of 
+\series bold
+
+\begin_inset Formula $\boldsymbol{q}$
+\end_inset
+
+ 
+\series default
+for the above approximation to make sense.
+ In case this works out, the result would be
+\series bold
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{11}^{\alpha} & =e^{2}\kappa\alpha\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\frac{\delta\left(\xi_{\bm{p}}\right)}{\tau}\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)\\
+ & \sim\frac{e^{2}\kappa\alpha}{\tau}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+overall 
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{e^{2}\kappa\alpha}{\tau}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bubble II
+\end_layout
+
+\begin_layout Standard
+The bubble in this case is given by
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{q}}^{\alpha\alpha}\left(i\omega_{n}\right)=-\frac{1}{V}\frac{1}{\beta}\frac{1}{\beta^{2}N^{2}}\sum_{\ell}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}}\sum_{ik_{n}'ik_{n}ip_{n}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'+\boldsymbol{q}\right)\right|^{2}D\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},ik_{n}-ip_{n}-ik_{n}'\right)S\left(\boldsymbol{p},ip_{n}\right)\mathcal{G}\left(\boldsymbol{k},ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}'+\boldsymbol{q},ik_{n}'+iq_{n}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{q}}^{\alpha\alpha}\left(i\omega_{n}\right)=-\frac{1}{N^{3}}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}}\sum_{\ell}\int\frac{d\epsilon}{\pi}\frac{d\nu}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'+\boldsymbol{q}\right)\right|^{2}B\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k},\nu\right)A\left(\boldsymbol{k}',\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\nu\right)\right]\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z-\mu\right)}{i\omega_{n}-\epsilon-z-\mu+\nu}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when we take the 
+\series bold
+
+\begin_inset Formula $\boldsymbol{q}\rightarrow0$
+\end_inset
+
+ 
+\series default
+limit and performin analytical continuation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi^{\alpha\alpha}\left(i\omega_{n}\right)=-\frac{1}{N^{3}}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}\ell}\int\frac{d\epsilon}{\pi}\frac{d\nu}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}B\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k},\nu\right)A\left(\boldsymbol{k}',\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\nu\right)\right]\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z-\mu\right)}{\omega^{+}-\epsilon-z-\mu+\nu}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in the 
+\begin_inset Formula $\omega^{+}\rightarrow\omega$
+\end_inset
+
+ limit 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Pi^{\alpha\alpha}\left(i\omega_{n}\right) & =\frac{1}{N^{3}}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}\ell}\int\frac{d\epsilon}{\pi}\frac{d\nu}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}B\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k},\nu\right)A\left(\boldsymbol{k}',\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\nu\right)\right]\left[n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z-\mu\right)\right]\pi\delta\left(\omega-\epsilon-z-\mu+\nu\right)\\
+ & =\frac{1}{N^{3}}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}B\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k},-\left(\omega-\epsilon-z-\mu\right)\right)A\left(\boldsymbol{k}',\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(-\left(\omega-\epsilon-z-\mu\right)\right)\right]\left[n_{F}\left(\epsilon\right)-n_{F}\left(\epsilon-\omega\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the 
+\begin_inset Formula $\omega\rightarrow0$
+\end_inset
+
+ limit, we get
+\begin_inset Formula 
+\begin{align*}
+\lim_{\omega\rightarrow0}\frac{\Pi^{\alpha\alpha\prime\prime}\left(\omega\right)}{\omega} & =-\frac{1}{N^{3}}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}B\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k},\epsilon+z+\mu\right)A\left(\boldsymbol{k}',\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =-\frac{1}{N^{3}}\sum_{\boldsymbol{q}\boldsymbol{k}\boldsymbol{p}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}B\left(\boldsymbol{q}-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k}+\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the degenerate limit for the fermions 
+\begin_inset Formula 
+\[
+\sigma_{22}^{\alpha}=\frac{e^{2}}{\pi}\frac{1}{N^{3}}\sum_{\boldsymbol{q}\boldsymbol{k}\boldsymbol{p}\ell}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},0\right)\int\frac{d\mu}{\pi}\frac{dz}{\pi}B\left(\boldsymbol{q}-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k}+\boldsymbol{q},z+\mu\right)\left[n_{B}\left(\mu\right)-n_{B}\left(-z\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(+z+\mu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit we have 
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d\mu}{\pi}\frac{dz}{\pi}B\left(\boldsymbol{q}-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k}+\boldsymbol{q},z+\mu\right)\left[n_{B}\left(\mu\right)-n_{B}\left(-z\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(z+\mu\right)\right]\\
+\sim\left(k_{b}T\right)^{2}\int\frac{d\mu}{\pi}\frac{dz}{\pi}B\left(\boldsymbol{q}-\boldsymbol{p},z\right)\chi''\left(\boldsymbol{p},\mu\right)A\left(\boldsymbol{k}+\boldsymbol{q},z+\mu\right)\left(\frac{1}{z}+\frac{1}{\mu}\right)\frac{1}{z+\mu}\\
+=\left(k_{b}T\right)^{2}\int\frac{d\mu}{\pi}\frac{dz}{\pi}\frac{B\left(\boldsymbol{q}-\boldsymbol{p},z\right)}{z}\frac{\chi''\left(\boldsymbol{p},\mu\right)}{\mu}A\left(\boldsymbol{k}+\boldsymbol{q},z+\mu\right)\\
+\sim\left(k_{b}T\right)^{2}A\left(\boldsymbol{k}+\boldsymbol{q},0\right)\int\frac{d\mu}{\pi}\frac{dz}{\pi}\frac{B\left(\boldsymbol{q}-\boldsymbol{p},z\right)}{z}\frac{\chi''\left(\boldsymbol{p},\mu\right)}{\mu}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now using s
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dz}{\pi}\frac{B\left(z\right)}{z} & =\int\frac{dz}{\pi}\frac{\pi\hbar}{2M\omega_{0}z}\left(\delta\left(z-\omega_{0}\right)-\delta\left(z+\omega_{0}\right)\right)\\
+ & =\int\frac{dz}{\pi}\frac{\pi\hbar}{2M\omega_{0}^{2}}\left(\delta\left(z-\omega_{0}\right)+\delta\left(z+\omega_{0}\right)\right)\\
+ & =\frac{\hbar}{M\omega_{0}^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d\nu}{\pi}\frac{\chi''\left(\nu\right)}{\nu} & =\int\frac{d\nu}{\pi}\frac{\kappa}{J}\beta^{-1}\theta\left(\alpha\pi J-\left|\nu\right|\right)\\
+ & =\frac{\kappa}{J}\beta^{-1}\int_{-\pi\alpha J}^{\pi\alpha J}\frac{d\nu}{\pi}\\
+ & =2\alpha\kappa\beta^{-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we then have 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & \sim\frac{e^{2}}{\pi}\frac{1}{N^{2}}\sum_{\ell}\sum_{\boldsymbol{q}\boldsymbol{k}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\left(2\alpha\kappa\beta^{-1}\frac{\hbar}{M\omega_{0}^{2}}\left(k_{b}T\right)^{2}\right)A\left(\boldsymbol{k}+\boldsymbol{q},0\right)A\left(\boldsymbol{k},0\right)\\
+ & =2\frac{\hbar e^{2}\alpha\kappa}{\pi M\omega_{0}^{2}}\left(k_{b}T\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q},0\right)A\left(\boldsymbol{k},0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{22}^{\alpha}=2\frac{\hbar e^{2}\alpha\kappa}{\pi M\omega_{0}^{2}}\left(k_{b}T\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q},0\right)A\left(\boldsymbol{k},0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the same approximation on the spectral functions as before
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)=\frac{\pi\delta\left(\xi_{\bm{p}}\right)}{2\tau}\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\]
+
+\end_inset
+
+, we get 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =\frac{e^{2}\alpha\kappa}{\tau}\frac{\hbar k_{b}T}{M\omega_{0}^{2}}\frac{1}{N^{2}}\sum_{\ell}\sum_{\boldsymbol{q}\boldsymbol{k}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k}+\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\delta\left(\xi_{\bm{k}}\right)\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{k}}/\partial\bm{k}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bubble for the usual current 
+\end_layout
+
+\begin_layout Standard
+The bubble in this case is 
+\begin_inset Formula 
+\[
+\Pi^{\alpha\alpha}\left(i\omega_{n}\right)=-\frac{1}{\beta V}\sum_{\boldsymbol{k}}\sum_{ik_{n}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}\mathcal{G}\left(\boldsymbol{k},ik_{n}\right)\mathcal{G}\left(\boldsymbol{k},ik_{n}+i\omega_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the matsubara sum, we get 
+\begin_inset Formula 
+\begin{align*}
+\Pi^{\alpha\alpha}\left(i\omega_{n}\right) & =-\frac{1}{V}\int\frac{d\epsilon d\epsilon'}{\pi^{2}}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\epsilon\right)\left(\frac{n_{F}\left(\epsilon'\right)-n_{F}\left(\epsilon\right)}{i\omega_{n}-\epsilon+\epsilon'}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Performing analytic continuation we have 
+\begin_inset Formula 
+\[
+\Pi^{\alpha\alpha}\left(\omega\right)=-\frac{1}{V}\int\frac{d\epsilon d\epsilon'}{\pi^{2}}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\epsilon\right)\left(\frac{n_{F}\left(\epsilon'\right)-n_{F}\left(\epsilon\right)}{\omega^{+}-\epsilon+\epsilon'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the imaginary part 
+\begin_inset Formula 
+\begin{align*}
+\Pi^{\alpha\alpha\prime\prime}\left(\omega\right) & =\frac{1}{V}\int\frac{d\epsilon d\epsilon'}{\pi}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\epsilon\right)\left(n_{F}\left(\epsilon'\right)-n_{F}\left(\epsilon\right)\right)\delta\left(\omega-\epsilon+\epsilon'\right)\\
+ & =\frac{1}{V}\int\frac{d\epsilon'}{\pi}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\omega+\epsilon'\right)\left(n_{F}\left(\epsilon'\right)-n_{F}\left(\omega+\epsilon'\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the limit of vanishing frequency, we have 
+\begin_inset Formula 
+\[
+\lim_{\omega\rightarrow0}\frac{\Pi^{\alpha\alpha\prime\prime}\left(\omega\right)}{\omega}=\frac{1}{V}\int\frac{d\epsilon'}{\pi}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\epsilon'\right)\left(-\frac{\partial n_{F}\left(\epsilon'\right)}{\partial\epsilon'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so we have 
+\begin_inset Formula 
+\[
+\sigma_{00}^{\alpha}=\frac{e^{2}}{V}\int\frac{d\epsilon'}{\pi}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k},\epsilon'\right)A\left(\boldsymbol{k},\epsilon'\right)\left(-\frac{\partial n_{F}\left(\epsilon'\right)}{\partial\epsilon'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the approximation 
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)=\frac{\pi\delta\left(\xi_{\bm{p}}\right)}{2\tau}\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have 
+\begin_inset Formula 
+\[
+\sigma_{00}^{\alpha}=\frac{e^{2}}{V}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}\tau\delta\left(\xi_{\bm{k}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}\right)=\frac{4g^{2}}{U}\frac{\left(\bm{R}_{i}-\bm{R}_{j}\right)}{2i}e^{-i\bm{k}\left(\bm{R}_{i}-\bm{R}_{j}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Phonon renorm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\ell\boldsymbol{k}}\left(\omega\right)=\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{k}+\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{\omega^{+}-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+g\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\sum_{ik}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\\
+ & =\frac{4g^{2}}{U}u\left(\boldsymbol{k}\right)u\left(\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{equation}
+\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\sum_{k}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\ell\boldsymbol{k}}\left(\omega\right)=\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{k}+\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{\omega^{+}-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\ell}\left(\omega\right)=\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},\nu\right)A\left(\boldsymbol{k},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{\omega^{+}-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the real part, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\ell}'\left(0\right)=\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},\nu\right)A\left(\boldsymbol{k},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for the imaginary part we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Pi_{\ell}''\left(\omega\right) & =-\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\omega\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},\epsilon+z\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\epsilon+z\right)\right)\partial_{\epsilon}n_{F}\left(\epsilon\right)\\
+ & =-\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\omega\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},\epsilon+z\right)A\left(\boldsymbol{q},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\epsilon+z\right)\right)\partial_{\epsilon}n_{F}\left(\epsilon\right)\\
+ & =\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\omega\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(z\right)+n_{F}\left(z\right)\right)A\left(\boldsymbol{q},0\right)\\
+ & =\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\omega\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(z\right)+n_{F}\left(z\right)\right)A\left(\boldsymbol{q},0\right)\\
+ & =\left(\frac{4g^{2}\lambda}{U}\right)^{2}\omega\rho_{0}^{2}\int\frac{dz}{\pi}\chi''\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z\right)\right)\\
+ & =\left(J_{K}\lambda\right)^{2}\omega\rho_{0}^{2}2\alpha\kappa
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Continuing with the real part
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\ell}'\left(0\right)=\frac{1}{N^{2}}\left(\frac{4g^{2}\lambda}{U}\right)^{2}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(z\right)A\left(\boldsymbol{p},\nu\right)A\left(\boldsymbol{k},\epsilon\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right)P\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{-\epsilon+\nu-z}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

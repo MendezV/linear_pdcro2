@@ -1,0 +1,126 @@
+%% LyX 2.3.6.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+To evaluate the incoherent contribution to the conductivity we start
+by fourier transforming the current operators that are associated
+to the kondo and magnetoelastic assisted hoppings between Pd layers.
+These particle-current operators are given by 
+
+\begin{equation}
+\boldsymbol{J}^{1}\left(\omega_{n}\right)=\frac{1}{\sqrt{N\beta}}\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\alpha\beta\\
+i\nu_{l},i\nu_{n}
+\end{array}}\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{k}-\boldsymbol{k}'}\left(i\nu_{l}-i\nu_{n}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{equation}
+
+\begin{align}
+\boldsymbol{J}^{2}\left(\omega_{n}\right) & =\frac{1}{N\beta}\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\boldsymbol{q}\alpha\beta i\\
+i\nu_{l},i\mu_{m},i\nu_{n}
+\end{array}}\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i,\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\left(i\nu_{l}-i\mu_{m}-i\nu_{n}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{q}}\left(i\mu_{m}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{align}
+
+where the bare vertices are given by 
+\begin{align}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =J_{K}\left(\frac{2a_{z}}{\hbar}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right),
+\end{align}
+
+and 
+
+\begin{align}
+\boldsymbol{\Lambda}_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\boldsymbol{\Lambda}_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align}
+
+we additionally parametrized the magnetoelastic interaction as $\tilde{\alpha}=J_{k}\lambda$
+. Note that we have two phonon operators per local moment since there
+are two bond streching modes, one that connects to the upper and one
+that connects to the lower Pd layers. With these definitions, we proceed
+to calculate the current-current correlation functions 
+
+\begin{equation}
+\Pi_{\boldsymbol{k},i}^{zz}\left(i\omega_{n}\right)=\frac{-1}{\beta V}\langle J_{z}^{i}(\tilde{q})J_{z}^{i}(-\tilde{q})\rangle=\Pi_{1}+\Pi_{2}
+\end{equation}
+
+There are two diagrams that contibute to leading order, these are
+respectively:
+
+where the dotted line corresponds to the $\boldsymbol{J}^{1}$ current,
+the dashed line is a spin propagator, the zig-zag line is a $\boldsymbol{J}^{2}$
+current, and the wiggly line is a phonon propagator. 
+
+For the first diagram we consider only the Kondo vertex, the diagram
+itself is given by 
+
+\begin{equation}
+\Pi_{\boldsymbol{k},1}^{zz}\left(i\omega_{n}\right)=\frac{1}{\beta V}\frac{1}{\beta N}\sum_{\boldsymbol{q}\boldsymbol{p}}\sum_{i\nu_{n}iz_{n}}\left|f^{z}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{k}+\boldsymbol{q}\right)\right|^{2}S\left(\boldsymbol{p},iz_{n}\right)\mathcal{G}\left(\boldsymbol{p}+\boldsymbol{q},i\nu_{n}+iz_{n}\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\nu_{n}\right)
+\end{equation}
+
+which comes from the definition of the current from the continutiry
+equation. We expect that in the high temperature limit vertex corrections
+can be safely ignored in the perturbative regime when quasi-elastic
+collisions dominate and there is no momentum structure to the scattering
+potentials. In this case we proceed by performing the bosonic and
+fermionic matsubara sumations. The result of this is
+
+\begin{align}
+\Pi_{\boldsymbol{k},1}^{zz}\left(i\omega_{n}\right) & =\frac{1}{V}\frac{1}{N}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{z}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{k}+\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{d\nu}{\pi}\int\frac{dz}{\pi}\chi''\left(\boldsymbol{p},z\right)A\left(\boldsymbol{p}+\boldsymbol{q},\nu\right)A\left(\boldsymbol{k}+\boldsymbol{q},\epsilon\right)\\
+ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \times\left(\frac{n_{F}\left(\epsilon\right)-n_{F}\left(\nu-z\right)}{i\omega_{n}-\epsilon+\nu-z}\right)\left(n_{B}\left(z\right)+n_{F}\left(\nu\right)\right).
+\end{align}
+
+We see that overall the current correlation function is a convolution
+of electron spectral functions with the spin susceptibility. Once
+we perform analytic continuation and take the zero frequency limit,
+we get 
+\begin{equation}
+\sigma_{11}^{c}=\frac{\hbar e^{2}}{VN}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}\chi''\left(\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right),
+\end{equation}
+
+where we already took the $\boldsymbol{k}\rightarrow0$ limit and
+we used the local approximation on $\chi''$ to simplify the momentum
+sums. Since the electron spectral functions satisfy $A\left(\boldsymbol{p},\omega\right)\approx A\left(\left(p_{x},p_{y}\right),\omega\right)$
+we can pull the momentum sums over $q_{x,y}$ and $p_{x,y}$ past
+the bare vertex, and to leading order we have 
+
+\begin{equation}
+\sigma_{11}^{c}=\frac{2a_{z}}{a_{pl}^{2}}\hbar e^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}\chi''\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{equation}
+
+using 
+
+\[
+\sigma_{11}^{c}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)J_{K}^{2}\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\int\frac{dz}{\pi}\rho\left(\epsilon-z\right)\chi''\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z-\epsilon\right)\right)
+\]
+
+To evaluate this integral we use the density of states evaluated from
+the dispersion in the low energy theory of XXX
+
+Now we focus on the magnetoelastic current correlation functions
+
+\[
+\Pi_{\boldsymbol{q},2}^{zz}\left(i\omega_{n}\right)=-\frac{1}{\beta^{3}VN^{2}}\sum_{\begin{array}{c}
+\boldsymbol{k}'\boldsymbol{k}\boldsymbol{p}\\
+ik_{n}'ik_{n}ip_{n}\\
+\ell
+\end{array}}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'+\boldsymbol{q}\right)\right|^{2}D\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{p},ik_{n}-ip_{n}-ik_{n}'\right)S\left(\boldsymbol{p},ip_{n}\right)\mathcal{G}\left(\boldsymbol{k},ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}'+\boldsymbol{q},ik_{n}'+iq_{n}\right)
+\]
+
+where we defined 
+
+\begin{align}
+\sigma_{22}^{c} & =-\frac{e^{2}}{VN}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}B\left(z\right)\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\times\\
+ & \ \ \ \left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align}
+
+\begin{align}
+\sigma_{22}^{c} & =\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[2J_{K}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon\right)\cosh\left(\frac{\beta\epsilon}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\times\\
+ & S\left(\mu\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]
+\end{align}
+
+\end{document}

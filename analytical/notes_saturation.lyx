@@ -1,0 +1,474 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Saturation of resistivity large N
+\end_layout
+
+\begin_layout Section
+Derivation of the current
+\end_layout
+
+\begin_layout Standard
+Lets start with the Hamiltonian
+\begin_inset Formula 
+\[
+H_{0}=-t\sum_{ari}c_{ai}^{\dagger}c_{ai+r}+c_{ai+r}^{\dagger}c_{ai}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{\text{ph}}=\frac{1}{2}\sum_{abri}M\omega_{0}\left(X_{ab,i}^{r}\right)^{2}+\frac{1}{2M}\left(P_{ab,i}^{r}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{\text{int}}=\sum_{abri}X_{ab,i}^{r}\left[c_{ai}^{\dagger}c_{bi+r}+c_{bi+r}^{\dagger}c_{ai}+c_{bi}^{\dagger}c_{ai+r}+c_{ai+r}^{\dagger}c_{bi}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To calculate the particle current we consider the Heisenberg equation of
+ motion for the number density
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+i\partial_{t}n_{ia}=\left[n_{ia},H\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+J_{N}^{a} & =-i\sum_{i}\bm{R}_{i}\left[n_{ia},H\right]\\
+ & =-i\sum_{irc}\bm{R}_{i}\left[n_{ia},h_{rc}\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the local hamiltonian that has a finite contribution to the current
+ is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+h_{rc}=\sum_{l}\frac{t_{rl}}{2}c_{rc}^{\dagger}c_{lc}+\frac{t_{rl}}{2}c_{lc}^{\dagger}c_{rc}+\sum_{b}X_{cb,lr}\left[c_{cl}^{\dagger}c_{br}+c_{br}^{\dagger}c_{cl}+c_{bl}^{\dagger}c_{cr}+c_{cr}^{\dagger}c_{bl}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\[
+X_{cb,lr}=\sum_{r'}X_{cb,l}^{r'}\delta_{r,l+r'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+t_{rl}=2t\sum_{r'}\delta_{r,l+r'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do this for the current per flavor.
+ We only need to calculate the commutator with the term
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left[n_{ia},c_{cl}^{\dagger}c_{br}\right] & =\left[n_{ia},c_{cl}^{\dagger}\right]c_{br}+c_{cl}^{\dagger}\left[n_{ia},c_{br}\right]\\
+ & =\left(\delta_{ac}\delta_{il}-\delta_{ab}\delta_{ri}\right)c_{cl}^{\dagger}c_{br}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The current is then,
+\begin_inset Formula 
+\[
+\boldsymbol{J}=\boldsymbol{J}_{1}+\boldsymbol{J}_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{1} & =-i\sum_{iracl}\bm{R}_{i}t_{rl}\left[\left(\delta_{ac}\delta_{il}-\delta_{ac}\delta_{ri}\right)c_{cl}^{\dagger}c_{cr}+r\leftrightarrow l\right]\\
+ & =-i\sum_{iral}\bm{R}_{i}t_{rl}\left[\left(\delta_{il}-\delta_{ri}\right)c_{al}^{\dagger}c_{ar}+r\leftrightarrow l\right]\\
+ & =-i\sum_{ral}\frac{t_{rl}}{2}\left[\left(\bm{R}_{l}-\bm{R}_{r}\right)c_{al}^{\dagger}c_{ar}+\left(\bm{R}_{r}-\bm{R}_{l}\right)c_{ar}^{\dagger}c_{al}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the formula above for the hopping 
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{1} & =-it\sum_{ral}\sum_{r'}\delta_{r,l+r'}\left[\left(\bm{R}_{l}-\bm{R}_{r}\right)c_{al}^{\dagger}c_{ar}+\left(\bm{R}_{r}-\bm{R}_{l}\right)c_{ar}^{\dagger}c_{al}\right]\\
+ & =-it\sum_{ral}\left(\bm{R}_{l}-\bm{R}_{l+r}\right)c_{al}^{\dagger}c_{al+r}+\left(\bm{R}_{l+r}-\bm{R}_{l}\right)c_{al+r}^{\dagger}c_{al}\\
+ & =-it\sum_{ral}\left(\bm{R}_{l+r}-\bm{R}_{l}\right)\left(c_{al+r}^{\dagger}c_{al}-c_{al}^{\dagger}c_{al+r}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $r=\hat{x},\hat{y}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we Fourier transform this current by introducing 
+\begin_inset Formula 
+\begin{equation}
+c_{ia}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{-i\bm{k}\bm{R}_{i}}c_{\bm{k}a}^{\dagger}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c_{ia}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{i\bm{k}\bm{R}_{i}}c_{\bm{k}a}^{\dagger}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we have 
+\begin_inset Formula 
+\[
+\boldsymbol{J}_{1}=-it\frac{1}{N}\sum_{\boldsymbol{k}\boldsymbol{k}'}\sum_{ral}\left(\bm{R}_{l+r}-\bm{R}_{l}\right)\left(e^{-i\bm{k}\bm{R}_{l+r}}e^{i\bm{k}'\bm{R}_{l}}c_{\bm{k}a}^{\dagger}c_{\bm{k}'a}-e^{i\bm{k}'\bm{R}_{l+r}}e^{-i\bm{k}\bm{R}_{l}}c_{\bm{k}a}^{\dagger}c_{\bm{k}'a}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bm{R}_{l+r}=\bm{R}_{l}+\boldsymbol{a}_{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{1}\left(\tau\right) & =-it\sum_{\boldsymbol{k}}\sum_{ra}\boldsymbol{a}_{r}\left(e^{-i\bm{k}\boldsymbol{a}_{r}}c_{\bm{k}a}^{\dagger}\left(\tau\right)c_{\bm{k}a}\left(\tau\right)-e^{i\bm{k}\boldsymbol{a}_{r}}c_{\bm{k}a}^{\dagger}\left(\tau\right)c_{\bm{k}a}\left(\tau\right)\right)\\
+ & =\sum_{\boldsymbol{k}}\sum_{ra}\boldsymbol{a}_{r}\left\{ 2t\sin\left(\bm{k}\boldsymbol{a}_{r}\right)\right\} c_{\bm{k}a}^{\dagger}c_{\bm{k}a}\\
+ & =\sum_{\boldsymbol{k}}\sum_{a}\frac{\partial\varepsilon_{\boldsymbol{k}}}{\partial\boldsymbol{k}}c_{\bm{k}a}^{\dagger}\left(\tau\right)c_{\bm{k}a}\left(\tau\right)\\
+ & =\sum_{\boldsymbol{k}}\sum_{a}\boldsymbol{v}_{\boldsymbol{k}}c_{\bm{k}a}^{\dagger}\left(\tau\right)c_{\bm{k}a}\left(\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now introduce the fourier transform in imaginary time as follows
+\begin_inset Formula 
+\[
+\int_{0}^{\beta}d\tau e^{i\tau\omega_{n}}\boldsymbol{J}_{1}\left(\tau\right)=\boldsymbol{J}_{1}\left(\omega_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+together with:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c_{\boldsymbol{k}a}^{\dagger}\left(\tau\right)=\frac{1}{\sqrt{\beta}}\sum_{i\nu_{n}}e^{i\nu_{n}\tau}c_{\bm{k}a}^{\dagger}\left(i\nu_{n}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+c_{\boldsymbol{k}a}\left(\tau\right)=\frac{1}{\sqrt{\beta}}\sum_{i\nu_{n}}e^{-i\nu_{n}\tau}c_{\bm{k}a}\left(i\nu_{n}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we get the following 
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{1}\left(\omega_{n}\right) & =\frac{1}{\beta}\int_{0}^{\beta}d\tau e^{i\tau\omega_{n}}\sum_{\boldsymbol{k}}\sum_{a}\boldsymbol{v}_{\boldsymbol{k}}\sum_{i\nu_{n}}\sum_{i\nu_{n}'}e^{i\nu_{n}\tau}e^{-i\nu_{n}'\tau}c_{\bm{k}a}^{\dagger}\left(i\nu_{n}\right)c_{\bm{k}a}\left(i\nu_{n}'\right)\\
+ & =\frac{1}{\beta}\sum_{\boldsymbol{k}}\sum_{a}\boldsymbol{v}_{\boldsymbol{k}}\sum_{i\nu_{n}}\sum_{i\nu_{n}'}\beta\delta\left(\omega_{n}-\nu_{n}'+\nu_{n}\right)c_{\bm{k}a}^{\dagger}\left(i\nu_{n}\right)c_{\bm{k}a}\left(i\nu_{n}'\right)\\
+ & =\sum_{\boldsymbol{k}i\nu_{n}a}\boldsymbol{v}_{\boldsymbol{k}}c_{\bm{k}a}^{\dagger}\left(i\nu_{n}\right)c_{\bm{k}a}\left(\omega_{n}+\nu_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we proceed with the second term
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{2} & =-i\sum_{abclri}\bm{R}_{i}X_{cb,lr}\left[\left(\delta_{ac}\delta_{il}-\delta_{ab}\delta_{ri}\right)c_{cl}^{\dagger}c_{br}+\left(\delta_{ac}\delta_{ir}-\delta_{ab}\delta_{li}\right)c_{br}^{\dagger}c_{cl}+c\leftrightarrow b\right]\\
+ & =-i\sum_{abclr}X_{cb,lr}\left[\left(\delta_{ac}\bm{R}_{l}-\delta_{ab}\bm{R}_{r}\right)c_{cl}^{\dagger}c_{br}+\left(\delta_{ac}\bm{R}_{r}-\delta_{ab}\bm{R}_{l}\right)c_{br}^{\dagger}c_{cl}+c\leftrightarrow b\right]\\
+ & =-i\sum_{bclr}X_{cb,lr}\left[\left(\bm{R}_{l}-\bm{R}_{r}\right)c_{cl}^{\dagger}c_{br}+\left(\bm{R}_{r}-\bm{R}_{l}\right)c_{br}^{\dagger}c_{cl}+c\leftrightarrow b\right]\\
+ & =-i\sum_{bclr}\sum_{r'}X_{cb,l}^{r'}\delta_{r,l+r'}\left[\left(\bm{R}_{l}-\bm{R}_{r}\right)c_{cl}^{\dagger}c_{br}+\left(\bm{R}_{r}-\bm{R}_{l}\right)c_{br}^{\dagger}c_{cl}+c\leftrightarrow b\right]\\
+ & =-i\sum_{bclr}X_{cb,l}^{r}\left[\left(\bm{R}_{l}-\bm{R}_{l+r}\right)c_{cl}^{\dagger}c_{bl+r}+\left(\bm{R}_{l+r}-\bm{R}_{l}\right)c_{bl+r}^{\dagger}c_{cl}+c\leftrightarrow b\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bm{R}_{l+r}=\bm{R}_{l}+\boldsymbol{a}_{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{J}_{2}=i\sum_{bclr}\boldsymbol{a}_{r}X_{cb,l}^{r}\left[c_{cl}^{\dagger}c_{bl+r}-c_{bl+r}^{\dagger}c_{cl}+c\leftrightarrow b\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we fourier transform:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{2} & =\frac{i}{N}\sum_{bclr}\sum_{\bm{k}}\sum_{\bm{k}'}\boldsymbol{a}_{r}X_{cb,l}^{r}\left[e^{-i\bm{k}\bm{R}_{l}}e^{i\bm{k}'\bm{R}_{l+r}}c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}-e^{-i\bm{k}\bm{R}_{l+r}}e^{i\bm{k}'\bm{R}_{l}}c_{b\boldsymbol{k}}^{\dagger}c_{c\boldsymbol{k}'}+c\leftrightarrow b\right]\\
+ & =\frac{i}{N}\sum_{bclr}\sum_{\bm{k}}\sum_{\bm{k}'}\boldsymbol{a}_{r}X_{cb,l}^{r}\left[e^{-i\left(\bm{k}-\bm{k}'\right)\bm{R}_{l}}e^{i\bm{k}'\boldsymbol{a}_{r}}c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}-e^{-i\left(\bm{k}-\bm{k}'\right)\bm{R}_{l}}e^{-i\bm{k}\boldsymbol{a}_{r}}c_{b\boldsymbol{k}}^{\dagger}c_{c\boldsymbol{k}'}+c\leftrightarrow b\right]\\
+ & =i\sum_{bcr}\sum_{\bm{k}}\sum_{\bm{k}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}'\right)\left[e^{i\bm{k}'\boldsymbol{a}_{r}}c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}-e^{-i\bm{k}\boldsymbol{a}_{r}}c_{b\boldsymbol{k}}^{\dagger}c_{c\boldsymbol{k}'}+c\leftrightarrow b\right]\\
+ & =i\sum_{bcr}\sum_{\bm{k}}\sum_{\bm{k}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}'\right)\left[e^{i\bm{k}'\boldsymbol{a}_{r}}c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}-e^{-i\bm{k}\boldsymbol{a}_{r}}c_{b\boldsymbol{k}}^{\dagger}c_{c\boldsymbol{k}'}+e^{i\bm{k}'\boldsymbol{a}_{r}}c_{b\boldsymbol{k}}^{\dagger}c_{c\boldsymbol{k}'}-e^{-i\bm{k}\boldsymbol{a}_{r}}c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}\right]\\
+ & =i\sum_{bcr}\sum_{\bm{k}\bm{k}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}'\right)\left(e^{i\bm{k}'\boldsymbol{a}_{r}}-e^{-i\bm{k}\boldsymbol{a}_{r}}\right)\left[c_{c\boldsymbol{k}}^{\dagger}c_{b\boldsymbol{k}'}+c\leftrightarrow b\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we fourier transfrom in frequency, to get 
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{J}_{2}\left(i\omega_{n}\right) & =\frac{i}{\beta}\int_{0}^{\beta}d\tau e^{i\tau\omega_{n}}\sum_{bcr}\sum_{\bm{k}\bm{k}'}\sum_{i\nu_{n}i\nu_{n}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}'\right)e^{i\nu_{n}\tau-i\nu_{n}'\tau}\left(e^{i\bm{k}'\boldsymbol{a}_{r}}-e^{-i\bm{k}\boldsymbol{a}_{r}}\right)\left[c_{c\boldsymbol{k}}^{\dagger}\left(i\nu_{n}\right)c_{b\boldsymbol{k}'}\left(i\nu_{n}'\right)+c\leftrightarrow b\right]\\
+ & =i\sum_{bcr}\sum_{\bm{k}\bm{k}'}\sum_{i\nu_{n}i\nu_{n}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}',\omega_{n}+\nu_{n}-\nu_{n}'\right)\left(e^{i\bm{k}'\boldsymbol{a}_{r}}-e^{-i\bm{k}\boldsymbol{a}_{r}}\right)\left[c_{c\boldsymbol{k}}^{\dagger}\left(i\nu_{n}\right)c_{b\boldsymbol{k}'}\left(i\nu_{n}'\right)+c\leftrightarrow b\right]\\
+ & =\sum_{bcr}\sum_{\bm{k}\bm{k}'}\sum_{i\nu_{n}i\nu_{n}'}\boldsymbol{a}_{r}X_{cb}^{r}\left(\bm{k}-\bm{k}',\nu_{n}-\nu_{n}'\right)\frac{\left(e^{-i\bm{k}\boldsymbol{a}_{r}}-e^{i\bm{k}'\boldsymbol{a}_{r}}\right)}{i}\left[c_{c\boldsymbol{k}}^{\dagger}\left(i\nu_{n}\right)c_{b\boldsymbol{k}'}\left(i\omega_{n}+i\nu_{n}'\right)+c\leftrightarrow b\right].
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This perfectly reproduces the current operators in Erez's paper, up to a
+ small change in the form factor 
+\begin_inset Formula $g_{\boldsymbol{k}\boldsymbol{k}'.}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+J_{x}\left(i\omega_{n}\right)=\sum_{bc}\sum_{\bm{k}\bm{k}'}\sum_{i\nu_{n}i\nu_{n}'}X_{cb}^{x}\left(\bm{k}-\bm{k}',\nu_{n}-\nu_{n}'\right)f_{x}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left[c_{c\boldsymbol{k}}^{\dagger}\left(i\nu_{n}\right)c_{b\boldsymbol{k}'}\left(i\omega_{n}+i\nu_{n}'\right)+c\leftrightarrow b\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{\bm{k}\bm{k}'}\sum_{i\nu_{n}i\nu_{n}'}\left|f_{x}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right|^{2}D\left(\bm{k}-\bm{k}',\nu_{n}-\nu_{n}'\right)\mathcal{G}_{\boldsymbol{k}}\left(i\nu_{n}\right)\mathcal{G}_{\boldsymbol{k}'}\left(i\omega_{n}+i\nu_{n}'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

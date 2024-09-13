@@ -1,0 +1,315 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{2e^{2}\kappa\alpha}{\pi}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the spectral function 
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p},0\right)=\frac{\Gamma_{K}\left(\boldsymbol{p}\right)+\Gamma_{ME}\left(\boldsymbol{p}\right)}{\varepsilon_{\boldsymbol{p}}^{2}+\left(\Gamma_{K}\left(\boldsymbol{p}\right)+\Gamma_{ME}\left(\boldsymbol{p}\right)\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking a circular fermi surface and a completely vertical bare vertex, we
+ get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{11}^{\alpha} & =\frac{2e^{2}\kappa\alpha}{\pi}V_{uc}^{2}\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\left|\frac{4g^{2}}{U}\left(2a_{z}\right)\hat{z}\sin\left(p_{z}a_{z}+2q_{z}a_{z}\right)\right|^{2}A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)\\
+ & =\frac{2e^{2}\kappa\alpha}{\pi}\left(\frac{8g^{2}}{U}a\right)^{2}V_{uc}^{2}\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin^{2}\left(p_{z}a+2q_{z}a\right)A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\begin_inset Formula 
+\[
+\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin^{2}\left(k_{z}a+2q_{z}a\right)A\left(\boldsymbol{p}+\boldsymbol{q},0\right)A\left(\boldsymbol{q},0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we calculate the momentum dependent scattering rate 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =2\pi\kappa\alpha\frac{1}{N}\sum_{\bm{k}'}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\left|\frac{4g^{2}}{U}u\left(\boldsymbol{k}\right)u\left(\boldsymbol{k}'\right)\right|^{2}\\
+ & =2\pi\kappa\alpha\left(\frac{4g^{2}}{U}u\left(\boldsymbol{k}\right)\right)^{2}\frac{V_{uc}}{V}\sum_{\bm{k}'}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\left|u\left(\boldsymbol{k}'\right)\right|^{2}\\
+ & =2\pi\kappa\alpha\left(\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\right)^{2}\frac{V_{uc}}{V}\sum_{\bm{k}'}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)\left|\left[2\cos\left(k_{z}'a_{z}\right)\right]\right|^{2}\\
+ & =2\pi\kappa\alpha\nu_{0}\left(\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\right)^{2}a_{z}\int\frac{dk_{z}'}{2\pi}\left|\left[2\cos\left(k_{z}'a_{z}\right)\right]\right|^{2}\\
+ & =2\pi\kappa\alpha\nu_{0}\left(\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\right)^{2}4\int\frac{dk_{z}'}{2\pi}\cos\left(k_{z}'\right)^{2}\\
+ & =4\pi\kappa\alpha\nu_{0}\left(\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\right)^{2}\\
+ & =4\pi\kappa\alpha\nu_{0}\left(\frac{8g^{2}}{U}\right)^{2}\cos^{2}\left(k_{z}a_{z}\right)=\frac{1}{\tau_{K,k_{z}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can do the same for the Magneto-Elastic term
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =8\pi\kappa\alpha k_{b}T\frac{\hbar\lambda^{2}}{M\omega_{0}^{2}}\left(\frac{8g^{2}}{U}\right)^{2}\nu_{0}\cos^{2}\left(k_{z}a_{z}\right)\\
+ & =\frac{1}{\tau_{ME,k_{z}}}=2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\frac{1}{\tau_{K,k_{z}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the extra factor of 2 comes from the two phonon branches.
+ The total scattering rate is then 
+\begin_inset Formula 
+\begin{align*}
+\gamma_{k_{z}}=\frac{1}{\tau_{k_{z}}} & =\frac{1}{\tau_{ME,k_{z}}}+\frac{1}{\tau_{ME,k_{z}}}\\
+ & =\frac{1}{\tau_{K,k_{z}}}\left(1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\\
+ & =4\pi\kappa\alpha\nu_{0}\left(\frac{8g^{2}}{U}\right)^{2}\cos^{2}\left(k_{z}a_{z}\right)\left(1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, we have 
+\begin_inset Formula 
+\[
+\tau_{k_{z}}=\tau_{K,k_{z}}\frac{1}{1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we have 
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p},0\right)=\frac{\gamma_{p_{z}}}{\varepsilon_{\boldsymbol{p}}^{2}+\gamma_{p_{z}}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin^{2}\left(p_{z}a+2q_{z}a\right)\frac{\gamma_{p_{z}}}{\varepsilon_{\boldsymbol{p}}^{2}+\gamma_{p_{z}}^{2}}\frac{\gamma_{p_{z}+q_{z}}}{\varepsilon_{\boldsymbol{p}+\boldsymbol{q}}^{2}+\gamma_{p_{z}+q_{z}}^{2}}\\
+\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin^{2}\left(p_{z}a+2q_{z}a\right)\frac{\gamma_{p_{z}}}{\left(\epsilon_{\boldsymbol{p}}-\mu\right)^{2}+\gamma_{p_{z}}^{2}}\frac{\gamma_{p_{z}+q_{z}}}{\left(\epsilon_{\boldsymbol{p}}+\frac{\boldsymbol{q}_{\parallel}\cdot\boldsymbol{p}_{\parallel}}{m}+\epsilon_{\boldsymbol{q}}-\mu\right)^{2}+\gamma_{p_{z}+q_{z}}^{2}}\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\gamma_{p_{z}}\gamma_{p_{z}+q_{z}}\sin^{2}\left(p_{z}a+2q_{z}a\right)\frac{1}{\frac{\left(p_{\parallel}^{2}-2m\mu\right)^{2}}{4m^{2}}+\gamma_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}}{\frac{1}{4m^{2}}\left(p_{\parallel}^{2}+2p_{\parallel}q_{\parallel}\cos\left(\theta-\phi\right)+q_{\parallel}^{2}-2m\mu\right)^{2}+\gamma_{p_{z}+q_{z}}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+changing var
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\left(2m\right)^{2}}{a^{2}}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\gamma_{p_{z}}\gamma_{p_{z}+q_{z}}\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\left(p_{\parallel}^{2}-\mu\right)^{2}+\gamma_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}}{\left(p_{\parallel}^{2}+2p_{\parallel}q_{\parallel}\cos\left(\theta-\phi\right)+q_{\parallel}^{2}-\mu\right)^{2}+\gamma_{p_{z}+q_{z}}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+naming 
+\begin_inset Formula 
+\[
+4\pi\kappa\alpha\nu_{0}\left(\frac{8g^{2}}{U}\right)^{2}=\tilde{J}_{K}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}=\tilde{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\gamma_{k_{z}} & =\tilde{J}_{K}\cos^{2}\left(k_{z}\right)\left(1+\tilde{T}\right)\\
+ & =J_{K}\cos^{2}\left(k_{z}\right)\\
+ & =J_{k}\tilde{\gamma}_{k_{z}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+J_{k}=\tilde{J}_{K}\left(1+\tilde{T}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\left(2m\right)^{2}}{a^{2}}J_{k}^{2}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\tilde{\gamma}_{p_{z}}\tilde{\gamma}_{p_{z}+q_{z}}\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\left(p_{\parallel}^{2}-\mu\right)^{2}+J_{K}^{2}\tilde{\gamma}_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}}{\left(p_{\parallel}^{2}+2p_{\parallel}q_{\parallel}\cos\left(\theta-\phi\right)+q_{\parallel}^{2}-\mu\right)^{2}+J_{K}^{2}\tilde{\gamma}_{p_{z}+q_{z}}^{2}}\\
+\frac{\left(2m\right)^{2}}{a^{2}}\frac{1}{J_{K}^{2}}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\tilde{\gamma}_{p_{z}}\tilde{\gamma}_{p_{z}+q_{z}}\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\frac{\left(p_{\parallel}^{2}-\mu\right)^{2}}{J_{K}^{2}}+\tilde{\gamma}_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}}{\left(\frac{p_{\parallel}^{2}}{J_{K}}+2\frac{p_{\parallel}q_{\parallel}}{J_{k}}\cos\left(\theta-\phi\right)+\frac{q_{\parallel}^{2}}{J_{K}}-\frac{\mu}{J_{k}}\right)^{2}+\tilde{\gamma}_{p_{z}+q_{z}}^{2}}\\
+\frac{\left(2m\right)^{2}}{a^{2}}\frac{1}{J_{K}}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\tilde{\gamma}_{p_{z}}\tilde{\gamma}_{p_{z}+q_{z}}\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\frac{\left(p_{\parallel}^{2}-\mu\right)^{2}}{J_{K}^{2}}+\tilde{\gamma}_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}/J_{K}}{\left(\frac{p_{\parallel}^{2}}{J_{K}}+2\frac{p_{\parallel}q_{\parallel}}{J_{k}}\cos\left(\theta-\phi\right)+\frac{q_{\parallel}^{2}}{J_{K}}-\frac{\mu}{J_{k}}\right)^{2}+\tilde{\gamma}_{p_{z}+q_{z}}^{2}}\\
+\frac{\left(2m\right)^{2}}{a^{2}}\frac{1}{J_{K}}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\tilde{\gamma}_{p_{z}}\tilde{\gamma}_{p_{z}+q_{z}}\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\frac{\left(p_{\parallel}^{2}-\mu\right)^{2}}{J_{K}^{2}}+\tilde{\gamma}_{p_{z}}^{2}}\frac{p_{\parallel}q_{\parallel}}{\left(\frac{p_{\parallel}^{2}}{J_{K}}+2\frac{p_{\parallel}q_{\parallel}}{J_{k}}\cos\left(\theta-\phi\right)+\frac{q_{\parallel}^{2}}{J_{K}}-\frac{\mu}{J_{k}}\right)^{2}+\tilde{\gamma}_{p_{z}+q_{z}}^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Changing variables 
+\begin_inset Formula 
+\[
+\frac{\left(2m\right)^{2}}{a^{2}}\int\frac{dp_{z}dp_{\parallel}d\theta}{\left(2\pi\right)^{3}}\int\frac{dq_{z}dq_{\parallel}d\phi}{\left(2\pi\right)^{3}}\cos^{2}\left(p_{z}\right)\cos^{2}\left(p_{z}+q_{z}\right)\sin^{2}\left(p_{z}+2q_{z}\right)\frac{1}{\left(p_{\parallel}^{2}-\frac{\mu}{J_{k}}\right)^{2}+\cos^{4}\left(p_{z}\right)}\frac{p_{\parallel}q_{\parallel}}{\left(p_{\parallel}^{2}+2p_{\parallel}q_{\parallel}\cos\left(\theta-\phi\right)+q_{\parallel}^{2}-\frac{\mu}{J_{k}}\right)^{2}+\cos^{4}\left(p_{z}+q_{z}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

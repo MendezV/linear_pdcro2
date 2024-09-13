@@ -1,0 +1,1185 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\begin_preamble
+\usepackage{slashed}
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Out of plane conductivity
+\end_layout
+
+\begin_layout Standard
+We will perform a simplified calculation starting from the path integral
+ 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{Z}\left[A,t_{p}\right]=\int\left[\mathcal{D}p\mathcal{D}\bm{S}\right]e^{-\sum_{\alpha}S_{\alpha}+\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{i}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the action is given by 
+\begin_inset Formula 
+\begin{equation}
+S_{\alpha}=\int_{0}^{\beta}d\tau p_{i\sigma\alpha}^{\dagger}\partial_{\tau}p_{i\sigma\alpha}-t_{p}\sum_{\left\langle ij\right\rangle \sigma}p_{i\sigma\alpha}^{\dagger}p_{j\sigma\alpha}+\frac{4t_{c}^{2}}{U}\sum_{\left\langle ij\right\rangle }^{n.n}\bm{S}_{i}^{\alpha}\cdot\bm{S}_{j}^{\alpha},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d$
+\end_inset
+
+ is the interlayer distance, 
+\begin_inset Formula $t_{g}=g^{2}/U$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a layer index.
+ To calculate the conductivity we need to evaluate 
+\begin_inset Formula 
+\begin{align}
+\sigma\left(\omega\right) & =\frac{1}{i\omega}\frac{J\left(\omega\right)}{A\left(\omega\right)}\\
+ & =-\frac{1}{i\omega}\frac{\delta^{2}}{\delta A\left(\omega\right)^{2}}\left(-\frac{1}{\beta}\log\left(\frac{\mathcal{Z}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}\right)\right),\\
+ & =-\frac{1}{i\omega}\frac{\delta^{2}}{\delta A\left(\omega\right)^{2}}F\left[A\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expanding the interlayer term in the path integral to second order in the
+ hopping amplitude we get
+\begin_inset Formula 
+\begin{align}
+e^{\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{i}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}} & \sim1+\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{j}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}\\
+ & +\frac{1}{2}\left(\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{j}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}\right)^{2}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get then 
+\begin_inset Formula 
+\begin{equation}
+\log\left(1-\left(1-\frac{\mathcal{Z}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}\right)\right)\sim\log\left(1-\frac{\mathcal{Z}_{1}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}-\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}+\mathcal{O}\left(t_{g}^{4}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{Z}_{1}\left[A,t_{p}\right]=\int\left[\mathcal{D}p\right]e^{-\sum_{\alpha}S_{\alpha}}\left(\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{j}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{Z}_{2}\left[A,t_{p}\right]=\int\left[\mathcal{D}p\right]e^{-\sum_{\alpha}S_{\alpha}}\frac{1}{2}\left(\int d\tau\sum_{j,\sigma\sigma',\alpha}t_{g}e^{ieAd}\bm{S}_{j}^{\alpha}\cdot\bm{\sigma}_{\sigma'\sigma}p_{j\sigma'\alpha+1}^{\dagger}p_{j\sigma\alpha}+\text{h.c}\right)^{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We find that since the zeroth order action does not connect sites on adjacent
+ layer, 
+\begin_inset Formula $\mathcal{Z}_{1}=0$
+\end_inset
+
+ identically and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\log\left(1-\left(1-\frac{\mathcal{Z}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}\right)\right)=\log\left(1-\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}+\mathcal{O}\left(t_{g}^{4}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so we focus on 
+\begin_inset Formula $\mathcal{Z}_{2}$
+\end_inset
+
+.
+ Take the definition 
+\begin_inset Formula 
+\begin{equation}
+\Gamma_{\sigma\sigma'\alpha}\left(A,\tau\right)=t_{g}e^{ieA\left(\tau\right)d}\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma'\sigma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The term in parenthesis in the definition of 
+\begin_inset Formula $\mathcal{Z}_{2}$
+\end_inset
+
+ is equivalent to 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int d\tau\sum_{j,\sigma_{1}\sigma_{2},\alpha}\int d\tau'\sum_{j',\sigma_{1}',\sigma_{2}',\alpha'}\left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}p_{j\sigma_{1}\alpha}+\text{h.c}\right)\left(\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}\left(A,\tau'\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}p_{j'\sigma_{1}'\alpha'}+\text{h.c}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consequently, we have the following equality 
+\begin_inset Formula 
+\begin{equation}
+\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}=\frac{1}{2}\int d\tau\sum_{j,\sigma_{1}\sigma_{2},\alpha}\int d\tau'\sum_{j',\sigma_{1}',\sigma_{2}',\alpha'}\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}p_{j\sigma_{1}\alpha}+\text{h.c}\right)\left(\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}\left(A,\tau'\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}p_{j'\sigma_{1}'\alpha'}+\text{h.c}\right)\right\rangle _{0}
+\end{equation}
+
+\end_inset
+
+where the time-ordered expectation value is taken with respect to the unperturbe
+d system without interlayer hopping.
+ We now expand the product of the two terms in parenthesis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=\left\langle \Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)\right\rangle _{0}\\
++\left\langle \Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}\left(\tau'\right)p_{j'\sigma_{1}'\alpha'}\left(\tau'\right)\right\rangle _{0}\\
++\left\langle \overline{\Gamma_{\sigma_{1}\sigma_{2}\alpha}}\left(A,\tau\right)\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}p_{j\sigma_{1}\alpha}^{\dagger}\left(\tau\right)p_{j\sigma_{2}\alpha+1}\left(\tau\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)\right\rangle _{0}\\
++\left\langle \overline{\Gamma_{\sigma_{1}\sigma_{2}\alpha}}\left(A,\tau\right)\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}p_{j\sigma_{1}\alpha}^{\dagger}\left(\tau\right)p_{j\sigma_{2}\alpha+1}\left(\tau\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}\left(\tau'\right)p_{j'\sigma_{1}'\alpha'}\left(\tau'\right)\right\rangle _{0}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only terms that survive are the ones for which the layer index 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ can have a chance to be properly matched 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=\delta_{\alpha\alpha'}\left\langle \Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)\right\rangle _{0}\\
++\delta_{\alpha\alpha'}\left\langle \overline{\Gamma_{\sigma_{1}\sigma_{2}\alpha}}\left(A,\tau\right)\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}p_{j\sigma_{1}\alpha}^{\dagger}\left(\tau\right)p_{j\sigma_{2}\alpha+1}\left(\tau\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}\left(\tau'\right)p_{j'\sigma_{1}'\alpha'}\left(\tau'\right)\right\rangle _{0}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Wicks theorem we can simplify further and cancel more terms for which
+ the layer indices cannot be properly matched
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=\delta_{\alpha\alpha'}t_{g}^{2}e^{ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{2}'\sigma_{1}'}\right)\right\rangle _{0}\left\langle p_{j\sigma_{1}\alpha}\left(\tau\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)\right\rangle _{0}\left\langle p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)\right\rangle _{0}\\
++\delta_{\alpha\alpha'}t_{g}^{2}e^{ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{2}\sigma_{1}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{1}'\sigma_{2}'}\right)\right\rangle _{0}\left\langle p_{j\sigma_{2}\alpha+1}\left(\tau\right)p_{j'\sigma_{2}'\alpha'+1}^{\dagger}\left(\tau'\right)\right\rangle _{0}\left\langle p_{j\sigma_{1}\alpha}^{\dagger}\left(\tau\right)p_{j'\sigma_{1}'\alpha'}\left(\tau'\right)\right\rangle _{0}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the time-ordered expectation values, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=-\delta_{\alpha\alpha'}\delta_{\sigma_{1}\sigma_{1}'}\delta_{\sigma_{2}\sigma_{2}'}t_{g}^{2}e^{ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{2}'\sigma_{1}'}\right)\right\rangle _{0}G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+-\delta_{\alpha\alpha'}\delta_{\sigma_{1}\sigma_{1}'}\delta_{\sigma_{2}\sigma_{2}'}t_{g}^{2}e^{-ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{2}\sigma_{1}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{1}'\sigma_{2}'}\right)\right\rangle _{0}G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Performing the sum over spins, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{\sigma_{1}\sigma_{2}}\sum_{\sigma_{1}',\sigma_{2}'}\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=-\delta_{\alpha\alpha'}t_{g}^{2}e^{ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left(\sum_{\sigma_{1}\sigma_{2}}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{2}\sigma_{1}}\right)\right\rangle _{0}\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+-\delta_{\alpha\alpha'}t_{g}^{2}e^{-ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}\left(\sum_{\sigma_{1}\sigma_{2}}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{2}\sigma_{1}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\right\rangle _{0}\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now use the following identity for pauli matrices
+\begin_inset Formula 
+\begin{equation}
+\sum_{\sigma_{2}}\left(\bm{a}\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\left(\bm{b}\cdot\bm{\sigma}_{\sigma_{2}\sigma_{3}}\right)=\bm{a}\cdot\bm{b}\mathbb{I}+\left(\bm{a}\times\bm{b}\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{3}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which implies that 
+\begin_inset Formula 
+\begin{equation}
+\sum_{\sigma_{1}\sigma_{2}}\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{\sigma}_{\sigma_{1}\sigma_{2}}\right)\left(\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\cdot\bm{\sigma}_{\sigma_{2}\sigma_{1}}\right)\right\rangle _{0}=2\left\langle \left(\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{S}_{j'}^{\alpha'}\left(\tau'\right)\right)\right\rangle _{0}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we define the structure factor for a layer of spins
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left\langle T\bm{S}_{j}^{\alpha}\left(\tau\right)\cdot\bm{S}_{j'}^{\alpha}\left(\tau'\right)\right\rangle =S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{\sigma_{1}\sigma_{2}}\sum_{\sigma_{1}',\sigma_{2}'}\left\langle \left(\Gamma_{\sigma_{1}\sigma_{2}\alpha}\left(A,\tau\right)p_{j\sigma_{2}\alpha+1}^{\dagger}\left(\tau\right)p_{j\sigma_{1}\alpha}\left(\tau\right)+\text{h.c}\right)\left(\overline{\Gamma_{\sigma_{1}'\sigma_{2}'\alpha'}}\left(A,\tau'\right)p_{j'\sigma_{1}'\alpha'}^{\dagger}\left(\tau'\right)p_{j'\sigma_{2}'\alpha'+1}\left(\tau'\right)+\text{h.c}\right)\right\rangle _{0}\\
+\\
+=-2\delta_{\alpha\alpha'}t_{g}^{2}e^{ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+-2\delta_{\alpha\alpha'}t_{g}^{2}e^{-ie\left(A\left(\tau\right)-A\left(\tau'\right)\right)d}S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+\\
+-4\delta_{\alpha\alpha'}\cos\left[e\left(A\left(\tau\right)-A\left(\tau'\right)\right)d\right]S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting this in our expression for 
+\begin_inset Formula $\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{align}
+\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]} & =-2\int d\tau\sum_{j,\alpha}\int d\tau'\sum_{j',\alpha'}\delta_{\alpha\alpha'}t_{g}^{2}\cos\left[e\left(A\left(\tau\right)-A\left(\tau'\right)\right)d\right]S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+ & =-2N_{l}t_{g}^{2}\int d\tau\int d\tau'\sum_{j'j}\cos\left[e\left(A\left(\tau\right)-A\left(\tau'\right)\right)d\right]S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $N_{l}$
+\end_inset
+
+ is the number of layers in the system.
+ Now we can express this in momentum space as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{j'j}S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)G_{j'j}\left(\tau-\tau'\right) & =\frac{1}{N_{s}^{3}}\sum_{j'j}\sum_{\boldsymbol{k}'\boldsymbol{k}\boldsymbol{q}}e^{-i\left(\boldsymbol{k}-\boldsymbol{k}'+\boldsymbol{q}\right)\cdot\left(\boldsymbol{r}_{j}-\boldsymbol{r}_{j'}\right)}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}',\tau'-\tau\right)\\
+ & =\frac{1}{N_{s}^{2}}\sum_{j}\sum_{\boldsymbol{k}\boldsymbol{k}'\boldsymbol{q}}e^{-i\left(\boldsymbol{k}-\boldsymbol{k}'+\boldsymbol{q}\right)\cdot\boldsymbol{r}_{j}}\delta\left(\boldsymbol{k}-\boldsymbol{k}'+\boldsymbol{q}\right)S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}',\tau'-\tau\right)\\
+ & =\frac{1}{N_{s}^{2}}\sum_{j}\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
+ & =\frac{1}{N_{s}}\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we used the following relations
+\begin_inset Formula 
+\begin{equation}
+S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)=\frac{1}{N_{s}}\sum_{\boldsymbol{q}}e^{-i\boldsymbol{q}\cdot\left(\boldsymbol{r}_{j}-\boldsymbol{r}_{j'}\right)}S\left(\bm{q},\tau-\tau'\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G_{jj'}\left(\tau-\tau\right)=\frac{1}{N_{s}}\sum_{\boldsymbol{k}}e^{-i\boldsymbol{k}\cdot\left(\boldsymbol{r}_{j}-\boldsymbol{r}_{j'}\right)}G\left(\boldsymbol{k},\tau-\tau\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+here 
+\begin_inset Formula $N_{s}$
+\end_inset
+
+ is the number of sites within a layer.
+ With this, the expression simplifies to 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]} & =-2\int d\tau\sum_{j,\alpha}\int d\tau'\sum_{j',\alpha'}\delta_{\alpha\alpha'}t_{g}^{2}\cos\left[e\left(A\left(\tau\right)-A\left(\tau'\right)\right)d\right]S\left(\bm{r}_{j},\bm{r}_{j'},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+ & =-\frac{2N_{l}}{N_{s}}t_{g}^{2}\int d\tau\int d\tau'\cos\left[e\left(A\left(\tau\right)-A\left(\tau'\right)\right)d\right]\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the second order coefficient in the expansion with respect to the
+ external field, we get the following terms
+\begin_inset Formula 
+\begin{align}
+\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}=\\
+-\frac{2N_{l}}{N_{s}}t_{g}^{2}\int d\tau\int d\tau'\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
+-\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\int d\tau\int d\tau'A\left(\tau'\right)A\left(\tau\right)\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
++\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\int d\tau\int d\tau'\left[\left(A\left(\tau\right)\right)^{2}+\left(A\left(\tau'\right)\right)^{2}\right]\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
++\mathcal{O}\left(A^{3}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the fourier transform 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G\left(\boldsymbol{k},\tau-\tau'\right)=\frac{1}{\beta}\sum_{i\nu_{n}}G\left(\boldsymbol{k},i\nu_{n}\right)e^{i\nu_{n}\left(\tau-\tau'\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S\left(\boldsymbol{q},\tau-\tau'\right)=\frac{1}{\beta}\sum_{i\nu_{n}}S\left(\boldsymbol{q},i\nu_{n}\right)e^{i\nu_{n}\left(\tau-\tau'\right)},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we will express everything in frequency space.
+ We deal term by term, for the first term in the expression for 
+\begin_inset Formula $\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}$
+\end_inset
+
+, we get:
+\begin_inset Formula 
+\begin{align}
+-\frac{2N_{l}}{N_{s}}t_{g}^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int d\tau d\tau'S\left(\boldsymbol{q},\tau-\tau'\right)G_{jj'}\left(\tau-\tau'\right)G_{j'j}\left(\tau'-\tau\right)\\
+-\frac{2N_{l}}{N_{s}}t_{g}^{2}\frac{1}{\beta^{3}}\sum_{iz_{n}i\nu_{n}i\mu_{n}}\sum_{\boldsymbol{k}\boldsymbol{q}}\int d\tau d\tau'S\left(\boldsymbol{q},iz_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\mu_{n}\right)e^{i\left(\nu_{n}+z_{n}-\mu_{n}\right)\left(\tau-\tau'\right)}\\
+-\frac{2N_{l}}{N_{s}}t_{g}^{2}\frac{1}{\beta}\sum_{iz_{n}i\nu_{n}}\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},iz_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\left(\nu_{n}+z_{n}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the second term we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int d\tau d\tau'A\left(\tau'\right)A\left(\tau\right)S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
+\frac{1}{\beta^{3}}\int d\tau d\tau'\sum_{iz_{n}i\nu_{n}i\mu_{n}}A\left(\tau\right)A\left(\tau'\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},iz_{n}\right)e^{i\left(\nu_{n}+\mu_{n}-z_{n}\right)\left(\tau-\tau'\right)}\\
+=\frac{1}{\beta}\sum_{iz_{n}i\nu_{n}i\mu_{n}}\left(\frac{1}{\beta}\int d\tau A\left(\tau\right)e^{i\left(\nu_{n}+\mu_{n}-z_{n}\right)\left(\tau-\tau'\right)}\right)\left(\frac{1}{\beta}\int d\tau'A\left(\tau'\right)e^{-i\left(\nu_{n}+\mu_{n}-z_{n}\right)\tau'}\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},iz_{n}\right)\\
+=\frac{1}{\beta}\sum_{iz_{n}i\nu_{n}i\mu_{n}}A\left(-i\left(z_{n}-\nu_{n}-\mu_{n}\right)\right)A\left(i\left(z_{n}-\nu_{n}-\mu_{n}\right)\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},iz_{n}\right)\\
+=\frac{1}{\beta}\sum_{i\nu_{n}i\omega_{n}i\mu_{n}}\left|A\left(i\omega_{n}\right)\right|^{2}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for the last term, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int d\tau d\tau'A\left(\tau\right)A\left(\tau\right)S\left(\boldsymbol{q},\tau-\tau'\right)G\left(\boldsymbol{k},\tau-\tau'\right)G\left(\boldsymbol{k}+\boldsymbol{q},\tau'-\tau\right)\\
+\frac{1}{\beta^{3}}\int d\tau d\tau'\sum_{i\nu_{n}}\sum_{i\nu_{n}'}\sum_{i\omega_{n}}\sum_{i\omega_{n}'}\sum_{i\mu_{n}}A\left(i\omega_{n}\right)A\left(i\omega_{n}'\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},iz_{n}\right)e^{i\omega_{n}\tau}e^{i\omega_{n}'\tau}e^{i\left(\nu_{n}+\mu_{n}-z_{n}\right)\left(\tau-\tau'\right)}\\
+=\frac{1}{\beta^{2}}\int d\tau\sum_{iz_{n}}\sum_{i\omega_{n}}\sum_{i\omega_{n}'}\sum_{i\mu_{n}}A\left(i\omega_{n}\right)A\left(i\omega_{n}'\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)e^{i\left(\omega_{n}+\omega_{n}'\right)\tau}\\
+=\frac{1}{\beta}\sum_{i\nu_{n}i\omega_{n}i\mu_{n}}A\left(i\omega_{n}\right)A\left(-i\omega_{n}\right)S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)\\
+=\frac{1}{\beta}\sum_{i\nu_{n}i\omega_{n}i\mu_{n}}\left|A\left(i\omega_{n}\right)\right|^{2}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)\\
+=\frac{1}{\beta}\sum_{i\nu_{n}i\omega_{n}i\mu_{n}}\left|A\left(i\omega_{n}\right)\right|^{2}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall, we get the following expression
+\begin_inset Formula 
+\begin{align}
+\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}=\\
+-\frac{2N_{l}}{N_{s}}t_{g}^{2}\frac{1}{\beta}\sum_{iz_{n}i\nu_{n}}\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},iz_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\left(\nu_{n}+z_{n}\right)\right)\\
++\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\frac{1}{\beta}\sum_{\boldsymbol{k}\boldsymbol{q}}\sum_{i\nu_{n}i\omega_{n}i\mu_{n}}\left|A\left(i\omega_{n}\right)\right|^{2}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)\left(G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)-G\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, the functional derivative yields
+\begin_inset Formula 
+\begin{align*}
+ & -\frac{1}{\beta}\frac{\delta^{2}}{\delta A\left(\omega\right)^{2}}\log\frac{\mathcal{Z}\left[A\right]}{\mathcal{Z}\left[0\right]}\\
+ & =\frac{\delta^{2}}{\delta A\left(\omega\right)^{2}}\log\left(1-\frac{\mathcal{Z}_{2}\left[A,t_{p}\right]}{\mathcal{Z}\left[0\right]}+\mathcal{O}\left(t_{g}^{4}\right)\right)\\
+ & =\frac{-\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\frac{1}{\beta^{2}}\sum_{\boldsymbol{k}\boldsymbol{q}}\sum_{i\nu_{n}i\mu_{n}}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)\left(G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)-G\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\right)}{1-\frac{2N_{l}}{N_{s}}t_{g}^{2}\frac{1}{\beta}\sum_{iz_{n}i\nu_{n}}\sum_{\boldsymbol{k}\boldsymbol{q}}S\left(\boldsymbol{q},iz_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)G\left(\boldsymbol{k}+\boldsymbol{q},i\left(\nu_{n}+z_{n}\right)\right)}\\
+ & +\mathcal{O}\left(A,t_{g}^{4}\right).\\
+ & =-\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\frac{1}{\beta^{2}}\sum_{i\nu_{n}i\mu_{n}}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)\left(G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)-G\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\right)\\
+ & +\mathcal{O}\left(A,t_{g}^{4}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In more familiar terms 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\Pi\left(i\omega_{n}\right)=\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\frac{1}{\beta^{2}}\sum_{\boldsymbol{k}\boldsymbol{q}}\sum_{i\nu_{n}i\mu_{n}}S\left(\boldsymbol{q},i\mu_{n}\right)G\left(\boldsymbol{k},i\nu_{n}\right)\left(G\left(\boldsymbol{k}+\boldsymbol{q},i\nu_{n}+i\mu_{n}\right)-G\left(\boldsymbol{k}+\boldsymbol{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We notice that as the frequency vanishes, the correlation function goes
+ to zero as usual for a metal.
+\end_layout
+
+\begin_layout Standard
+Using the spectral representation:
+\begin_inset Formula 
+\[
+G\left(\boldsymbol{k},i\omega_{n}\right)=\int\frac{d\omega}{2\pi}\frac{A_{\text{pd}}\left(\boldsymbol{k},\omega\right)}{i\omega_{n}-\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With this, we can evaluate one of the Matsubara sums above
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \frac{1}{\beta}\sum_{i\nu_{n}}G\left(\bm{k},i\nu_{n}\right)G\left(\bm{k}+\bm{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\\
+ & =\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-\epsilon_{1}}\frac{1}{i\omega_{n}+i\mu_{n}+i\nu_{n}-\epsilon_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the fermionic Matsubara sum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-\epsilon_{1}}\frac{1}{i\omega_{n}+i\mu_{n}+i\nu_{n}-\epsilon_{2}} & =\int_{\mathcal{C}_{1}}\frac{dz}{2\pi i}\frac{1}{z-\epsilon_{1}}\frac{1}{z+i\omega_{n}+i\mu_{n}-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =\int_{\mathcal{C}_{3}}\frac{dz}{2\pi i}\frac{1}{z-\epsilon_{1}}\frac{1}{z+i\omega_{n}+i\mu_{n}-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =\frac{n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}+i\mu_{n}+\epsilon_{1}-\epsilon_{2}}+\frac{n_{F}\left(-\left(i\omega_{n}+i\mu_{n}-\epsilon_{2}\right)\right)}{-\left(i\omega_{n}+i\mu_{n}-\epsilon_{2}\right)-\epsilon_{1}}\\
+ & =\frac{n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}+i\mu_{n}+\epsilon_{1}-\epsilon_{2}}-\frac{n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}+i\mu_{n}-\epsilon_{2}+\epsilon_{1}}\\
+\\
+ & =\frac{n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}+i\mu_{n}+\epsilon_{1}-\epsilon_{2}}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we get 
+\begin_inset Formula 
+\begin{align*}
+ & \frac{1}{\beta}\sum_{i\nu_{n}}G\left(\bm{k},i\nu_{n}\right)G\left(\bm{k}+\bm{q},i\omega_{n}+i\mu_{n}+i\nu_{n}\right)\\
+ & =\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\frac{n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}+i\mu_{n}+\epsilon_{1}-\epsilon_{2}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As such, we have
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+\Pi\left(i\omega_{n}\right) & =\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\frac{1}{\beta}\sum_{\boldsymbol{k}\boldsymbol{q}}\sum_{i\mu_{n}}\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)S\left(\boldsymbol{q},i\mu_{n}\right)\\
+ & \times\left(\frac{n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)}{i\mu_{n}+\epsilon_{1}-\epsilon_{2}}-\frac{n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}+i\mu_{n}+\epsilon_{1}-\epsilon_{2}}\right)\text{}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the spectral representation for the structure factor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S\left(\bm{q},i\mu_{n}\right)=\int_{0}^{\infty}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\frac{2\nu}{\nu^{2}+\mu_{n}^{2}}\frac{d\nu}{2\pi}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using this representation, we can evaluate the second matsubara sum above,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\beta}\sum_{i\mu_{n}}\frac{2\nu}{\nu^{2}+\mu_{n}^{2}}\frac{1}{i\omega_{n}+i\mu_{n}+\epsilon_{2}-\epsilon_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we do so by the usual methods:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\beta}\sum_{i\mu_{n}}\left(\frac{1}{\nu-i\mu_{n}}+\frac{1}{\nu+i\mu_{n}}\right)\frac{1}{i\omega_{n}+i\mu_{n}+\epsilon_{2}-\epsilon_{1}} & =\int_{\mathcal{C}_{1}'}\frac{dz}{2\pi i}\left(\frac{1}{\nu-z}+\frac{1}{\nu+z}\right)\frac{1}{i\omega_{n}+z+\epsilon_{2}-\epsilon_{1}}n_{B}\left(z\right)\\
+ & =\int_{\mathcal{C}_{1}'}\frac{dz}{2\pi i}\left(-\frac{1}{z-\nu}\frac{1}{z-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}+\frac{1}{z-\left(-\nu\right)}\frac{1}{z-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}\right)n_{B}\left(z\right)\\
+ & =\int_{\mathcal{C}_{3}'}\frac{dz}{2\pi i}\left(-\frac{1}{z-\nu}\frac{1}{z-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}+\frac{1}{z-\left(-\nu\right)}\frac{1}{z-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}\right)n_{B}\left(z\right)\\
+ & =-\left(-\frac{1}{\nu-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}n_{B}\left(\nu\right)-\frac{1}{\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)-\nu}n_{B}\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)\right.\\
+ & \left.+\frac{1}{-\nu-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}n_{B}\left(-\nu\right)+\frac{1}{\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)-\left(-\nu\right)}n_{B}\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)\right)\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the minus sign in the last line corresponds to the orientation of
+ the contour.
+ The conventions for all te contours in fermionic and bosonic matsubara
+ sums are given in figure 1 below
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../../Delafossites/analytical/Contours.jpeg
+	lyxscale 50
+	width 5cm
+	height 10cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Fig 1.
+ Contours used in Matsubara sumation.
+ Top: Bosonic contour.
+ Bottom: Fermionic contour, this countour runs clockwise originally, since
+ the residues are negative for the fermi function along the imaginary axis.
+\end_layout
+
+\begin_layout Standard
+Simplifying the expressions above
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & =-\left(-\frac{1}{\nu-\epsilon_{1}+\epsilon_{2}+i\omega_{n}}n_{B}\left(\nu\right)+\frac{1}{-\epsilon_{1}+\epsilon_{2}+i\omega_{n}+\nu}n_{B}\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)\right.\\
+ & \left.+\frac{1}{-\nu-\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)}n_{B}\left(-\nu\right)+\frac{1}{\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)-\left(-\nu\right)}n_{B}\left(\epsilon_{1}-\epsilon_{2}-i\omega_{n}\right)\right)\\
+ & =-\left(\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)-n_{B}\left(\nu\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}+\nu}+\right.\left.\frac{n_{B}\left(-\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}-\nu}\right)\\
+ & =\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}+\nu}+\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)-n_{B}\left(-\nu\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}-\nu}\\
+ & =\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}+\nu}+\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}-\nu}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where in the last line, we used the property of the bose function 
+\begin_inset Formula $n_{B}\left(-\nu\right)=-1-n_{B}\left(\nu\right).$
+\end_inset
+
+ Inserting this expresion in the current correlation function, we get 
+\begin_inset Formula 
+\begin{align}
+\Pi\left(i\omega_{n}\right) & =\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\int_{0}^{\infty}\frac{d\nu}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\left(\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{\epsilon_{2}-\epsilon_{1}+\nu}+\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{\epsilon_{2}-\epsilon_{1}-\nu}-\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}+\nu}-\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{i\omega_{n}+\epsilon_{2}-\epsilon_{1}-\nu}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we analytically continue to real frequencies 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\Pi\left(\omega\right) & =\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\int_{0}^{\infty}\frac{d\nu}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\left(\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{\epsilon_{2}-\epsilon_{1}+\nu}+\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{\epsilon_{2}-\epsilon_{1}-\nu}-\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{\omega+i\delta+\epsilon_{2}-\epsilon_{1}+\nu}-\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{\omega+i\delta+\epsilon_{2}-\epsilon_{1}-\nu}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At this point, after performing the matsubara sumations, this function vanishes
+ at finite temperature at zero frequency signaling a regular limit at zero
+ frequency for the conductivity at finite temperature.
+ To calculate the DC conductivity, we need 
+\begin_inset Formula 
+\begin{align}
+\sigma & =\lim_{\omega\rightarrow0}\text{Re}\left[\frac{\Pi\left(\omega\right)}{i\omega}\right]\\
+ & =\lim_{\omega\rightarrow0}\text{Im}\left[\frac{\Pi\left(\omega\right)}{\omega}\right]\\
+ & =-\lim_{\omega\rightarrow0}\text{Im}\frac{1}{\omega}\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\int_{0}^{\infty}\frac{d\nu}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\\
+ & \times\left(n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(\frac{n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)}{\omega+i\delta+\epsilon_{2}-\epsilon_{1}+\nu}+\frac{n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)}{\omega+i\delta+\epsilon_{2}-\epsilon_{1}-\nu}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At this point, we use the Sokhotski-Plemej formula: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\omega+\zeta\pm i\delta}=P\frac{1}{\omega+\zeta}\mp i\pi\delta\left(\omega+\zeta\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\sigma & =\lim_{\omega\rightarrow0}\frac{1}{\omega}\frac{2N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{1}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\int_{0}^{\infty}\frac{d\nu}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\epsilon_{1}\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\left(\left(n_{B}\left(\nu\right)-n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)\right)\pi\delta\left(\omega+\epsilon_{2}-\epsilon_{1}+\nu\right)+\left(n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+1+n_{B}\left(\nu\right)\right)\pi\delta\left(\omega+\epsilon_{2}-\epsilon_{1}-\nu\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we integrate over 
+\begin_inset Formula $\epsilon_{1}$
+\end_inset
+
+ and omit the limit for the moment
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma & =\frac{1}{\omega}\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\omega+\epsilon_{2}+\nu\right)\int_{0}^{\infty}\frac{d\nu}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\omega+\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\left(\left(n_{B}\left(\nu\right)-n_{B}\left(\omega+\nu\right)\right)\right)\\
+ & +\frac{1}{\omega}\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}\int_{0}^{\infty}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\omega+\epsilon_{2}-\nu\right)\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\omega+\epsilon_{2}-\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\left(\left(n_{B}\left(\omega-\nu\right)+1+n_{B}\left(\nu\right)\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the property of the bose funcition for transforming negative arguments
+ into positive arguments, we get 
+\begin_inset Formula 
+\begin{align*}
+\sigma & =\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}\int_{0}^{\infty}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\omega+\epsilon_{2}+\nu\right)\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\omega+\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\frac{\left(n_{B}\left(\nu\right)-n_{B}\left(\omega+\nu\right)\right)}{\omega}\\
+ & +\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}\int_{0}^{\infty}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\omega+\epsilon_{2}-\nu\right)\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\omega+\epsilon_{2}-\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\frac{\left(n_{B}\left(\nu\right)-n_{B}\left(\nu-\omega\right)\right)}{\omega}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the DC limit we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\sigma & =\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}\int_{0}^{\infty}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\epsilon_{2}+\nu\right)\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(+\frac{\partial n_{B}}{\partial\nu}\right)\\
+ & +\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon_{2}}{2\pi}\int_{0}^{\infty}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)A_{\text{Pd}}\left(\bm{k},\epsilon_{2}-\nu\right)\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}\left(n_{F}\left(\epsilon_{2}-\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(-\frac{\partial n_{B}}{\partial\nu}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Changing variables on the second term, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int_{-\infty}^{0}\frac{d\nu}{2\pi}\int\frac{d\epsilon_{2}}{2\pi}\frac{S\left(\bm{q},-\nu\right)}{1+n_{B}\left(-\nu\right)}A_{\text{Pd}}\left(\bm{k},\epsilon_{2}+\nu\right)A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\left(n_{F}\left(\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(-\frac{\partial n_{B}}{\partial\nu}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using the property of the bose distribution 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{1+n_{B}\left(\nu\right)}=e^{-\beta\nu}\frac{1}{n_{B}\left(\nu\right)},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we get for the second term in 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int_{-\infty}^{0}\frac{d\nu}{2\pi}\int\frac{d\epsilon_{2}}{2\pi}\frac{S\left(\bm{q},\nu\right)e^{-\beta\nu}}{-n_{B}\left(\nu\right)}A_{\text{Pd}}\left(\bm{k},\epsilon_{2}+\nu\right)A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\left(n_{F}\left(\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(-\frac{\partial n_{B}}{\partial\nu}\right)\\
+=\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int_{-\infty}^{0}\frac{d\nu}{2\pi}\int\frac{d\epsilon_{2}}{2\pi}\frac{S\left(\bm{q},\nu\right)}{1+n_{B}\left(\nu\right)}A_{\text{Pd}}\left(\bm{k},\epsilon_{2}+\nu\right)A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon_{2}\right)\left(n_{F}\left(\epsilon_{2}+\nu\right)-n_{F}\left(\epsilon_{2}\right)\right)\left(\frac{\partial n_{B}}{\partial\nu}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As such, joining the two terms above, we get
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma=\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon}{2\pi}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon\right)A_{\text{Pd}}\left(\bm{k},\epsilon+\nu\right)S\left(\bm{q},\nu\right)\frac{\left(n_{F}\left(\epsilon\right)-n_{F}\left(\epsilon+\nu\right)\right)}{1+n_{B}\left(\nu\right)}\left(-\frac{\partial n_{B}}{\partial\nu}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can now further simplify this by using the fluctuation dissipation theorem.
+ First, let's calculate the derivative 
+\begin_inset Formula 
+\begin{align*}
+\left(-\frac{\partial n_{B}}{\partial\nu}\right) & =\frac{\partial}{\partial\nu}\frac{1}{1-e^{\beta\nu}}\\
+ & =\frac{-\beta e^{\beta\nu}}{\left(1-e^{\beta\nu}\right)^{2}}\\
+ & =\beta n_{b}\left(\nu\right)\left(1+n_{b}\left(\nu\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma=\beta\frac{N_{l}}{N_{s}}\left(edt_{g}\right)^{2}\sum_{\boldsymbol{k}\boldsymbol{q}}\int\frac{d\epsilon}{2\pi}\frac{d\nu}{2\pi}A_{\text{Pd}}\left(\bm{k}+\bm{q},\epsilon\right)A_{\text{Pd}}\left(\bm{k},\epsilon+\nu\right)S\left(\bm{q},\nu\right)\left(n_{F}\left(\epsilon\right)-n_{F}\left(\epsilon+\nu\right)\right)n_{b}\left(\nu\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the fluctuation dissipation theorem states that 
+\begin_inset Formula 
+\[
+S\left(\bm{q},\nu\right)=\left(1-e^{-\beta\nu}\right)\chi\left(\boldsymbol{q},\nu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

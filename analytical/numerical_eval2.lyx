@@ -1,0 +1,597 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+For the second
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =-\frac{e^{2}}{VN}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}B\left(z\right)\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{\Lambda}_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =-\frac{4g^{2}\lambda}{U\hbar}\left(2a_{z}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right)\\
+ & =\boldsymbol{\Lambda}_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now we integrate the spectral function of the phonons
+\begin_inset Formula 
+\[
+B\left(z\right)=\frac{\pi\hbar}{2M\omega_{0}}\left(\delta\left(z-\omega_{0}\right)-\delta\left(\nu+\omega_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{z} & =-\frac{1}{N^{2}}\frac{\pi\hbar\lambda^{2}}{2M\omega_{0}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|f^{z}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\left(\delta\left(z-\omega_{0}\right)-\delta\left(\nu+\omega_{0}\right)\right)\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+integrating
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =-2\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\left|f^{z}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+\omega_{0}+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(-\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(\omega_{0}+\mu\right)+n_{F}\left(\epsilon+\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +2\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\left|f^{z}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon-\omega_{0}+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(-\omega_{0}+\mu\right)+n_{F}\left(\epsilon-\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we integrate the spectral function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{z} & =-2\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sum_{\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\left|f^{z}\left(p_{z},q_{z}\right)\right|^{2}\rho\left(\epsilon+\omega_{0}+\mu\right)\rho\left(\epsilon\right)\chi''\left(\mu\right)\left[n_{B}\left(-\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(\omega_{0}+\mu\right)+n_{F}\left(\epsilon+\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +2\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sum_{\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\left|f^{z}\left(p_{z},q_{z}\right)\right|^{2}\rho\left(\epsilon-\omega_{0}+\mu\right)\rho\left(\epsilon\right)\chi''\left(\mu\right)\left[n_{B}\left(\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(-\omega_{0}+\mu\right)+n_{F}\left(\epsilon-\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now we integrate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|\Lambda_{\ell}^{z}\left(p_{z},q_{z}\right)\right|^{2}=2\lambda^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2} & =2\lambda^{2}\left[\frac{4g^{2}}{U}\left(2a_{z}\right)\right]^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\\
+ & =2\lambda^{2}\left[\frac{4g^{2}}{U}\left(2a_{z}\right)\right]^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\frac{1-\cos\left(p_{z}a_{z}+q_{z}a_{z}\right)}{2}\\
+ & =2\lambda^{2}\left[\frac{4g^{2}}{U}\left(2a_{z}\right)\right]^{2}\frac{1}{2\pi}\frac{1}{2\pi}\frac{2\pi}{a_{z}}\frac{2\pi}{a_{z}}\frac{1}{2}\\
+ & =\left[\frac{16g^{2}\lambda}{U}\right]^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+finally we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{z} & =-\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon+\omega_{0}+\mu\right)\rho\left(\epsilon\right)\chi''\left(\mu\right)\left[n_{B}\left(-\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(\omega_{0}+\mu\right)+n_{F}\left(\epsilon+\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon-\omega_{0}+\mu\right)\rho\left(\epsilon\right)\chi''\left(\mu\right)\left[n_{B}\left(\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(-\omega_{0}+\mu\right)+n_{F}\left(\epsilon-\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the FD theorem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{z} & =-\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon+\omega_{0}+\mu\right)\rho\left(\epsilon\right)\frac{\mu}{T}S\left(\mu\right)\left[n_{B}\left(-\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(\omega_{0}+\mu\right)+n_{F}\left(\epsilon+\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon-\omega_{0}+\mu\right)\rho\left(\epsilon\right)\frac{\mu}{T}S\left(\mu\right)\left[n_{B}\left(\omega_{0}\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(-\omega_{0}+\mu\right)+n_{F}\left(\epsilon-\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+modifying the expression a bit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{z} & =\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon+\omega_{0}+\mu\right)\rho\left(\epsilon\right)S\left(\mu\right)\left[\frac{\mu}{T}+\frac{\mu}{T}n_{B}\left(\omega_{0}\right)+\frac{\mu}{T}n_{B}\left(\mu\right)\right]\left[n_{B}\left(\omega_{0}+\mu\right)+n_{F}\left(\epsilon+\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon-\omega_{0}+\mu\right)\rho\left(\epsilon\right)S\left(\mu\right)\left[\frac{\mu}{T}n_{B}\left(\omega_{0}\right)-\frac{\mu}{T}n_{B}\left(\mu\right)\right]\left[n_{B}\left(-\omega_{0}+\mu\right)+n_{F}\left(\epsilon-\omega_{0}+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One more try
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}B\left(z\right)\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\left[n_{B}\left(-z\right)-n_{B}\left(\mu\right)\right]\left[n_{B}\left(z+\mu\right)+n_{F}\left(\epsilon+z+\mu\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+simplifying 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =\frac{1}{4}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\frac{dz}{\pi}\left|\Lambda_{\ell}^{\alpha}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}B\left(z\right)\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+z+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\cosh\left(\frac{\epsilon}{2}\right)\text{sech}\left(\frac{\epsilon+\mu+z}{2}\right)\text{csch}\left(\frac{z}{2}\right)\text{csch}\left(\frac{\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =\frac{1}{4}\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon+\omega_{0}+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\cosh\left(\frac{\epsilon}{2}\right)\text{sech}\left(\frac{\epsilon+\mu+\omega_{0}}{2}\right)\text{csch}\left(\frac{\omega_{0}}{2}\right)\text{csch}\left(\frac{\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & +\frac{1}{4}\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\chi''\left(\mu\right)A\left(\boldsymbol{q},\epsilon-\omega_{0}+\mu\right)A\left(\boldsymbol{k},\epsilon\right)\cosh\left(\frac{\epsilon}{2}\right)\text{sech}\left(\frac{\epsilon+\mu-\omega_{0}}{2}\right)\text{csch}\left(\frac{\omega_{0}}{2}\right)\text{csch}\left(\frac{\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =\frac{1}{4}\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{k}\ell}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\chi''\left(\mu\right)A\left(\boldsymbol{k},\epsilon\right)\cosh\left(\frac{\epsilon}{2}\right)\left[A\left(\boldsymbol{q},\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\frac{\epsilon+\mu+\omega_{0}}{2}\right)+A\left(\boldsymbol{q},\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\text{csch}\left(\frac{\omega_{0}}{2}\right)\text{csch}\left(\frac{\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+\\
+ & =\frac{1}{4}\left(\frac{\hbar\lambda^{2}}{2M\omega_{0}}\right)\left[\frac{16g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\chi''\left(\mu\right)\rho\left(\epsilon\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\cosh\left(\frac{\beta\epsilon}{2}\right)\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\text{csch}\left(\frac{\beta\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+\\
+ & =2\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{4g^{2}}{U}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\chi''\left(\mu\right)\rho\left(\epsilon\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\cosh\left(\frac{\beta\epsilon}{2}\right)\text{csch}\left(\frac{\beta\mu}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+\\
+ & =4\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{4g^{2}}{U}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}S\left(\mu\right)\rho\left(\epsilon\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\cosh\left(\frac{\beta\epsilon}{2}\right)\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+\\
+ & =\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}S\left(\mu\right)\rho\left(\epsilon\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\cosh\left(\frac{\beta\epsilon}{2}\right)\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the end we have 
+\begin_inset Formula 
+\[
+=\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\cosh\left(\frac{\beta\epsilon}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\frac{d\mu}{\pi}S\left(\mu\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Reinstating all the units 
+\begin_inset Formula 
+\[
+\sigma_{22}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\cosh\left(\frac{\beta\epsilon}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\frac{d\mu}{\pi}S\left(\mu\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the Heisenberg scale to measure energies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{22}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{UJ}\right]^{2}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon\right)\cosh\left(\frac{\beta\epsilon}{2}\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)S\left(\mu\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\left[\frac{\beta\mu}{2}\text{csch}\left(\frac{\beta\mu}{2}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To estimate the crossover temperature , we have at high temperatures but
+ below the degeneratcy temperature 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & =\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{1}{J}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\int\frac{d\epsilon}{\pi}\frac{d\mu}{\pi}\rho\left(\epsilon\right)\cosh\left(\frac{\beta\epsilon}{2}\right)\delta\left(\epsilon\right)\left[\rho\left(\epsilon+\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu+\omega_{0}}{2}\right)+\rho\left(\epsilon-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\epsilon+\mu-\omega_{0}}{2}\right)\right]\\
+ & =\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{1}{J}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\frac{\rho\left(0\right)}{\pi}\int\frac{d\mu}{\pi}\left[\rho\left(\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\mu+\omega_{0}}{2}\right)+\rho\left(-\omega_{0}+\mu\right)\text{sech}\left(\beta\frac{\mu-\omega_{0}}{2}\right)\right]\\
+ & \sim\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{1}{J}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\frac{\rho\left(0\right)^{2}}{\pi}\int\frac{d\mu}{\pi}\left[\text{sech}\left(\beta\frac{\mu+\omega_{0}}{2}\right)+\text{sech}\left(\beta\frac{\mu-\omega_{0}}{2}\right)\right]\\
+ & =\kappa\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{1}{J}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\frac{\rho\left(0\right)^{2}}{\pi}\frac{gd\left(\beta\alpha J+\beta\omega_{0}\right)-gd\left(-\beta\alpha J+\beta\omega_{0}\right)}{\pi\beta}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+near zero the gudermannian behaves linearly so 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{22}^{\alpha} & \sim\kappa\alpha\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{1}{J}\text{csch}\left(\frac{\beta\omega_{0}}{2}\right)\frac{\rho\left(0\right)^{2}}{\pi}\frac{2\beta J}{\pi\beta}\\
+ & \sim\kappa\alpha\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\left[\frac{8g^{2}}{U}\right]^{2}\frac{k_{b}T}{\hbar\omega_{0}}\rho\left(0\right)^{2}\\
+ & \sim\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\lambda_{ME}\nu_{0}T\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we want to compare with the out of plane conductivity 
+\begin_inset Formula 
+\[
+\sigma_{\perp}=e^{2}\tau_{tr}\left\langle v_{x\boldsymbol{k}}^{2}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+\tau_{tr}^{-1}\sim\left(\lambda_{ME}+\lambda_{ph}\right)\frac{1}{\beta\hbar}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then we have 
+\begin_inset Formula 
+\[
+\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\lambda_{ME}\nu_{0}T=\frac{e^{2}\left\langle v_{x\boldsymbol{k}}\right\rangle ^{2}}{\left(\lambda_{ME}+\lambda_{ph}\right)\frac{k_{b}T}{\hbar}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+solving for T
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(k_{b}T\right)^{2}=\frac{e^{2}\left\langle v_{x\boldsymbol{k}}\right\rangle ^{2}}{\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)\lambda_{ME}\nu_{0}\left(\lambda_{ME}+\lambda_{ph}\right)\frac{1}{\hbar}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that we have 
+\begin_inset Formula 
+\begin{align*}
+T^{2} & =\frac{\hbar^{2}\left\langle v_{x\boldsymbol{k}}\right\rangle ^{2}}{\left(\frac{2a_{z}}{a_{pl}^{2}}\right)\nu_{0}\lambda_{ME}\left(\lambda_{ME}+\lambda_{ph}\right)}\\
+ & \sim\frac{\hbar^{2}v_{F\perp}^{2}\frac{\nu_{0}}{a_{pl}^{2}a_{z}}}{\left(\frac{2a_{z}}{a_{pl}^{2}}\right)\nu_{0}\lambda_{ME}\left(\lambda_{ME}+\lambda_{ph}\right)}\\
+ & \sim\frac{\hbar^{2}v_{F\perp}^{2}}{a_{z}^{2}\lambda_{ME}\left(\lambda_{ME}+\lambda_{ph}\right)}\\
+ & \sim G_{z}^{2}v_{F\perp}^{2}\frac{1}{\lambda_{ME}\left(\lambda_{ME}+\lambda_{ph}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then, the crossover scale above which 
+\begin_inset Formula $\sigma_{ME}>\sigma_{\perp}$
+\end_inset
+
+ should happen at 
+\begin_inset Formula 
+\[
+k_{b}T^{*}=G_{z}v_{F\perp}\sqrt{\frac{1}{\lambda_{ME}\left(\lambda_{ME}+\lambda_{ph}\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for completeness 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{ME}=\kappa\alpha\nu_{0}\left(\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\frac{1}{\hbar\omega_{0}}\left[\frac{8g^{2}}{U}\right]^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $\lambda_{ME}\rightarrow0$
+\end_inset
+
+ 
+\begin_inset Formula $T^{*}\rightarrow\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{\perp}>\sigma_{ME}$
+\end_inset
+
+ for all temperatures, and if 
+\begin_inset Formula $v_{F\perp}\rightarrow0$
+\end_inset
+
+ the crossover scale goes to zero and 
+\begin_inset Formula $\sigma_{ME}>\sigma_{\perp}$
+\end_inset
+
+ for all temperatures.
+ Putting numbers to this assuming 
+\end_layout
+
+\begin_layout Section
+Small interlayer hopping 
+\end_layout
+
+\begin_layout Standard
+We have a contribution to the conductivity given by 
+\begin_inset Formula 
+\[
+\sigma_{\perp}=e^{2}\tau_{tr}\left\langle v_{x\boldsymbol{k}}^{2}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The dispersion is now 
+\begin_inset Formula 
+\[
+\varepsilon_{\boldsymbol{k}}=\varepsilon_{\boldsymbol{k}_{xy}}+2t_{z}\left(1-\cos k_{z}d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that the velocity becomes 
+\begin_inset Formula 
+\[
+v_{\boldsymbol{k}}^{z}=\frac{2d}{\hbar}t_{z}\sin k_{z}d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle v_{x\boldsymbol{k}}^{2}\right\rangle =\frac{4d^{2}t_{z}^{2}}{\hbar^{2}}\left\langle \sin^{2}k_{z}d\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\begin_inset Formula 
+\begin{align*}
+\left\langle \sin^{2}k_{z}d\right\rangle  & =\frac{1}{V}\sum_{\boldsymbol{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\sin^{2}k_{z}d\\
+ & =\int\frac{d\boldsymbol{k}}{\left(2\pi\right)^{3}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\sin^{2}k_{z}d\\
+ & \sim\int\frac{d\boldsymbol{k}}{\left(2\pi\right)^{3}}\delta\left(\varepsilon_{\boldsymbol{k}_{xy}}\right)\sin^{2}k_{z}d\\
+ & =\frac{\nu_{0}}{a_{xy}^{2}}\int_{-\pi/d}^{\pi/d}\frac{dk_{z}}{\left(2\pi\right)}\sin^{2}k_{z}d\\
+ & =\frac{\nu_{0}}{a_{xy}^{2}}\frac{1}{2d}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall we have 
+\begin_inset Formula 
+\begin{align*}
+\sigma_{\perp} & =e^{2}\tau_{tr}\left(4d^{2}t_{z}^{2}\frac{\nu_{0}}{a_{xy}^{2}}\frac{1}{2d}\right)\\
+ & =2\frac{a_{z}}{a_{xy}^{2}}\frac{e^{2}}{\hbar}\frac{t_{z}^{2}\nu_{0}}{\hbar\Gamma_{tr}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting the transport rate we have 
+\begin_inset Formula 
+\[
+\sigma_{\perp}=2\frac{a_{z}}{a_{xy}^{2}}\frac{e^{2}}{\hbar}\frac{t_{z}^{2}\nu_{0}}{\hbar\frac{\left(2\pi\lambda_{ep}+2\pi\lambda_{ME}\right)k_{b}T}{\hbar}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{\perp}=2\frac{a_{z}}{a_{xy}^{2}}\frac{e^{2}}{\hbar}\frac{t_{z}^{2}\nu_{0}}{\left(2\pi\lambda_{ep}+2\pi\lambda_{ME}\right)k_{b}T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{\perp}\sim\frac{a_{z}}{a_{xy}^{2}}\frac{e^{2}}{\hbar}\frac{t_{\perp}^{2}\nu_{0}}{\lambda_{ME}k_{b}T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

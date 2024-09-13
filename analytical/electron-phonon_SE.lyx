@@ -1,0 +1,428 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Electron phonon self energy at high temperatures
+\end_layout
+
+\begin_layout Standard
+We start from the self energy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma''\left(\boldsymbol{k},\omega\right)=-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\left|g_{\boldsymbol{q}}\right|^{2}A\left(\bm{q}+\boldsymbol{k},\epsilon\right)B\left(\boldsymbol{q},\omega-\epsilon\right)\left[n_{B}\left(\omega-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the electron phonon problem, the spectral function is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D\left(\boldsymbol{k},i\omega_{n}\right)=\int\frac{d\nu}{\pi}\frac{B\left(\boldsymbol{k},\nu\right)}{i\omega_{n}-\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The propagator
+\begin_inset Formula 
+\[
+D\left(\boldsymbol{k},i\omega_{n}\right)=\frac{\hbar}{2M\omega_{\boldsymbol{k}}}\left(\frac{1}{i\omega_{n}-\omega_{\boldsymbol{k}}}-\frac{1}{i\omega_{n}+\omega_{\boldsymbol{k}}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then we have 
+\begin_inset Formula 
+\[
+B\left(\boldsymbol{k},\nu\right)=\frac{\pi\hbar}{2M\omega_{\boldsymbol{k}}}\left(\delta\left(\nu-\omega_{\boldsymbol{k}}\right)-\delta\left(\nu+\omega_{\boldsymbol{k}}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+similarly, if we start from free electrons
+\begin_inset Formula 
+\[
+A\left(\bm{q}+\boldsymbol{k},\epsilon\right)=\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we have 
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k},\omega\right) & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\omega-\epsilon-\omega_{\boldsymbol{q}}\right)-\delta\left(\omega-\epsilon+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\omega-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+ we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k}\right) & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)-\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\\
+ & =\sum_{\bm{q}}\int_{-\infty}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)-\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+ & =\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)-\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+ & +\sum_{\bm{q}}\int_{-\infty}^{0}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)-\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+ & +\sum_{\bm{q}}\int_{-\infty}^{0}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+ & -\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\epsilon+\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\left(\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+\delta\left(\epsilon+\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}}{2M\omega_{\boldsymbol{q}-\boldsymbol{k}}}\left(\delta\left(\epsilon-\varepsilon_{\boldsymbol{q}}\right)+\delta\left(\epsilon+\varepsilon_{\boldsymbol{q}}\right)\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}-\boldsymbol{k}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\\
+ & \sim-2\sum_{\bm{q}}\int_{0}^{\omega_{D}}d\epsilon\frac{\pi\hbar\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}}{2M\omega_{\boldsymbol{q}-\boldsymbol{k}}}\delta\left(\varepsilon_{\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}-\boldsymbol{k}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definig 
+\begin_inset Formula 
+\[
+\alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)=\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}}{2M\omega_{\boldsymbol{q}-\boldsymbol{k}}}\delta\left(\varepsilon_{\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}-\boldsymbol{k}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So that 
+\begin_inset Formula 
+\[
+\Sigma''\left(\boldsymbol{k}\right)=-2\pi\int_{0}^{\omega_{D}}d\epsilon\ \alpha_{\boldsymbol{k}}F^{2}\left(\epsilon\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can then infer the single particle scattering time as 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =-2\Sigma''\left(\boldsymbol{k}\right)\\
+ & =4\pi\int_{0}^{\omega_{D}}d\epsilon\ \alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the high temperature limit we have 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau_{\boldsymbol{k}}} & =4\pi k_{b}T\int_{0}^{\omega_{D}}\frac{d\epsilon}{\epsilon}\ \alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)\\
+ & =4\pi\lambda_{\boldsymbol{k}}k_{b}T
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined 
+\begin_inset Formula 
+\[
+\lambda_{\boldsymbol{k}}=\int_{0}^{\omega_{D}}\frac{d\epsilon}{\epsilon}\ \alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the fermi surface average, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{\tau}=4\pi\lambda k_{b}T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\begin{align*}
+\lambda & =\frac{\sum_{\boldsymbol{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\lambda_{\boldsymbol{k}}}{\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =\frac{\sum_{\boldsymbol{k}}\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}}{2M\omega_{\boldsymbol{q}-\boldsymbol{k}}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{q}}\right)\int_{0}^{\omega_{D}}\frac{d\epsilon}{\epsilon}\delta\left(\epsilon-\omega_{\boldsymbol{q}-\boldsymbol{k}}\right)}{\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}\\
+ & =\frac{\sum_{\boldsymbol{k}}\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}}{2M\omega_{\boldsymbol{q}-\boldsymbol{k}}^{2}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{q}}\right)}{\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the case of an optical mode, we have 
+\begin_inset Formula 
+\[
+\lambda=\frac{\hbar}{2M\omega_{0}^{2}}\frac{\sum_{\boldsymbol{k}}\sum_{\bm{q}}\left|g_{\boldsymbol{q}-\boldsymbol{k}}\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)\delta\left(\varepsilon_{\boldsymbol{q}}\right)}{\sum_{\bm{k}}\delta\left(\varepsilon_{\boldsymbol{k}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the energy dependent imaginary part of the self-energy
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k},\omega\right) & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\omega-\epsilon-\omega_{\boldsymbol{q}}\right)-\delta\left(\omega-\epsilon+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\omega-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\\
+ & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)-\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)\right]\\
+ & +\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon+\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)\right]\\
+ & +\sum_{\bm{q}}\int_{\infty}^{0}\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\omega-\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(-\epsilon\right)+n_{F}\left(-\omega-\epsilon\right)\right]\\
+\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)\right]\\
+ & -\sum_{\bm{q}}\int_{0}^{\infty}\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\omega-\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\omega+\epsilon\right)\right]\\
+\\
+\\
+ & =-\sum_{\bm{q}}\int_{0}^{\infty}\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\left[\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+\delta\left(\omega-\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)+n_{F}\left(\omega+\epsilon\right)\right]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+now we define 
+\begin_inset Formula 
+\begin{align*}
+\alpha_{\boldsymbol{k}}^{2}F\left(\omega,\epsilon\right) & =\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\frac{1}{\pi}\left[\delta\left(\epsilon+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+\delta\left(\omega-\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\\
+ & =\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\frac{1}{\pi}\left[\delta\left(\omega_{\boldsymbol{q}}+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+\delta\left(\omega-\omega_{\boldsymbol{q}}-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+THen 
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k},\omega\right) & =-\pi\int_{0}^{\infty}d\epsilon\alpha_{\boldsymbol{k}}^{2}F\left(\omega,\epsilon\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)+n_{F}\left(\omega+\epsilon\right)\right]\\
+ & =-\pi\int_{0}^{\omega_{D}}d\epsilon\alpha_{\boldsymbol{k}}^{2}F\left(\omega,\epsilon\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)+n_{F}\left(\omega+\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+people usually approximate 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\alpha_{\boldsymbol{k}}^{2}F\left(\omega,\epsilon\right) & =\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\frac{1}{\pi}\left[\delta\left(\omega_{\boldsymbol{q}}+\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+\delta\left(\omega-\omega_{\boldsymbol{q}}-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\\
+ & \sim\sum_{\bm{q}}\frac{\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\frac{2}{\pi}\delta\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\delta\left(\epsilon-\omega_{\boldsymbol{q}}\right)\\
+ & =\alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then we have 
+\begin_inset Formula 
+\[
+\Sigma''\left(\boldsymbol{k},\omega\right)=-\pi\int_{0}^{\omega_{D}}d\epsilon\alpha_{\boldsymbol{k}}^{2}F\left(\epsilon\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\omega\right)+n_{F}\left(\omega+\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the case of an optical mode, we have 
+\begin_inset Formula 
+\[
+\Sigma''\left(\boldsymbol{k},\omega\right)=-\pi\alpha\left[2n_{B}\left(\omega_{0}\right)+n_{F}\left(\omega_{0}-\omega\right)+n_{F}\left(\omega_{0}+\omega\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Classic result
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma''\left(\boldsymbol{k},\omega\right) & =-\sum_{\bm{q}}\int\frac{d\epsilon}{\pi}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\left(\delta\left(\omega-\epsilon-\omega_{\boldsymbol{q}}\right)-\delta\left(\omega-\epsilon+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\omega-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\\
+ & =-\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\left(\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}-\omega_{\boldsymbol{q}}\right)-\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}+\omega_{\boldsymbol{q}}\right)\right)\left[n_{B}\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)+n_{F}\left(-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\\
+ & =-\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\omega_{\boldsymbol{q}}\right)+n_{F}\left(-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\\
+ & +\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}+\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(-\omega_{\boldsymbol{q}}\right)+n_{F}\left(-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\\
+\\
+ & =-\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}-\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\omega_{\boldsymbol{q}}\right)+1-n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\\
+ & -\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}+\omega_{\boldsymbol{q}}\right)\left[n_{B}\left(\omega_{\boldsymbol{q}}\right)+n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right]\\
+\\
+\\
+ & =-\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{2M\omega_{\boldsymbol{q}}}\left[\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}-\omega_{\boldsymbol{q}}\right)\left(n_{B}\left(\omega_{\boldsymbol{q}}\right)+1-n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right)+\delta\left(\omega-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}+\omega_{\boldsymbol{q}}\right)\left(n_{B}\left(\omega_{\boldsymbol{q}}\right)+n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the scattering rate is given by 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau\left(\boldsymbol{k}\right)} & =-2\Sigma''\left(\boldsymbol{k},\epsilon_{\boldsymbol{k}}\right)\\
+ & =\sum_{\bm{q}}\frac{\pi\hbar\left|g_{\boldsymbol{q}}\right|^{2}}{M\omega_{\boldsymbol{q}}}\left[\delta\left(\epsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}-\omega_{\boldsymbol{q}}\right)\left(n_{B}\left(\omega_{\boldsymbol{q}}\right)+1-n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right)+\delta\left(\epsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}+\omega_{\boldsymbol{q}}\right)\left(n_{B}\left(\omega_{\boldsymbol{q}}\right)+n_{F}\left(\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

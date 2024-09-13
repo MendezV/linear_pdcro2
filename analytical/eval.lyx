@@ -1,0 +1,261 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{00}^{\alpha} & =\frac{e^{2}}{N}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}\tau\delta\left(\xi_{\bm{k}}\right)\\
+ & =e^{2}\int\frac{d\boldsymbol{k}}{\left(2\pi\right)^{2}}\frac{k^{2}}{2m^{2}}\tau\delta\left(\xi_{\bm{k}}\right)\\
+ & =e^{2}\int\frac{kdk}{\left(2\pi\right)^{2}}\frac{k^{2}}{2m^{2}}\tau\delta\left(\frac{k^{2}-k_{F}^{2}}{2m}\right)\\
+ & =\frac{2}{2m}\tau e^{2}\int\frac{d\theta}{\left(2\pi\right)^{2}}\int kdkk^{2}\delta\left(k^{2}-k_{F}^{2}\right)\\
+ & =\frac{2}{2m}\tau e^{2}\int\frac{d\theta}{\left(2\pi\right)^{2}}\int kdkk^{2}\frac{\delta\left(k-k_{F}\right)}{2k_{F}}\\
+ & =\frac{k_{F}^{2}}{2m}\frac{e^{2}}{2\pi}\tau
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\pi k_{F}^{2}}{4\pi^{2}/V}=N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then
+\begin_inset Formula 
+\begin{align*}
+\frac{\pi k_{F}^{2}}{4\pi^{2}} & =\frac{N}{V}\\
+ & =n
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{00}^{\alpha}=\frac{ne^{2}\tau}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in 3d
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{00}^{\alpha} & =\frac{e^{2}}{N}\sum_{\boldsymbol{k}}\left|v^{\alpha}\left(\boldsymbol{k}\right)\right|^{2}\tau\delta\left(\xi_{\bm{k}}\right)\\
+ & =e^{2}\int\frac{d\boldsymbol{k}}{\left(2\pi\right)^{2}}\frac{k^{2}}{3m^{2}}\tau\delta\left(\xi_{\bm{k}}\right)\\
+ & =e^{2}\int\frac{k^{2}dk}{\left(2\pi\right)^{2}}\frac{k^{2}}{3m^{2}}\tau\delta\left(\frac{k^{2}-k_{F}^{2}}{2m}\right)\\
+ & =\frac{2}{3m}\tau e^{2}\int\frac{d\Omega}{\left(2\pi\right)^{3}}\int k^{2}dkk^{2}\delta\left(k^{2}-k_{F}^{2}\right)\\
+ & =\frac{2}{3m}\tau e^{2}\int\sin\theta\frac{d\theta}{\left(2\pi\right)^{2}}\int k^{2}dkk^{2}\frac{\delta\left(k-k_{F}\right)}{2k_{F}}\\
+ & =\frac{2k_{F}^{3}}{3m}\frac{e^{2}}{\left(2\pi\right)^{2}}\tau
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{4\pi k_{F}^{3}/3}{8\pi^{3}/V}=N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{k_{F}^{3}}{3}\frac{1}{2\pi^{2}} & =\frac{N}{V}\\
+ & =n
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{00}^{\alpha}=\frac{ne^{2}\tau}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for the leading order bubble.
+ Assuming that the conductivity is only in the z direction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{e^{2}\kappa\alpha}{\tau}\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\partial\xi_{\bm{p}}/\partial\bm{p}\right)^{2}+\left(1/\tau\right)^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this case we have 
+\begin_inset Formula 
+\[
+\frac{4g^{2}}{U}\sin\left(p_{z}+2q_{z}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{e^{2}\kappa\alpha}{\tau}\left(\frac{4g^{2}}{U}\right)^{2}\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{3}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin\left(p_{z}+2q_{z}\right)^{2}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\boldsymbol{v}_{F}\left(\boldsymbol{p}\right)\right)^{2}+\left(1/\tau\right)^{2}}\right)\\
+\frac{e^{2}\kappa\alpha}{\tau}\left(\frac{4g^{2}}{U}\right)^{2}\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{2}}\frac{dp_{z}}{\left(2\pi\right)}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\sin\left(p_{z}+2q_{z}\right)^{2}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\boldsymbol{v}_{F}\left(\boldsymbol{p}\right)\right)^{2}+\left(1/\tau\right)^{2}}\right)\\
+\frac{e^{2}\kappa\alpha}{\tau}\left(\frac{4g^{2}}{U}\right)^{2}\frac{1}{4\pi}\int\frac{d\boldsymbol{p}}{\left(2\pi\right)^{2}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\delta\left(\xi_{\bm{p}}\right)\left(\frac{1}{\left(\bm{q}\cdot\boldsymbol{v}_{F}\left(\boldsymbol{p}\right)\right)^{2}+\left(1/\tau\right)^{2}}\right)\\
+e^{2}\tau\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m}{4\pi}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\int\frac{d\theta}{\left(2\pi\right)^{2}}\left(\frac{1}{\left(q_{xy}\tau v_{f}\cos\theta\right)^{2}+1}\right)\\
+\sim e^{2}\tau\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m}{4\pi}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\int\frac{d\theta}{\left(2\pi\right)^{2}}\\
+e^{2}\tau\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m}{8\pi^{2}}\int\frac{d\boldsymbol{q}}{\left(2\pi\right)^{3}}\\
+e^{2}\tau\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m}{8\pi^{2}}\\
+\sim\lambda_{K}\frac{ne^{2}\tau}{m}\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Density of states in 2d
+\begin_inset Formula 
+\[
+\frac{mE_{F}}{2\pi}=\frac{N}{V}=n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+e^{2}\tau\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m}{8\pi^{2}} & =\frac{e^{2}\tau}{m}\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m^{2}}{8\pi^{2}}\\
+ & =\frac{e^{2}\tau}{m}\kappa\alpha\left(\frac{4g^{2}}{U}\right)^{2}\frac{m^{2}}{8\pi^{2}}\\
+ & =\frac{e^{2}\tau}{m}\frac{1}{2}\lambda_{K}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\lambda_{K}\frac{ne^{2}\tau}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau=\frac{\tau_{ME}\tau_{K}}{\tau_{ME}+\tau_{K}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

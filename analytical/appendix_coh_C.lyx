@@ -1,0 +1,188 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+For the c axis resistivity we also consider the dispersion 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\boldsymbol{k}}=\varepsilon_{\boldsymbol{k}}-2t_{\perp}\cos\left(k_{z}a_{z}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\varepsilon_{\boldsymbol{k}}$
+\end_inset
+
+ is the purely 2d dispersion considered in the main text.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\rho_{\perp} & =\frac{\hbar}{e^{2}}\frac{a_{xy}^{2}}{a_{z}}\left(\frac{1}{2\nu_{0}\left(2t_{\perp}\right)^{2}}\right)\left[2\pi\lambda_{K}J_{K}\mathcal{I}\left(\alpha\pi\beta J\right)+2\pi\frac{\lambda_{tr,ME}}{\beta}\mathcal{M}\left(\alpha\pi\beta J,\beta\omega_{0}\right)+2\pi\frac{\lambda_{tr,E}}{\beta}\mathcal{K}\left(\beta\omega_{0}\right)\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With where the functions above Explicitly we have the definitions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{I}\left(y\right) & =-\frac{4\text{Li}_{2}\left(e^{-y}\right)}{y}-\frac{2y}{e^{y}-1}-4y+\frac{2\pi^{2}}{3y}+4\log\left(e^{y}-1\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{K}\left(x\right)=\left[\frac{x}{2}\text{csch}\left(\frac{x}{2}\right)\right]^{2},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{M}\left(y,z\right)=\frac{z^{2}}{\cosh\left(z\right)-1}\mathcal{J}\left(y,z\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{J}\left(y,z\right) & =\frac{-2z\text{Li}_{2}\left(e^{-y}\right)+\left(2y+z\right)\text{Li}_{2}\left(e^{-y-z}\right)+\left(z-2y\right)\text{Li}_{2}\left(e^{z-y}\right)+2\text{Li}_{3}\left(e^{-y-z}\right)-2\text{Li}_{3}\left(e^{z-y}\right)}{2yz}\\
+ & +\frac{z^{2}}{12y}-\frac{1}{2}\log\left(\left(e^{y}-e^{z}\right)\left(e^{y+z}-1\right)\right)+\frac{y\log\left(\sinh\left(\frac{y-z}{2}\right)\text{csch}\left(\frac{y+z}{2}\right)\right)}{2z}+\frac{y}{2}+\frac{\pi^{2}}{3y}+\log\left(e^{y}-1\right)+\frac{z}{2}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These functions have the following high temperature limits
+\begin_inset Formula 
+\begin{equation}
+\lim_{T\rightarrow\infty}\mathcal{M}\left(\alpha\pi\beta J,\beta\omega_{0}\right)=\lim_{T\rightarrow\infty}\mathcal{K}\left(\beta\omega_{0}\right)=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{equation}
+\lim_{T\rightarrow\infty}\mathcal{I}\left(\alpha\pi\beta J\right)=2.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,566 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{slashed}
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Spectral Representation
+\end_layout
+
+\begin_layout Standard
+Finally we prove the spectral representation above
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S\left(\bm{k},i\nu_{n}\right)=\int\frac{d\nu}{\pi}\frac{\chi''\left(\bm{k},\nu\right)}{\nu-i\nu_{n}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First define the response matrix 
+\begin_inset Formula 
+\begin{equation}
+\chi_{ij}^{R}\left(\bm{q},t-t'\right)=-i\theta\left(t-t'\right)\left\langle \left[S_{\bm{q}}^{i}\left(t\right),S_{\bm{-q}}^{j}\left(t'\right)\right]\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the structure factor matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{ij}\left(\bm{q},\tau\right)=-\left\langle T_{\tau}S_{\bm{q}}^{i}\left(\tau\right)S_{\bm{-q}}^{j}\left(0\right)\right\rangle ,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ indices denote different spin components.
+ The structure factor and response function in the calculation above, would
+ be the traces of these matrices.
+ Using the Lehmann representation we have for the response function 
+\begin_inset Formula 
+\begin{align}
+\chi_{ij}^{R}\left(\bm{q},t-t'\right) & =-i\theta\left(t-t'\right)\frac{1}{Z}\sum_{n}e^{-\beta E_{n}}\bra{n}\left[S_{\bm{q}}^{i}\left(t\right),S_{\bm{-q}}^{j}\left(t'\right)\right]\ket{n}\\
+ & =-i\theta\left(t-t'\right)\frac{1}{Z}\sum_{n}e^{-\beta E_{n}}\bra{n}\left(S_{\bm{q}}^{i}\left(t\right)S_{\bm{-q}}^{j}\left(t'\right)-S_{\bm{-q}}^{j}\left(t'\right)S_{\bm{q}}^{i}\left(t\right)\right)\ket{n}\\
+ & =-i\theta\left(t-t'\right)\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}\left(\bra{n}S_{\bm{q}}^{i}\left(t\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(t'\right)\ket{n}-\bra{n}S_{\bm{-q}}^{j}\left(t'\right)\ket{m}\bra{m}S_{\bm{q}}^{i}\left(t\right)\ket{n}\right)\\
+ & =-i\theta\left(t-t'\right)\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(t\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(t'\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recalling that 
+\begin_inset Formula 
+\begin{equation}
+S_{\bm{q}}^{i}\left(t\right)=e^{itH}S_{\bm{q}}^{i}\left(0\right)e^{-itH}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting this back, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\chi_{ij}^{R}\left(\bm{q},t-t'\right)=-i\theta\left(t-t'\right)\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}e^{-i\left(E_{m}-E_{n}\right)\left(t-t'\right)}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the fourier transform, we get 
+\begin_inset Formula 
+\begin{align}
+\chi_{ij}^{R}\left(\bm{q},\omega\right) & =\int d\left(t-t'\right)e^{i\omega\left(t-t'\right)}\chi_{ij}^{R}\left(\bm{q},t-t'\right)\\
+ & =-i\int_{0}^{\infty}dte^{i\omega_{+}t}e^{-i\left(E_{m}-E_{n}\right)t}\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\\
+ & =-i\left[\frac{e^{i\left(\omega_{+}-\left(E_{m}-E_{n}\right)\right)t}}{i\left(\omega_{+}-\left(E_{m}-E_{n}\right)\right)}\right]_{0}^{\infty}\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\\
+ & =i\frac{1}{i\left(\omega_{+}-\left(E_{m}-E_{n}\right)\right)}\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\\
+ & =\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\frac{\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)}{\omega+i\delta+E_{n}-E_{m}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we perform a similar manipulation on the structure factor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+S_{ij}\left(\bm{q},\tau\right) & =-\left\langle T_{\tau}S_{\bm{q}}^{i}\left(\tau\right)S_{\bm{-q}}^{j}\left(0\right)\right\rangle \\
+ & =-\frac{1}{Z}\sum_{n,m}\bra{n}e^{-\beta H}S_{\bm{q}}^{i}\left(\tau\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\\
+ & =-\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}\bra{n}S_{\bm{q}}^{i}\left(\tau\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the imaginary time evolution 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{\bm{q}}^{i}\left(\tau\right)=e^{\tau H}S_{\bm{q}}^{i}\left(0\right)e^{-\tau H},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we find
+\begin_inset Formula 
+\begin{equation}
+S_{ij}\left(\bm{q},\tau\right)=-\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we Fourier transform
+\begin_inset Formula 
+\begin{align}
+S_{ij}\left(\bm{q},i\nu_{n}\right) & =\int_{0}^{\beta}d\tau e^{i\nu_{n}\tau}S_{ij}\left(\bm{q},\tau\right)\\
+ & =-\int_{0}^{\beta}d\tau e^{i\nu_{n}\tau}\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\\
+ & =-\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}\left[\left.\frac{e^{\tau\left(i\nu_{n}+E_{n}-E_{m}\right)}}{i\nu_{n}+E_{n}-E_{m}}\right|_{0}^{\beta}\right]\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\\
+ & =-\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}\frac{e^{\beta\left(i\nu_{n}+E_{n}-E_{m}\right)}-1}{i\nu_{n}+E_{n}-E_{m}}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\\
+ & =\frac{1}{Z}\sum_{n,m}\frac{e^{-\beta E_{n}}-e^{-\beta E_{m}}}{i\nu_{n}+E_{n}-E_{m}}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparing this last equation with the formula for the response function
+ we immediately see that 
+\begin_inset Formula 
+\begin{equation}
+S_{ij}\left(\bm{q},i\nu_{n}\right)=\lim_{\omega+i\delta\rightarrow i\nu_{n}}\chi_{ij}^{R}\left(\bm{q},\omega\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Furthermore, using the Sokhotski-Plemej formula, we see that 
+\begin_inset Formula 
+\begin{align}
+\text{Im}\chi_{ij}^{R} & \equiv\chi_{ij}''\\
+ & =-\pi\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\delta\left(\omega+E_{n}-E_{m}\right)\\
+ & =-\pi\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(1-e^{-\beta\left(E_{m}-E_{n}\right)}\right)\delta\left(\omega+E_{n}-E_{m}\right)\\
+ & =-\pi\frac{\left(1-e^{-\beta\omega}\right)}{Z}\sum_{n,m}e^{-\beta E_{n}}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\delta\left(\omega+E_{n}-E_{m}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, it can be verified that 
+\begin_inset Formula 
+\begin{equation}
+\chi_{ij}^{R}\left(\bm{q},\omega\right)=\int_{-\infty}^{\infty}\frac{\chi_{ij}^{\prime\prime}\left(\bm{q},\omega'\right)}{\omega'-\left(\omega+i\delta\right)}\frac{d\omega'}{\pi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+by direct substitution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{-\infty}^{\infty}\frac{\chi_{ij}^{\prime\prime}\left(\bm{q},\omega'\right)}{\left(\omega+i\delta\right)-\omega'}\frac{d\omega'}{\pi}= & \int_{-\infty}^{\infty}\frac{-\pi\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\delta\left(\omega'+E_{n}-E_{m}\right)}{\left(\omega+i\delta\right)-\omega'}\frac{d\omega'}{\pi}\\
+ & =\frac{-\frac{1}{Z}\sum_{n,m}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\left(e^{-\beta E_{n}}-e^{-\beta E_{m}}\right)\delta\left(\omega+E_{n}-E_{m}\right)}{\left(\omega+i\delta\right)+E_{n}-E_{m}}\\
+ & =-\frac{1}{Z}\sum_{n,m}\frac{e^{-\beta E_{n}}-e^{-\beta E_{m}}}{\omega+i\delta+E_{n}-E_{m}}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{j}\left(0\right)\ket{n}\\
+ & =-\chi_{ij}^{R}\left(\bm{q},\omega\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the limit 
+\begin_inset Formula $\omega+i\delta\rightarrow i\nu_{n},$
+\end_inset
+
+ in this expression, then yields
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{ij}\left(\bm{q},i\nu_{n}\right)=\int_{-\infty}^{\infty}\frac{\chi_{ij}^{\prime\prime}\left(\bm{q},\omega'\right)}{\omega'-i\nu_{n}}\frac{d\omega'}{\pi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, tracing to both sides gives the result used in the main section.
+\end_layout
+
+\begin_layout Standard
+We also extend to the entire complex plane by doing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\chi_{ij}\left(\bm{q},\omega\right)=\int_{-\infty}^{\infty}\frac{\chi_{ij}^{\prime\prime}\left(\bm{q},\omega'\right)}{\omega'-\omega}\frac{d\omega'}{\pi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is a complex frequency.
+ We then recover the retarded response by 
+\begin_inset Formula $\chi_{ij}\left(\bm{q},\omega+i\delta\right)=\chi_{ij}^{R}\left(\bm{q},\omega\right).$
+\end_inset
+
+ Furthermore, we have that the size of the discontinuity along the branch
+ cut on the real axis in 
+\begin_inset Formula $\chi_{ij}\left(\boldsymbol{q},\omega\right)$
+\end_inset
+
+ gives the imaginary part of the retarded function
+\begin_inset Formula 
+\[
+\chi_{ij}\left(\bm{q},\omega+i\delta\right)=\chi_{ij}'\left(\bm{q},\omega\right)+i\chi_{ij}''\left(\bm{q},\omega\right)=\chi_{ij}^{R}\left(\bm{q},\omega\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi_{ij}\left(\bm{q},\omega-i\delta\right)=\chi_{ij}'\left(\bm{q},\omega\right)-i\chi_{ij}''\left(\bm{q},\omega\right)=\chi_{ij}^{A}\left(\bm{q},\omega\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that 
+\begin_inset Formula 
+\begin{align*}
+\frac{\chi_{ij}\left(\bm{q},\omega+i\delta\right)-\chi_{ij}\left(\bm{q},\omega-i\delta\right)}{2i}\\
+=\frac{\chi_{ij}^{R}\left(\bm{q},\omega\right)-\chi_{ij}^{A}\left(\bm{q},\omega\right)}{2i}\\
+=\chi_{ij}\left(\bm{q},\omega\right)\\
+=\chi_{ij}^{R\prime\prime}\left(\bm{q},\omega\right)\\
+=-\chi_{ij}^{A\prime\prime}\left(\bm{q},\omega\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We could have also used the spectral representation in terms of the structure
+ factor itself
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S\left(\bm{q},i\nu_{n}\right) & =\int_{-\infty}^{\infty}\frac{1}{1+n_{B}\left(\omega'\right)}\frac{S\left(\bm{q},\omega'\right)}{\omega'-i\nu_{n}}\frac{d\omega'}{2\pi}\\
+ & =\int_{0}^{\infty}\frac{1}{1+n_{B}\left(\omega'\right)}\frac{S\left(\bm{q},\omega'\right)}{\omega'-i\nu_{n}}\frac{d\omega'}{\pi}+\int_{0}^{\infty}\frac{1}{1+n_{B}\left(-\omega'\right)}\frac{S\left(\bm{q},-\omega'\right)}{-\omega'-i\nu_{n}}\frac{d\omega'}{2\pi}\\
+ & =\int_{0}^{\infty}\frac{1}{1+n_{B}\left(\omega'\right)}\frac{S\left(\bm{q},\omega'\right)}{\omega'-i\nu_{n}}\frac{d\omega'}{\pi}-\int_{0}^{\infty}\frac{e^{-\beta\omega'}}{n_{B}\left(\omega'\right)}\frac{S\left(\bm{q},\omega'\right)}{-\omega'-i\nu_{n}}\frac{d\omega'}{2\pi}\\
+ & =\int_{0}^{\infty}S\left(\bm{q},\omega'\right)\left(\frac{1}{1+n_{B}\left(\omega'\right)}\frac{1}{\omega'-i\nu_{n}}+\frac{e^{-\beta\omega'}}{n_{B}\left(\omega'\right)}\frac{1}{\omega'+i\nu_{n}}\right)\frac{d\omega'}{2\pi}\\
+ & =\int_{0}^{\infty}S\left(\bm{q},\omega'\right)\frac{1-e^{-\beta\omega'}}{\left(\omega'\right)^{2}+\left(\nu_{n}\right)^{2}}\omega'\frac{d\omega'}{\pi}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the end, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\left(\bm{q},i\nu_{n}\right)=\int_{0}^{\infty}S\left(\bm{q},\omega'\right)\frac{1-e^{-\beta\omega'}}{\left(\omega'\right)^{2}+\left(\nu_{n}\right)^{2}}\omega'\frac{d\omega'}{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in real frequencies, the analogous result is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S\left(\bm{q},\nu\right)=\int_{0}^{\infty}S\left(\bm{q},\omega\right)\frac{1-e^{-\beta\omega}}{\omega^{2}-\nu^{2}}\omega\frac{d\omega}{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In a more compact form, this result is expressed as 
+\begin_inset Formula 
+\[
+S\left(\bm{q},i\nu_{n}\right)=\int_{0}^{\infty}\frac{S\left(\bm{q},\omega'\right)}{1+n_{B}\left(\omega'\right)}\frac{2\omega'}{\left(\omega'\right)^{2}+\left(\nu_{n}\right)^{2}}\frac{d\omega'}{2\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Starting from 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{ii}\left(\bm{q},\tau\right)=\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{\bm{-q}}^{i}\left(0\right)\ket{n}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to prove additional identities for the complex conjugate of the
+ structure factor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{S_{ii}\left(\bm{q},\tau\right)} & =\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{m}\left(S_{\bm{q}}^{i}\right)^{\dagger}\left(0\right)\ket{n}\bra{n}\left(S_{-\bm{q}}^{i}\right)^{\dagger}\left(0\right)\ket{m}.\\
+ & =\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{m}S_{-\bm{q}}^{i}\left(0\right)\ket{n}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\\
+ & =\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{n}S_{\bm{q}}^{i}\left(0\right)\ket{m}\bra{m}S_{-\bm{q}}^{i}\left(0\right)\ket{n}\\
+ & =S_{ii}\left(\bm{q},\tau\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the inverse Fourier transform
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bm{S}_{\bm{q}}=\frac{1}{\sqrt{N}}\sum_{\bm{R}_{l}}e^{i\bm{q}\bm{R}_{l}}\bm{S}_{l}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+S_{ij}\left(\bm{q},\tau\right) & =\frac{1}{N}\sum_{l}\sum_{l'}e^{i\bm{q}\bm{R}_{l}}e^{-i\bm{q}\bm{R}_{l'}}\frac{1}{Z}\sum_{n,m}e^{-\beta E_{n}}e^{\tau\left(E_{n}-E_{m}\right)}\bra{n}S_{l}^{i}\left(0\right)\ket{m}\bra{m}S_{l'}^{j}\left(0\right)\ket{n}.\\
+ & =\frac{1}{N}\sum_{l}\sum_{l'}e^{i\bm{q}\bm{R}_{l}}e^{-i\bm{q}\bm{R}_{l'}}S_{ij}\left(\bm{R}_{l},\bm{R}_{l'},\tau\right)\\
+ & =\frac{1}{N}\sum_{l,l'}e^{i\bm{q}\left(\bm{R}_{l}-\bm{R}_{l'}\right)}S_{ij}\left(\bm{R}_{l},\bm{R}_{l'},\tau\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As such, we have 
+\begin_inset Formula $S_{ii}\left(-\bm{q},\tau\right)=\overline{S_{i}\left(\bm{q},\tau\right)}=S_{i}\left(\bm{q},\tau\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As a passing note, the inverse transform is given by 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{N}\sum_{\boldsymbol{q}}e^{-i\boldsymbol{q}\cdot\left(\boldsymbol{r}_{j}-\boldsymbol{r}_{j'}\right)}S_{ij}\left(\bm{q},\tau\right) & =\frac{1}{N}\frac{1}{N}\sum_{l,l'}\sum_{\boldsymbol{q}}e^{-i\boldsymbol{q}\cdot\left(\boldsymbol{r}_{j}-\boldsymbol{r}_{j'}\right)}e^{i\bm{q}\left(\bm{R}_{l}-\bm{R}_{l'}\right)}S_{ij}\left(\bm{R}_{l},\bm{R}_{l'},\tau\right)\\
+ & =\frac{1}{N}\sum_{l,l'}\delta\left(\bm{R}_{l}-\bm{R}_{l'}-\boldsymbol{r}_{j}+\boldsymbol{r}_{j'}\right)S_{ij}\left(\bm{R}_{l},\bm{R}_{l'},\tau\right)\\
+ & =\frac{1}{N}\sum_{l}S_{ij}\left(\bm{R}_{l},\bm{R}_{l}-\boldsymbol{r}_{j}+\boldsymbol{r}_{j'},\tau\right)\\
+ & =\frac{1}{N}\sum_{l}S_{ij}\left(0,-\boldsymbol{r}_{j}+\boldsymbol{r}_{j'},\tau\right)\\
+ & =\frac{1}{N}\sum_{l}S_{ij}\left(\boldsymbol{r}_{j},\boldsymbol{r}_{j'},\tau\right)\\
+ & =S\left(\boldsymbol{r}_{j},\boldsymbol{r}_{j'},\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

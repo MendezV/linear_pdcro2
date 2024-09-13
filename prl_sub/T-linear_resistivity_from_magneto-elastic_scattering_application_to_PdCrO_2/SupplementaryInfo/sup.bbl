@@ -1,0 +1,176 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{9}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Sunko}\ \emph {et~al.}(2020)\citenamefont {Sunko},
+  \citenamefont {Mazzola}, \citenamefont {Kitamura}, \citenamefont {Khim},
+  \citenamefont {Kushwaha}, \citenamefont {Clark}, \citenamefont {Watson},
+  \citenamefont {Marković}, \citenamefont {Biswas}, \citenamefont
+  {Pourovskii}, \citenamefont {Kim}, \citenamefont {Lee}, \citenamefont
+  {Thakur}, \citenamefont {Rosner}, \citenamefont {Georges}, \citenamefont
+  {Moessner}, \citenamefont {Oka}, \citenamefont {Mackenzie},\ and\
+  \citenamefont {King}}]{sunko_probing_2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Sunko}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Mazzola}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kitamura}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Khim}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Kushwaha}}, \bibinfo {author}
+  {\bibfnamefont {O.~J.}\ \bibnamefont {Clark}}, \bibinfo {author}
+  {\bibfnamefont {M.~D.}\ \bibnamefont {Watson}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Marković}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Biswas}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Pourovskii}}, \bibinfo {author} {\bibfnamefont {T.~K.}\
+  \bibnamefont {Kim}}, \bibinfo {author} {\bibfnamefont {T.-L.}\ \bibnamefont
+  {Lee}}, \bibinfo {author} {\bibfnamefont {P.~K.}\ \bibnamefont {Thakur}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Rosner}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Georges}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Moessner}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Oka}}, \bibinfo {author} {\bibfnamefont
+  {A.~P.}\ \bibnamefont {Mackenzie}},\ and\ \bibinfo {author} {\bibfnamefont
+  {P.~D.~C.}\ \bibnamefont {King}},\ }\bibfield  {title} {\bibinfo {title}
+  {Probing spin correlations using angle-resolved photoemission in a coupled
+  metallic/{Mott} insulator system},\ }\href
+  {https://doi.org/10.1126/sciadv.aaz0611} {\bibfield  {journal} {\bibinfo
+  {journal} {Science Advances}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo
+  {pages} {eaaz0611} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ziman}(1960)}]{Ziman_2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Ziman}},\ }\bibfield  {title} {\bibinfo {title} {{Electrons and Phonons: The
+  Theory of }\newline {Transport Phenomena in Solids}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Oxford University Press}\ }
+  (\bibinfo {year} {1960})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McRoberts}\ \emph {et~al.}(2023)\citenamefont
+  {McRoberts}, \citenamefont {Mendez-Valderrama}, \citenamefont {Moessner},\
+  and\ \citenamefont {Chowdhury}}]{mcroberts2022intermediatescale}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {McRoberts}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Mendez-Valderrama}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Moessner}},\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Chowdhury}},\ }\bibfield  {title} {\bibinfo {title} {Intermediate-scale
+  theory for electrons coupled to frustrated local moments},\ }\href
+  {https://doi.org/10.1103/PhysRevB.107.L020402} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {107}},\
+  \bibinfo {pages} {L020402} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sunko}(2019)}]{sunko_angle_2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Sunko}},\ }\href {https://doi.org/10.1007/978-3-030-31087-5}
+  {{\selectlanguage {english}\bibinfo {title} {Angle {Resolved} {Photoemission}
+  {Spectroscopy} of {Delafossite} {Metals}}}} (\bibinfo {year}
+  {2019})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bruin}\ \emph {et~al.}(2013)\citenamefont {Bruin},
+  \citenamefont {Sakai}, \citenamefont {Perry},\ and\ \citenamefont
+  {Mackenzie}}]{bruin_similarity_2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.~N.}\
+  \bibnamefont {Bruin}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Sakai}}, \bibinfo {author} {\bibfnamefont {R.~S.}\ \bibnamefont {Perry}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont {Mackenzie}},\
+  }\bibfield  {title} {{\selectlanguage {english}\bibinfo {title} {Similarity
+  of {Scattering} {Rates} in {Metals} {Showing} {T}-{Linear} {Resistivity}}},\
+  }\href {https://doi.org/10.1126/science.1227612} {\bibfield  {journal}
+  {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo {volume} {339}},\ \bibinfo
+  {pages} {804} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hicks}\ \emph {et~al.}(2012)\citenamefont {Hicks},
+  \citenamefont {Gibbs}, \citenamefont {Mackenzie}, \citenamefont {Takatsu},
+  \citenamefont {Maeno},\ and\ \citenamefont {Yelland}}]{Hicks_mobility_2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Hicks}}, \bibinfo {author} {\bibfnamefont {A.~S.}\ \bibnamefont {Gibbs}},
+  \bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont {Mackenzie}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Takatsu}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Maeno}},\ and\ \bibinfo {author}
+  {\bibfnamefont {E.~A.}\ \bibnamefont {Yelland}},\ }\bibfield  {title}
+  {\bibinfo {title} {Quantum oscillations and high carrier mobility in the
+  delafossite {PdCoO}$_{2}$},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.109.116401} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {109}},\
+  \bibinfo {pages} {116401} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Takatsu}\ \emph {et~al.}(2007)\citenamefont
+  {Takatsu}, \citenamefont {Yonezawa}, \citenamefont {Mouri}, \citenamefont
+  {Nakatsuji}, \citenamefont {Tanaka},\ and\ \citenamefont
+  {Maeno}}]{roles_highfreq_pdcoo2_takatsu_2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Takatsu}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Yonezawa}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Mouri}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Nakatsuji}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Tanaka}},\ and\ \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Maeno}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Roles of High-Frequency Optical Phonons in the Physical Properties
+  of the Conductive Delafossite {Pd}{Co}{O}$_2$}},\ }\href
+  {https://doi.org/10.1143/JPSJ.76.104701} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of the Physical Society of Japan}\ }\textbf {\bibinfo
+  {volume} {76}},\ \bibinfo {pages} {104701} (\bibinfo {year} {2007})},\
+  \Eprint {https://arxiv.org/abs/https://doi.org/10.1143/JPSJ.76.104701}
+  {https://doi.org/10.1143/JPSJ.76.104701} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Allen}\ and\ \citenamefont
+  {Schulz}(1993)}]{Allen1993}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~B.}\ \bibnamefont
+  {Allen}}\ and\ \bibinfo {author} {\bibfnamefont {W.~W.}\ \bibnamefont
+  {Schulz}},\ }\bibfield  {title} {\bibinfo {title} {Bloch-boltzmann analysis
+  of electrical transport in intermetallic compounds: {ReO}$_{3}$,
+  {BaPbO}$_{3}$, {CoSi}$_{2}$, and {Pd}$_{2}${Si}},\ }\href
+  {https://doi.org/10.1103/PhysRevB.47.14434} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {47}},\ \bibinfo
+  {pages} {14434} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sadovskii}(2019)}]{sadovskii_diagrammatics_2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~V.}\ \bibnamefont
+  {Sadovskii}},\ }\href {https://doi.org/10.1142/11605} {{\selectlanguage
+  {english}\bibinfo {title} {Diagrammatics: {Lectures} on {Selected} {Problems}
+  in {Condensed} {Matter} {Theory}}}} (\bibinfo {year} {2019})\BibitemShut
+  {NoStop}%
+\end{thebibliography}%

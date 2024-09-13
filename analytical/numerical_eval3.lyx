@@ -1,0 +1,608 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The interaction Hamiltonian that we consider is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{\text{int}}=\frac{1}{\sqrt{N}}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}\lambda\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{\boldsymbol{k}-\boldsymbol{k}'}p_{\boldsymbol{k}\alpha}^{\dagger}p_{\boldsymbol{k}'\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\begin{align}
+\lambda\left(\boldsymbol{k},\boldsymbol{k}'\right) & =g\lambda u\left(\boldsymbol{k}\right)u\left(\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in the aligned layer case, we have 
+\begin_inset Formula 
+\[
+\lambda\left(\boldsymbol{k},\boldsymbol{k}'\right)=g\lambda\left[2\cos\left(k_{z}a_{z}\right)\right]\left[2\cos\left(k_{z}'a_{z}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the current is then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{J}_{N}^{1}\left(\omega_{n}\right)=\frac{1}{\sqrt{N\beta}}\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\alpha\beta\\
+i\nu_{l},i\nu_{n}
+\end{array}}\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)X_{\boldsymbol{k}-\boldsymbol{k}'}\left(i\nu_{l}-i\nu_{n}\right)p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our starting point is the expression for both conductivity channes in the
+ out-of-plane direction 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{\hbar e^{2}}{VN}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{\alpha}\left(\boldsymbol{p}+\boldsymbol{q},\boldsymbol{q}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\boldsymbol{p}-\boldsymbol{q},\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+hbar comes from the 
+\begin_inset Formula $1/\omega$
+\end_inset
+
+ limit for the conductivity, where the denomiator has to be an actual frequency
+ 
+\end_layout
+
+\begin_layout Standard
+with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\frac{4g^{2}\lambda}{U}\left(\frac{2a_{z}}{\hbar}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we will consider the easy cases first.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{\hbar e^{2}}{VN}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}\chi''\left(\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we integrate the spectral functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{11}^{\alpha} & =\frac{\hbar e^{2}}{VN}V^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\int\frac{d^{2}\boldsymbol{q}}{\left(2\pi\right)^{2}}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{1}{V_{uc}}\frac{\hbar e^{2}}{N^{2}}V^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\int\frac{d^{2}\boldsymbol{q}}{\left(2\pi\right)^{2}}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{1}{V_{uc}}\frac{\hbar e^{2}}{N_{apl}^{2}N_{L}^{2}}A^{2}L^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\int\frac{d^{2}\boldsymbol{q}}{\left(2\pi\right)^{2}}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)A\left(\boldsymbol{p},z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]A\left(\boldsymbol{q},\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{1}{V_{uc}}\frac{\hbar e^{2}}{N_{L}^{2}}L^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{1}{V_{uc}}\hbar e^{2}\left(2a_{z}\right)^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{1}{2a_{z}a_{pl}^{2}}\hbar e^{2}\left(2a_{z}\right)^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\frac{2a_{z}}{a_{pl}^{2}}\hbar e^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which results in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\frac{2a_{z}}{a_{pl}^{2}}\hbar e^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\left[\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\right]\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we evaluate 
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2} & =\frac{1}{\hbar^{2}}\left[\frac{4g^{2}\lambda}{U}\left(2a_{z}\right)\right]^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\\
+ & =\frac{1}{\hbar^{2}}\left[\frac{4g^{2}\lambda}{U}\left(2a_{z}\right)\right]^{2}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\frac{1-\cos\left(p_{z}a_{z}+q_{z}a_{z}\right)}{2}\\
+ & =\frac{1}{\hbar^{2}}\left[\frac{4g^{2}\lambda}{U}\left(2a_{z}\right)\right]^{2}\frac{1}{2\pi}\frac{1}{2\pi}\frac{2\pi}{a_{z}}\frac{2\pi}{a_{z}}\frac{1}{2}\\
+ & =2\left[\frac{4g^{2}\lambda}{U}\right]^{2}\frac{1}{\hbar^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)2\left[\frac{4g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}B\left(\epsilon-z\right)\rho\left(z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+changing variables
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)2\left[\frac{4g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}B\left(z\right)\rho\left(\epsilon-z\right)\left(n_{B}\left(z\right)+n_{F}\left(z-\epsilon\right)\right)\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+More explicitly
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)2\left[\frac{4g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\int\frac{dz}{\pi}\rho\left(\epsilon-z\right)B\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z-\epsilon\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+replacing the spectral function by its actual value
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)2\left[\frac{4g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\int\frac{dz}{\pi}\rho\left(\epsilon-z\right)B\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z-\epsilon\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\left(z\right)=\frac{\pi\hbar}{2M\omega_{0}}\left(\delta\left(z-\omega_{0}\right)-\delta\left(\nu+\omega_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left(\frac{2a_{z}}{a_{pl}^{2}}\frac{e^{2}}{\hbar}\right)2\left[\frac{4g^{2}}{U}\right]^{2}\int\frac{d\epsilon}{\pi}\rho\left(\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\int\frac{dz}{\pi}\rho\left(\epsilon-z\right)B\left(z\right)\left(n_{B}\left(z\right)+n_{F}\left(z-\epsilon\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $A\left(\boldsymbol{k},\omega\right)$
+\end_inset
+
+ integration 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+A\left(\boldsymbol{p},\epsilon\right) & =V_{uc}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\frac{\gamma_{p_{z}}}{\left(\epsilon-\varepsilon_{\boldsymbol{p}}\right)^{2}+\gamma_{p_{z}}^{2}}\\
+ & =\int d\omega\delta\left(\omega-\varepsilon_{\boldsymbol{p}}\right)V_{uc}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\frac{\gamma_{p_{z}}}{\left(\epsilon-\varepsilon_{\boldsymbol{p}}\right)^{2}+\gamma_{p_{z}}^{2}}\\
+ & =\int d\omega\int\frac{\gamma_{p_{z}}}{\left(\epsilon-\omega\right)^{2}+\gamma_{p_{z}}^{2}}V_{uc}\int\frac{d^{2}\boldsymbol{p}}{\left(2\pi\right)^{2}}\delta\left(\omega-\varepsilon_{\boldsymbol{p}}\right)\\
+ & =\int d\omega\frac{\gamma_{p_{z}}}{\left(\epsilon-\omega\right)^{2}+\gamma_{p_{z}}^{2}}\rho\left(\omega\right)\\
+ & =\int d\omega\frac{\gamma_{p_{z}}}{\omega^{2}+\gamma_{p_{z}}^{2}}\rho\left(\omega+\epsilon\right)\\
+ & \sim\rho\left(\epsilon\right)\int d\omega\frac{\gamma_{p_{z}}}{\omega^{2}+\gamma_{p_{z}}^{2}}\\
+ & =\pi\rho\left(\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we had 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\gamma_{k_{z}}=\frac{1}{\tau_{k_{z}}} & =\frac{1}{\tau_{ME,k_{z}}}+\frac{1}{\tau_{ME,k_{z}}}\\
+ & =\frac{1}{\tau_{K,k_{z}}}\left(1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\\
+ & =4\pi\kappa\alpha\nu_{0}\left(\frac{8g^{2}}{U}\right)^{2}\cos^{2}\left(k_{z}a_{z}\right)\left(1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)\\
+ & =\gamma_{0}\cos^{2}\left(k_{z}a_{z}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the definition
+\begin_inset Formula 
+\[
+\gamma_{0}=4\pi\kappa\alpha\nu_{0}\left(\frac{8g^{2}}{U}\right)^{2}\left(1+2\frac{k_{b}T}{\omega_{0}}\frac{\hbar\lambda^{2}}{M\omega_{0}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we kept the 
+\begin_inset Formula $\omega$
+\end_inset
+
+ dependence in the density of states, we would have instead 
+\begin_inset Formula 
+\[
+A\left(\boldsymbol{p},\epsilon\right)=\int d\omega\frac{\gamma_{0}\cos^{2}\left(k_{z}a_{z}\right)}{\omega^{2}+\gamma_{0}^{2}\cos^{4}\left(k_{z}a_{z}\right)}\rho\left(\omega+\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma_{11}^{\alpha} & =\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\left|f^{Z}\left(p_{z},q_{z}\right)\right|^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\int d\omega\int d\omega'\ \frac{\gamma_{0}\cos^{2}\left(q_{z}a_{z}\right)}{\omega^{2}+\gamma_{0}^{2}\cos^{4}\left(q_{z}a_{z}\right)}\frac{\gamma_{0}\cos^{2}\left(p_{z}a_{z}\right)}{\omega^{\prime2}+\gamma_{0}^{2}\cos^{4}\left(p_{z}a_{z}\right)}\ \chi''\left(\epsilon-z\right)\rho\left(\omega'+z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\rho\left(\omega+\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)\\
+ & =\left[\frac{4g^{2}}{U}\left(2a_{z}\right)\right]^{2}\int\frac{d\epsilon}{\pi}\int\frac{dz}{\pi}\int d\omega\int d\omega'\left[\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\ \frac{\gamma_{0}\cos^{2}\left(q_{z}a_{z}\right)}{\omega^{2}+\gamma_{0}^{2}\cos^{4}\left(q_{z}a_{z}\right)}\frac{\gamma_{0}\cos^{2}\left(p_{z}a_{z}\right)}{\omega^{\prime2}+\gamma_{0}^{2}\cos^{4}\left(p_{z}a_{z}\right)}\right]\ \chi''\left(\epsilon-z\right)\rho\left(\omega'+z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\rho\left(\omega+\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Focusing on the momentum integral we have 
+\begin_inset Formula 
+\begin{align*}
+\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\ \frac{\gamma_{0}\cos^{2}\left(q_{z}a_{z}\right)}{\omega^{2}+\gamma_{0}^{2}\cos^{4}\left(q_{z}a_{z}\right)}\frac{\gamma_{0}\cos^{2}\left(p_{z}a_{z}\right)}{\omega^{\prime2}+\gamma_{0}^{2}\cos^{4}\left(p_{z}a_{z}\right)}\\
+\frac{1}{\gamma_{0}^{2}}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\ \frac{\cos^{2}\left(q_{z}a_{z}\right)}{\frac{\omega^{2}}{\gamma_{0}^{2}}+\cos^{4}\left(q_{z}a_{z}\right)}\frac{\cos^{2}\left(p_{z}a_{z}\right)}{\frac{\omega^{\prime2}}{\gamma_{0}^{2}}+\cos^{4}\left(p_{z}a_{z}\right)}\\
+=\pi^{2}f\left(\omega,\omega';\gamma_{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{11}^{\alpha}=\left[\frac{4g^{2}}{U}\left(2a_{z}\right)\right]^{2}\int d\epsilon dzd\omega d\omega'\ f\left(\omega,\omega';\gamma_{0}\right)\chi''\left(\epsilon-z\right)\rho\left(\omega'+z\right)\left(n_{B}\left(\epsilon-z\right)+n_{F}\left(-z\right)\right)\rho\left(\omega+\epsilon\right)\left(-\frac{\partial n_{F}\left(\epsilon\right)}{\partial\epsilon}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kernel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+f\left(\omega,\omega';\gamma_{0}\right)=\frac{1}{\pi^{2}\gamma_{0}^{2}}\int\frac{dp_{z}}{2\pi}\frac{dq_{z}}{2\pi}\sin\left(p_{z}a_{z}+q_{z}a_{z}\right)^{2}\ \frac{\cos^{2}\left(q_{z}a_{z}\right)}{\frac{\omega^{2}}{\gamma_{0}^{2}}+\cos^{4}\left(q_{z}a_{z}\right)}\frac{\cos^{2}\left(p_{z}a_{z}\right)}{\frac{\omega^{\prime2}}{\gamma_{0}^{2}}+\cos^{4}\left(p_{z}a_{z}\right)}\\
+=\frac{1}{4\pi^{4}\gamma_{0}^{2}}\frac{1}{a_{z}^{2}}\int dpdq\ \sin\left(p+q\right)^{2}\ \frac{\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\frac{\cos^{2}\left(p\right)}{\nu^{\prime2}+\cos^{4}\left(p\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined 
+\begin_inset Formula 
+\[
+\frac{\omega^{2}}{\gamma_{0}^{2}}=\nu^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nu^{\prime2}=\frac{\omega^{\prime2}}{\gamma_{0}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we calculate 
+\begin_inset Formula 
+\[
+\int dpdq\ \sin\left(p+q\right)^{2}\ \frac{\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\frac{\cos^{2}\left(p\right)}{\nu^{\prime2}+\cos^{4}\left(p\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expanding the 
+\begin_inset Formula $sin$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int dpdq\ \left(\sin\left(q\right)\cos\left(p\right)+\cos\left(q\right)\sin\left(p\right)\right)^{2}\ \frac{\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\frac{\cos^{2}\left(p\right)}{\nu^{\prime2}+\cos^{4}\left(p\right)}\\
+\int dpdq\ \left(\sin^{2}\left(q\right)\cos^{2}\left(p\right)+2\sin\left(q\right)\cos\left(p\right)\cos\left(q\right)\sin\left(p\right)+\cos^{2}\left(q\right)\sin^{2}\left(p\right)\right)\ \frac{\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\frac{\cos^{2}\left(p\right)}{\nu^{\prime2}+\cos^{4}\left(p\right)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are three integrals that we need to solve 
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}dq\frac{\sin^{2}\left(q\right)\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}=2\int_{0}^{\pi}dq\frac{\sin^{2}\left(q\right)\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}dq\frac{\cos^{4}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}=2\int_{0}^{\pi}dq\frac{\cos^{4}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}dq\frac{\sin\left(q\right)\cos^{3}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first integral, we have 
+\begin_inset Formula 
+\begin{align*}
+2\int_{0}^{\pi}dq\frac{\sin^{2}\left(q\right)\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)} & =-2\int_{1}^{-1}dq\frac{\sqrt{1-q^{2}}q^{2}}{\nu^{2}+q^{4}}\\
+ & =2\int_{-1}^{1}dq\frac{\sqrt{1-q^{2}}q^{2}}{\nu^{2}+q^{4}}\\
+ & =\sqrt{2}\pi\sqrt{\sqrt{\frac{1}{\nu^{2}}+1}+1}-2\pi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+2\int_{0}^{\pi}dq\frac{\cos^{4}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)} & =2\int_{0}^{\pi}dq\frac{\sin\left(q\right)}{\sin\left(q\right)}\frac{\cos^{4}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\\
+ & =-2\int_{1}^{-1}dq\frac{1}{\sqrt{1-q^{2}}}\frac{q^{4}}{\nu^{2}+q^{4}}\\
+ & =2\int_{-1}^{1}dq\frac{1}{\sqrt{1-q^{2}}}\frac{q^{4}}{\nu^{2}+q^{4}}\\
+ & =2\int_{-1}^{1}dq\frac{1}{\sqrt{1-q^{2}}}\frac{q^{4}}{\nu^{2}+q^{4}}\\
+ & =\left(2\pi-\sqrt{2}\pi\sqrt{\frac{1}{\sqrt{\frac{1}{\nu^{2}}+1}}+\frac{1}{\frac{1}{\nu^{2}}+1}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, we have 
+\begin_inset Formula 
+\begin{align*}
+\int dpdq\ \sin\left(p+q\right)^{2}\ \frac{\cos^{2}\left(q\right)}{\nu^{2}+\cos^{4}\left(q\right)}\frac{\cos^{2}\left(p\right)}{\nu^{\prime2}+\cos^{4}\left(p\right)}\\
+=\left(2\pi-\sqrt{2}\pi\sqrt{\frac{1}{\sqrt{\frac{1}{\nu^{2}}+1}}+\frac{1}{\frac{1}{\nu^{2}}+1}}\right)\left(\sqrt{2}\pi\sqrt{\sqrt{\frac{1}{\nu^{\prime2}}+1}+1}-2\pi\right)+\left(2\pi-\sqrt{2}\pi\sqrt{\frac{1}{\sqrt{\frac{1}{\nu^{\prime2}}+1}}+\frac{1}{\frac{1}{\nu^{\prime2}}+1}}\right)\left(\sqrt{2}\pi\sqrt{\sqrt{\frac{1}{\nu^{2}}+1}+1}-2\pi\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, the kernel takes the form
+\begin_inset Formula 
+\begin{align*}
+f\left(\omega,\omega';\gamma_{0}\right) & =\frac{1}{4\pi^{4}\gamma_{0}^{2}}\frac{1}{a_{z}^{2}}\left[\left(2\pi-\sqrt{2}\pi\sqrt{\frac{1}{\sqrt{\frac{1}{\nu^{2}}+1}}+\frac{1}{\frac{1}{\nu^{2}}+1}}\right)\left(\sqrt{2}\pi\sqrt{\sqrt{\frac{1}{\nu^{\prime2}}+1}+1}-2\pi\right)+\nu\leftrightarrow\nu'\right]\\
+\\
+ & =\frac{1}{\pi^{2}\gamma_{0}^{2}}\frac{1}{a_{z}^{2}}\left[\left(1-\sqrt{\frac{1}{2}\frac{1}{\sqrt{\frac{1}{\nu^{2}}+1}}+\frac{1}{2}\frac{1}{\frac{1}{\nu^{2}}+1}}\right)\left(\sqrt{\frac{1}{2}\sqrt{\frac{1}{\nu^{\prime2}}+1}+\frac{1}{2}}-1\right)+\nu\leftrightarrow\nu'\right]\\
+\\
+ & =\frac{1}{\pi^{2}\gamma_{0}^{2}}\frac{1}{a_{z}^{2}}\left[\left(1-\sqrt{\frac{1}{2}\frac{1}{\sqrt{\frac{\gamma_{0}^{2}}{\omega^{2}}+1}}+\frac{1}{2}\frac{1}{\frac{\gamma_{0}^{2}}{\omega^{2}}+1}}\right)\left(\sqrt{\frac{1}{2}\sqrt{\frac{\gamma_{0}^{2}}{\omega^{\prime2}}+1}+\frac{1}{2}}-1\right)+\omega\leftrightarrow\omega'\right]\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is well approximated by 
+\begin_inset Formula 
+\begin{align*}
+f\left(\omega,\omega';\gamma_{0}\right) & =\frac{1}{\pi^{2}\gamma_{0}^{2}}\frac{1}{a_{z}^{2}}\left[2\pi^{2}\gamma_{0}^{2}\delta\left(\omega\right)\delta\left(\omega'\right)\right]\\
+ & =\frac{2}{a_{z}^{2}}\delta\left(\omega\right)\delta\left(\omega'\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

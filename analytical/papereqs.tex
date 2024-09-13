@@ -1,0 +1,36 @@
+%% LyX 2.3.6.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{babel}
+\begin{document}
+\title{Paper equations}
+
+\maketitle
+For the current operators we have 
+
+\[
+\bm{J}_{N}^{0}=-i\sum_{ij\sigma}t_{ij}\left(\bm{r}_{i}-\bm{r}_{j}\right)p_{i\sigma}^{\dagger}p_{j\sigma}
+\]
+
+\[
+\bm{J}_{N}^{1}=-i\sum_{ilj\beta\alpha}\frac{2g_{il}g_{jl}}{U}\left(\bm{r}_{i}-\bm{r}_{j}\right)p_{i\alpha}^{\dagger}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)p_{j\beta}
+\]
+
+\[
+\bm{J}_{N}^{2}=i\sum_{ilj\beta\alpha}\frac{2\lambda g_{il}g_{jl}}{U}\left(X_{il}+X_{jl}\right)\left(\bm{r}_{i}-\bm{r}_{j}\right)p_{i\alpha}^{\dagger}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)p_{j\beta}
+\]
+
+\begin{align*}
+\bm{J}_{N}^{2} & =i\sum_{ilj\beta\alpha}\frac{2\lambda g_{jl}g_{il}}{U}\left(X_{il}\right)\left(\bm{r}_{j}-\bm{r}_{i}\right)p_{j\alpha}^{\dagger}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)p_{i\beta}\\
+ & =-i\sum_{ilj\beta\alpha}\frac{2\lambda g_{il}g_{jl}}{U}\left(X_{il}\right)\left(\bm{r}_{i}-\bm{r}_{j}\right)p_{j\alpha}^{\dagger}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)p_{i\beta}
+\end{align*}
+
+\[
+\bm{J}_{N}^{2}=i\sum_{ilj\beta\alpha}\frac{2\lambda g_{il}g_{jl}}{U}\left(\bm{r}_{i}-\bm{r}_{j}\right)X_{il}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)\left(p_{i\alpha}^{\dagger}p_{j\beta}-p_{j\alpha}^{\dagger}p_{i\beta}\right)
+\]
+
+\end{document}

@@ -1,0 +1,394 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+As detailed in the main text, the starting point of the resistivity calculation
+ is the variational Boltzmann approach justified by the long mean free path
+ 
+\begin_inset Formula $k_{F}\ell$
+\end_inset
+
+.
+ Within this approach the transport lifetime can estimated by 
+\begin_inset Formula 
+\begin{equation}
+\rho\leq\frac{\frac{V}{2kT}\sum_{\boldsymbol{q}\boldsymbol{p}}P_{\boldsymbol{p}\boldsymbol{q}}\left(\psi_{\boldsymbol{q}}-\psi_{\boldsymbol{p}}\right)^{2}}{\left|\sum_{\boldsymbol{q}}e\frac{\partial f}{\partial\epsilon_{\boldsymbol{q}}}\psi_{\boldsymbol{q}}\boldsymbol{v}\left(\boldsymbol{q}\right)\cdot\boldsymbol{n}\right|^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $\psi_{\boldsymbol{q}}$
+\end_inset
+
+ a variational anzatz, 
+\begin_inset Formula $P_{\boldsymbol{p}\boldsymbol{q}}$
+\end_inset
+
+ the transition probaility from different momentum states,
+\begin_inset Formula $V$
+\end_inset
+
+ the volume, 
+\begin_inset Formula $\boldsymbol{n}$
+\end_inset
+
+ is the direction of the electric field 
+\begin_inset Formula $\boldsymbol{E}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ the fermi-dirac distribution, 
+\begin_inset Formula $e$
+\end_inset
+
+ the electron charge , 
+\begin_inset Formula $\boldsymbol{v}\left(\boldsymbol{q}\right)=\partial_{\boldsymbol{q}}\epsilon_{\boldsymbol{q}},$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{\boldsymbol{q}}$
+\end_inset
+
+ the dispersion.
+ Using the ansatz 
+\begin_inset Formula $\psi_{\boldsymbol{q}}=-e\boldsymbol{v}_{\boldsymbol{q}}\cdot\boldsymbol{E}\tau_{\text{tr}}$
+\end_inset
+
+ we recover the drude formula with the momentum relaxation time
+\begin_inset Formula 
+\[
+\tau_{\text{tr}}^{-1}=\frac{\frac{1}{kT}\sum_{\boldsymbol{q}\boldsymbol{p}}P_{\boldsymbol{p}\boldsymbol{q}}\left(\boldsymbol{v}\left(\boldsymbol{q}\right)\cdot\boldsymbol{n}-\boldsymbol{v}\left(\boldsymbol{q}\right)\cdot\boldsymbol{n}\right)^{2}}{\sum_{\boldsymbol{q}}2\left(-\frac{\partial f}{\partial\epsilon_{\boldsymbol{q}}}\right)\left(\boldsymbol{v}\left(\boldsymbol{q}\right)\cdot\boldsymbol{n}\right)^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assuming Mathiessen's rule holds, we have 
+\begin_inset Formula 
+\begin{equation}
+\tau_{\text{tr}}^{-1}=\tau_{\text{tr},K}^{-1}+\tau_{\text{tr},EME}^{-1}+\tau_{\text{tr},ep}^{-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where each individual scattering rate is determined by the transition probabilit
+ies 
+\begin_inset Formula 
+\begin{equation}
+P_{\boldsymbol{p}\boldsymbol{q}}^{K}=kT\frac{2\pi}{\hbar}\left(-\frac{\partial f_{\boldsymbol{p}}}{\partial\epsilon_{\boldsymbol{p}}}\right)\left|J_{K}\left(\boldsymbol{p},\boldsymbol{q}\right)\right|^{2}\chi''\left(\boldsymbol{p}-\boldsymbol{q},\varepsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{q}}\right)\left(n_{B}\left(\varepsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{q}}\right)+n_{F}\left(-\epsilon_{\boldsymbol{q}}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{\boldsymbol{k}\boldsymbol{p}}^{EME}=kT\left(-\frac{\partial f}{\partial\epsilon_{\boldsymbol{p}}}\right)\left|\tilde{\alpha}\left(\boldsymbol{p},\boldsymbol{q}\right)\right|^{2}\sum_{\boldsymbol{k}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{k}+\boldsymbol{p}-\boldsymbol{q},\epsilon_{\boldsymbol{p}}-\nu\right)\mathcal{B}\left(\boldsymbol{k},\nu-\varepsilon_{\boldsymbol{q}}\right)\left[n_{B}\left(\epsilon_{\boldsymbol{p}}-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{B}\left(\nu-\varepsilon_{\boldsymbol{q}}\right)+n_{F}\left(-\varepsilon_{\boldsymbol{q}}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{\boldsymbol{p}\boldsymbol{q}}^{ep}=kT\frac{2\pi}{\hbar}\left(-\frac{\partial f_{\boldsymbol{p}}}{\partial\epsilon_{\boldsymbol{p}}}\right)\left|\alpha\left(\boldsymbol{p},\boldsymbol{q}\right)\right|^{2}\mathcal{B}\left(\boldsymbol{p}-\boldsymbol{q},\varepsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{q}}\right)\left(n_{B}\left(\varepsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{q}}\right)+f\left(-\epsilon_{\boldsymbol{q}}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\chi''\left(\boldsymbol{p},\omega\right)$
+\end_inset
+
+ is the spin susceptibility and 
+\begin_inset Formula $\mathcal{B}\left(\boldsymbol{k},\nu\right)$
+\end_inset
+
+ is the phonon spectral function.
+ We also reintroduced the momentum dependence in all the couplings.
+ In the case where the magnetic and itinerant electron layers are perfectly
+ aligned we have 
+\begin_inset Formula 
+\begin{equation}
+J_{K}\left(\boldsymbol{p},\boldsymbol{q}\right)=J_{K}\left[2\cos\left(p_{z}a_{z}\right)\right]\left[2\cos\left(q_{z}a_{z}\right)\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{\alpha}\left(\boldsymbol{p},\boldsymbol{q}\right)=\tilde{\alpha}\left[2\cos\left(p_{z}a_{z}\right)\right]\left[2\cos\left(q_{z}a_{z}\right)\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha\left(\boldsymbol{p},\boldsymbol{q}\right)=\alpha\left[2\cos\left(p_{z}a_{z}\right)\right]\left[2\cos\left(q_{z}a_{z}\right)\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the c axis resistivity we also consider the dispersion 
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{\boldsymbol{k}}=\varepsilon_{\boldsymbol{k}}-2t_{\perp}\cos\left(k_{z}a_{z}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\varepsilon_{\boldsymbol{k}}$
+\end_inset
+
+ is the purely 2d dispersion considered in the main text.
+ Additonally we consider the local approximation for 
+\begin_inset Formula 
+\begin{equation}
+\chi''\left(\nu\right)=\kappa\nu\frac{\theta\left(\alpha\pi J_{H}-\left|\nu\right|\right)}{J_{H}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the sum rule constraint 
+\begin_inset Formula 
+\begin{equation}
+\int\frac{\chi''\left(\nu\right)}{\nu}d\nu=2\pi S\left(S+1\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Focusing now on the case of optical phonons
+\begin_inset Formula 
+\begin{equation}
+\mathcal{B}\left(\boldsymbol{k},\nu\right)=\frac{\pi\hbar}{2M\omega_{0}}\left(\delta\left(\nu-\omega_{0}\right)-\delta\left(\nu+\omega_{0}\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can then calculate the transport time for the coherent conductivity channel.
+ The integrals above can then be evaluated analytically and the resistivity
+ becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\rho_{\perp} & =\frac{\hbar}{e^{2}}\frac{a_{xy}^{2}}{a_{z}}\left(\frac{1}{2\nu_{0}\left(2t_{\perp}\right)^{2}}\right)\left[2\pi\lambda_{K}J_{K}\mathcal{I}\left(\alpha\pi\beta J\right)+2\pi\frac{\lambda_{tr,ME}}{\beta}\mathcal{M}\left(\alpha\pi\beta J,\beta\omega_{0}\right)+2\pi\frac{\lambda_{tr,E}}{\beta}\mathcal{K}\left(\beta\omega_{0}\right)\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With where the functions above Explicitly we have the definitions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{I}\left(y\right) & =-\frac{4\text{Li}_{2}\left(e^{-y}\right)}{y}-\frac{2y}{e^{y}-1}-4y+\frac{2\pi^{2}}{3y}+4\log\left(e^{y}-1\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{K}\left(x\right)=\left[\frac{x}{2}\text{csch}\left(\frac{x}{2}\right)\right]^{2},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{M}\left(y,z\right)=\frac{z^{2}}{\cosh\left(z\right)-1}\mathcal{J}\left(y,z\right),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{J}\left(y,z\right) & =\frac{-2z\text{Li}_{2}\left(e^{-y}\right)+\left(2y+z\right)\text{Li}_{2}\left(e^{-y-z}\right)+\left(z-2y\right)\text{Li}_{2}\left(e^{z-y}\right)+2\text{Li}_{3}\left(e^{-y-z}\right)-2\text{Li}_{3}\left(e^{z-y}\right)}{2yz}\\
+ & +\frac{z^{2}}{12y}-\frac{1}{2}\log\left(\left(e^{y}-e^{z}\right)\left(e^{y+z}-1\right)\right)+\frac{y\log\left(\sinh\left(\frac{y-z}{2}\right)\text{csch}\left(\frac{y+z}{2}\right)\right)}{2z}+\frac{y}{2}+\frac{\pi^{2}}{3y}+\log\left(e^{y}-1\right)+\frac{z}{2}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These functions have the following high temperature limits
+\begin_inset Formula 
+\begin{equation}
+\lim_{T\rightarrow\infty}\mathcal{M}\left(\alpha\pi\beta J,\beta\omega_{0}\right)=\lim_{T\rightarrow\infty}\mathcal{K}\left(\beta\omega_{0}\right)=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{equation}
+\lim_{T\rightarrow\infty}\mathcal{I}\left(\alpha\pi\beta J\right)=2.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

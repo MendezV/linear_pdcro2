@@ -1,0 +1,121 @@
+%% LyX 2.3.6.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{babel}
+\begin{document}
+Here we start from the effective model described in {[}SUNKO{]} and
+derive the effective EME coupling that is presented in the main text.
+The key new insight is as follows: the effective Kondo-like coupling
+that is generated between the Pd-electrons and Cr local moments involves
+an inter-layer hybridization, $g_{ij}$ between sites $i$ and $j$.
+If this coupling were to be affected by the fluctuations associated
+with the corresponding out-of-plane bond, $g_{ij}$ will be renormalized
+by the displacement, $\varphi_{ij}$. Following similar steps as in
+{[}SUNKO{]} we define the creation and annihilation operators, $p_{i}^{\left(\dagger\right)},c_{i}^{\left(\dagger\right)}$and
+for the Pd an Cr electrons respectively. With these defintions, the
+Hamiltonian of the system is given by:
+
+\begin{align}
+H & =H_{\text{Pd}}+H_{\text{Cr}}+H_{\text{hyb}}+H_{\text{ph,EME}},\\
+H_{\text{Pd}} & =\sum_{\boldsymbol{k}\sigma}\left(\varepsilon_{\boldsymbol{k}}-\mu\right)p_{\boldsymbol{k}\sigma}^{\dagger}p_{\boldsymbol{k}\sigma},\\
+H_{\text{Cr}} & =-\sum_{ij\sigma}t_{ij}^{c}c_{i}^{\dagger}c_{j}+\text{h.c}+U\sum_{i}\left(n_{i\uparrow}^{c}-\frac{1}{2}\right)\left(n_{i\downarrow}^{c}-\frac{1}{2}\right),\\
+H_{\text{hyb}} & =\sum_{\left\langle ij\right\rangle \sigma}g_{ij}\left(1-\lambda\varphi_{ij}\right)\left(c_{i\sigma}^{\dagger}p_{j\sigma}+\text{h.c}\right)\\
+H_{\text{ph,EME}} & =\sum_{\left\langle ij\right\rangle }\frac{\pi_{ij}^{2}}{2M}+\frac{M\tilde{\omega}_{0}}{2}\varphi_{ij}^{2}.
+\end{align}
+
+here $t_{ij}^{c}$ is the hopping in the Cr layer, $\varepsilon_{\boldsymbol{k}}$
+is the dispersion for th Pd electrons, where we keep hopping up to
+second nearest neighbours, $\lambda$ determines the scale by which
+the hybridization is renormalized to leading order by the bond displacement
+$\varphi_{ij}$, $M$ is the phonon mass, $n_{i\sigma}^{c}$ is the
+density operator for Cr electrons, and $U$ is the on site interaction
+strenght. In general these interactions would involve multiple orbitals
+in the Cr layer and contain the full lattice structure of PdCrO$_{2}$,
+for simplicitly, however, we only consider a single orbital per site
+in the Cr layers.
+
+Since it has been demonstrated that the Cr atoms are strongly correlated
+and form a Mott insulator with 120$^{\circ}$ AFM order at low temperatrures,
+it is justified to take the strong coupling limit $U\gg t^{c},g$
+to get a low energy effective theory in terms of local moments in
+teh Cr layer {[}SUNKO{]}. We can obtain this low energy theory by
+performing a Schriffer-Wolf transformation of the above Hamiltonian.
+If we only keep linear terms in the bond displacement, the resulting
+Hamiltonian will be given by :
+
+\begin{align}
+H & =H_{\text{Pd}}+H_{\text{lm}}+H_{\text{K}}+H_{\text{EME}}+H_{\text{ph,EME}},\\
+H_{\text{lm}} & =J_{H}\sum_{\left\langle ij\right\rangle }\boldsymbol{S}_{i}\cdot\boldsymbol{S}_{j}\\
+H_{\text{K}} & =\sum_{\left\langle ilj\right\rangle \sigma}\frac{4g_{ij}g_{lj}}{U}\boldsymbol{S}_{l}\cdot\left(p_{i}^{\dagger}\boldsymbol{\sigma}p_{j}\right)\\
+H_{\text{EME}} & =-\sum_{\left\langle ilj\right\rangle \sigma}\frac{4g_{ij}g_{lj}}{U}\lambda\left(\varphi_{il}+\varphi_{jl}\right)\boldsymbol{S}_{l}\cdot\left(p_{i}^{\dagger}\boldsymbol{\sigma}p_{j}\right)
+\end{align}
+
+The first term above is the usual Heisenberg coupling with antiferromagnetic
+exchange $J_{H}=4t^{c}/U,$ where we only considered nearest neighbour
+hopping between Cr sites. The second term above is the Kondo coupling
+that was reported in {[}SUNKO{]}, while the third is the new EME coupling
+between local moments in the Cr layer,optical phonons and itinerant
+electrons. In what follows we consider the simplified case where adjacent
+Pd layers are aligned completely aligned and the hibridization is
+a constant independent of bond direction $g_{ij}\rightarrow g$. In
+this limit, we can define the Kondo and EME couplings to be $J_{K}=4g^{2}/U$
+and $\tilde{\alpha}=-J_{K}\lambda$. We then have the following Hamiltonian
+in momentum space
+\begin{equation}
+H=H_{\text{Pd}}+H_{\text{ph}}+H_{\text{lm}}+H_{\text{int}}
+\end{equation}
+
+with the interaction given by
+\begin{align}
+H_{\text{int}}= & \frac{1}{\sqrt{N}}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}J_{K}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\boldsymbol{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\boldsymbol{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & +\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\ell\alpha\beta}\tilde{\alpha}_{\ell}\left(\boldsymbol{k},\boldsymbol{k}'\right)\varphi_{\ell}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\boldsymbol{S}_{\boldsymbol{q}}\cdot\boldsymbol{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align}
+
+where the Fourier transfomed operators are:
+\begin{equation}
+\varphi_{\ell+j,j}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{-i\bm{k}\bm{R}_{j}}\varphi_{\ell}\left(\boldsymbol{k}\right)
+\end{equation}
+
+\begin{equation}
+p_{i\alpha}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{-i\bm{k}\bm{R}_{i}}p_{\boldsymbol{k}\alpha}^{\dagger}
+\end{equation}
+\begin{equation}
+\boldsymbol{S}_{j}=\frac{1}{\sqrt{N}}\sum_{\bm{q}}e^{-i\bm{q}\bm{R}_{j}}\boldsymbol{S}_{\boldsymbol{q}}
+\end{equation}
+
+and the momentum dependent coupligns are 
+\begin{align*}
+J_{K}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =J_{K}\left[2\cos\left(k_{z}a_{z}\right)\right]\left[2\cos\left(k_{z}'a_{z}\right)\right]
+\end{align*}
+
+and
+
+\begin{align*}
+\tilde{\alpha}_{+1}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\tilde{\alpha}_{-1}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\tilde{\alpha}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda J_{K}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align*}
+
+with $\bm{R}_{i}$ being the position of site $i$ and $N$ the number
+of unit cells as the normalization of the Fourier transform. 
+
+In the above derivation we introduced several three new parameters
+to the theory in {[}SUNKO{]}, the mass of the EME mode $M$, its frequency
+$\tilde{\omega}_{0}$ and the EME coupling $\lambda$. As we detail
+in the text, these parameters only enter the theory either in the
+precise combination that corresponds to the dimensionless EME coupling,
+or in the combination $\beta\tilde{\omega}_{0}$, leaving effectively
+two new parameters in the theory. The rest of the parameters are taken
+from the values provided in {[}SUNKO{]}. Specifically, we have $U=4$eV
+and $g=0.1$eV which lead to a Kondo coupling of $J_{K}=12$ meV.
+Additionally, we have $J_{H}=6.25$meV, $t_{nn}^{p}=568$meV, $t_{nnn}^{p}=108$meV,
+and $\mu=256$meV. Assuming these values we then fit the difference
+of the resistivity of PdCrO$_{2}$ and PdCoO$_{2}$ to obtain the
+dimensionless EME coupling in the main text and the frequency of this
+mode. 
+\end{document}

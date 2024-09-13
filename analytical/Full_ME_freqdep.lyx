@@ -1,0 +1,754 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},z\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(z\right)+n_{F}\left(\epsilon\right)\right]\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon-z\right)}{i\omega_{n}+z+\nu-\epsilon}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where we have 
+\begin_inset Formula 
+\[
+\Sigma_{ME}\left(\boldsymbol{k},\omega^{+}\right)=\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{dz}{\pi}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},z\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(z\right)+n_{F}\left(\epsilon\right)\right]\left[\frac{n_{B}\left(\nu\right)+n_{F}\left(\epsilon-z\right)}{\omega^{+}+z+\nu-\epsilon}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the imaginary part we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},\epsilon-\omega-\nu\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(\epsilon-\omega-\nu\right)+n_{F}\left(\epsilon\right)\right]\left[n_{B}\left(\nu\right)+n_{F}\left(\omega+\nu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+B\left(\boldsymbol{k},\nu\right) & =\frac{\pi\hbar}{2M\omega_{\boldsymbol{k}}}\left(\delta\left(\nu-\omega_{\boldsymbol{k}}\right)-\delta\left(\nu+\omega_{\boldsymbol{k}}\right)\right)\\
+ & =B^{-}\left(\boldsymbol{k},\nu\right)-B^{+}\left(\boldsymbol{k},\nu\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+similarly, if we start from free electrons
+\begin_inset Formula 
+\[
+A\left(\bm{q}+\boldsymbol{k},\epsilon\right)=\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}+\boldsymbol{q}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the coupling 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g\left(\boldsymbol{k},\boldsymbol{k}'\right) & =J_{K}\left[2\cos\left(k_{z}a_{z}\right)\right]\left[2\cos\left(k_{z}'a_{z}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lambda_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\lambda_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda g\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon-\omega-\nu\right)-B^{+}\left(\boldsymbol{q},\epsilon-\omega-\nu\right)\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\omega+\nu\right)\right]\left[n_{B}\left(\epsilon-\omega-\nu\right)+n_{F}\left(\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+changing variables
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon-\nu\right)-B^{+}\left(\boldsymbol{q},\epsilon-\nu\right)\right)\chi''\left(\boldsymbol{p},\nu-\omega\right)\left[n_{B}\left(\nu-\omega\right)+n_{F}\left(\nu\right)\right]\left[n_{B}\left(\epsilon-\nu\right)+n_{F}\left(\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the symmetry properties
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon-\nu\right)-B^{+}\left(\boldsymbol{q},\epsilon-\nu\right)\right)\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{B}\left(\epsilon-\nu\right)+n_{F}\left(\epsilon\right)\right]\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon-\nu\right)-B^{+}\left(\boldsymbol{q},\epsilon-\nu\right)\right)\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the same tricks as before, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\nu-\epsilon\right)-B^{+}\left(\boldsymbol{q},\nu-\epsilon\right)\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\left(A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon+\nu\right)+A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon-\nu\right)\right)B^{-}\left(\boldsymbol{q},\epsilon\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)+n_{F}\left(\epsilon+\nu\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Defining 
+\begin_inset Formula 
+\[
+\alpha_{\boldsymbol{k}}^{2}F_{ME}\left(\omega,\epsilon\right)=\frac{1}{\pi^{3}}\frac{1}{N^{2}}\sum_{\ell}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left(A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon+\nu\right)+A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon-\nu\right)\right)B^{-}\left(\boldsymbol{q},\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we have 
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-\pi\int d\epsilon\int d\nu\ \alpha_{\boldsymbol{k}}^{2}F_{ME}\left(\omega,\epsilon,\nu\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\nu-\epsilon\right)+n_{F}\left(\nu+\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In more detail
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon\right)-B^{+}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)\right]\\
+\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)\right]\\
+ & +=-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\left(-B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)\right]\\
+\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)\right]\\
+ & +=-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu+\epsilon\right)\left(-B^{-}\left(\boldsymbol{q},-\epsilon\right)\right)\left[n_{B}\left(-\epsilon\right)+n_{F}\left(-\epsilon-\nu\right)\right]\\
+\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)\right]\\
+ & +=-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu+\epsilon\right)\left(B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon+\nu\right)\right]\\
+\\
+ & =-\frac{2\lambda^{2}}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}\left|g\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\left[A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu+\epsilon\right)+A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\nu-\epsilon\right)\right]\left(B^{-}\left(\boldsymbol{q},\epsilon\right)\right)\left[2n_{B}\left(\epsilon\right)+n_{F}\left(\epsilon-\nu\right)+n_{F}\left(\epsilon+\nu\right)\right]\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For our specific case with an optical mode
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\alpha_{\boldsymbol{k}}^{2}F_{ME}\left(\omega,\epsilon,\nu\right) & =\frac{1}{\pi^{3}}\frac{1}{N^{2}}\sum_{\ell}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left(A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon+\nu\right)+A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon-\nu\right)\right)B^{-}\left(\boldsymbol{q},\epsilon\right)\\
+ & =\frac{1}{\pi^{3}}\frac{1}{N}\sum_{\ell}\sum_{\boldsymbol{q}}\left|\lambda_{\ell}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left(A\left(\boldsymbol{q},\epsilon+\nu\right)+A\left(\boldsymbol{q},\epsilon-\nu\right)\right)B^{-}\left(\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+approximating 
+\begin_inset Formula 
+\begin{align*}
+\alpha_{\boldsymbol{k}}^{2}F_{ME}\left(\omega,\epsilon,\nu\right) & \sim\frac{1}{\pi^{3}}\frac{1}{N}\sum_{\ell}\sum_{\boldsymbol{q}}\left|\lambda_{\ell}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]2\pi\delta\left(\epsilon_{\boldsymbol{q}}\right)B^{-}\left(\epsilon\right)\\
+ & =\frac{1}{\pi}\Lambda_{\boldsymbol{k}}\delta\left(\omega_{0}-\epsilon\right)\chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the definition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Lambda_{\boldsymbol{k}}\delta\left(\omega_{0}-\epsilon\right)= & 2\frac{1}{\pi}\frac{1}{N}\sum_{\ell}\sum_{\boldsymbol{q}}\left|\lambda_{\ell}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\delta\left(\epsilon_{\boldsymbol{q}}\right)B^{-}\\
+ & =2\frac{\hbar\lambda^{2}}{M\omega_{0}}\left(J_{K}\right)^{2}u_{\boldsymbol{k}}^{2}\nu_{0}\delta\left(\omega_{0}-\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+\Lambda_{\boldsymbol{k}}=2\frac{\hbar\lambda^{2}}{M\omega_{0}}\left(J_{K}\right)^{2}u_{\boldsymbol{k}}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we used 
+\begin_inset Formula 
+\[
+\frac{1}{N}\sum_{\ell}\sum_{\boldsymbol{q}}\left|\lambda_{\ell}\left(\boldsymbol{q},\boldsymbol{k}\right)\right|^{2}\delta\left(\epsilon_{\boldsymbol{q}}\right)=2\lambda^{2}u_{\boldsymbol{k}}^{2}\frac{1}{N}\sum_{\boldsymbol{q}}u_{\boldsymbol{q}}^{2}\delta\left(\epsilon_{\boldsymbol{q}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{N}\sum_{\bm{k}'}u_{\boldsymbol{k}'}^{2}\delta\left(\varepsilon_{\boldsymbol{k}'}\right)=2\nu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\end_layout
+
+\begin_layout Standard
+Overall, we have 
+\begin_inset Formula 
+\[
+\alpha_{\boldsymbol{k}}^{2}F_{ME}\left(\omega,\epsilon,\nu\right)=\frac{1}{\pi}\Lambda_{\boldsymbol{k}}\delta\left(\omega_{0}-\epsilon\right)\chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+inserting in the formula above, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\pi\Lambda_{\boldsymbol{k}}\int\frac{d\nu}{\pi}\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[2n_{B}\left(\omega_{0}\right)+n_{F}\left(\omega_{0}-\nu\right)+n_{F}\left(\nu+\omega_{0}\right)\right]\\
+\\
+ & =-2n_{B}\left(\omega_{0}\right)\Lambda_{\boldsymbol{k}}\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\\
+ & =-\Lambda_{\boldsymbol{k}}\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{F}\left(\omega_{0}-\nu\right)+n_{F}\left(\nu+\omega_{0}\right)\right]\\
+\\
+ & =-2\pi\kappa\alpha n_{B}\left(\omega_{0}\right)\Lambda_{\boldsymbol{k}}Y\left(\beta\omega,\alpha\beta J\right)\\
+ & -2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}Z\left(\beta\omega,\alpha\beta J,\beta\omega_{0}\right)\\
+\\
+ & =-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)Y\left(\beta\omega,\alpha\pi\beta J\right)+Z\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined 
+\begin_inset Formula 
+\begin{align*}
+\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\\
+=\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\int_{-\alpha\pi J}^{\alpha\pi J}d\nu\ \frac{\kappa\beta\nu}{J}\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\frac{\kappa\beta}{J}\int_{-\alpha\pi J}^{\alpha\pi J}d\nu\ \nu\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\frac{\kappa}{\beta J}\int_{-\alpha\pi\beta J}^{\alpha\pi\beta J}d\nu\ \nu\left[\frac{1}{e^{\nu}-1}+\frac{1}{e^{\nu-\beta\omega}+1}\right]\\
+=\pi\kappa\alpha Y\left(\beta\omega,\alpha\pi\beta J\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+Y\left(x,y\right)=-\frac{y}{2}-\log\left[\left(e^{-y-x}+1\right)\left(e^{y-x}+1\right)\right]+\frac{\text{Li}_{2}\left(-e^{-y-x}\right)-\text{Li}_{2}\left(-e^{y-x}\right)-2\text{Li}_{2}\left(1-e^{y}\right)}{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{F}\left(\omega_{0}-\nu\right)+n_{F}\left(\nu+\omega_{0}\right)\right]\\
+\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\left[n_{F}\left(\nu-\omega+\omega_{0}\right)+n_{F}\left(\omega-\nu+\omega_{0}\right)\right]\\
+\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\left[n_{F}\left(\omega_{0}-\omega+\nu\right)+n_{F}\left(\omega_{0}+\omega-\nu\right)\right]\\
+\frac{\kappa}{\beta J}\int_{-\alpha\pi\beta J}^{\alpha\pi\beta J}d\nu\ \nu\left[\frac{1}{e^{\nu}-1}+\frac{1}{e^{\nu-\beta\omega}+1}\right]\left[\frac{1}{e^{\beta\left(\omega_{0}-\omega\right)+\nu}+1}+\frac{1}{e^{\beta\left(\omega_{0}+\omega\right)-\nu}+1}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The relevant integrals are 
+\begin_inset Formula 
+\begin{align*}
+\frac{\kappa\pi\alpha}{\tilde{J}}\int_{-\tilde{J}}^{\tilde{J}}d\nu\ \nu\frac{1}{e^{\nu}-1}\frac{1}{e^{\tilde{\omega}_{0\pm}-\nu}+1} & =\frac{\kappa\pi\alpha}{\tilde{J}}\left(-\frac{6\tilde{J}^{2}+6\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+6\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+12\text{Li}_{2}\left(e^{-\tilde{J}}\right)+6\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+3\tilde{\omega}_{0\pm}^{2}-\pi^{2}}{6e^{\tilde{\omega}_{0\pm}}+6}\right)\\
+ & =\frac{\kappa\pi\alpha}{\tilde{J}}\left(-\frac{\tilde{J}^{2}+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2}-\frac{\pi^{2}}{6}}{e^{\tilde{\omega}_{0\pm}}+1}\right)\\
+ & =-\frac{\kappa\pi\alpha}{\tilde{J}}n_{F}\left(\omega_{0\pm}\right)\left(\tilde{J}^{2}+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2}-\frac{\pi^{2}}{6}\right)\\
+ & =-\kappa\pi\alpha n_{F}\left(\omega_{0\pm}\right)\left(\tilde{J}+\frac{\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)}{\tilde{J}}+\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2\tilde{J}}-\frac{\pi^{2}}{6\tilde{J}}\right)\\
+ & =2\kappa\pi\alpha n_{F}\left(\omega_{0\pm}\right)Z_{1}\left(\pm\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+\omega_{0\pm}=\omega_{0}\pm\omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+\frac{\kappa\pi\alpha}{\tilde{J}}\int_{-\tilde{J}}^{\tilde{J}}d\nu\ \nu\frac{1}{e^{\nu-\tilde{\omega}}+1}\frac{1}{e^{\tilde{\omega}_{0\pm}-\nu}+1} & =\frac{\kappa\pi\alpha}{\tilde{J}}\left(\frac{-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{1}{2}\left(\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}\right)}{1-e^{\tilde{\omega}_{0\pm}-\tilde{\omega}}}\right)\\
+ & =\frac{\kappa\pi\alpha}{\tilde{J}}\left(\frac{-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{1}{2}\left(\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}\right)}{1-e^{\tilde{\omega}_{0\pm}-\tilde{\omega}}}\right)\\
+ & =-\kappa\pi\alpha n_{B}\left(\left(\omega_{0}\pm\omega\right)-\omega\right)\left(\frac{\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}}{2\tilde{J}}+\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)}{\tilde{J}}\right)\\
+ & =2\kappa\pi\alpha n_{B}\left(\left(\omega_{0}\pm\omega\right)-\omega\right)Z_{2}\left(\pm\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only reason we ha
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ is because when 
+\begin_inset Formula $\beta\omega$
+\end_inset
+
+ apears by itself and not in the combination 
+\begin_inset Formula $\omega_{0\pm}$
+\end_inset
+
+ it appears in an even function of its argument.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{1}\left(x,y,z\right)=-\frac{1}{2}\left[y+\frac{\left(x+z\right)^{2}}{2y}-\frac{\pi^{2}}{6y}+\log\left(\frac{\cosh\left(y\right)+\cosh\left(x+z\right)}{\cosh\left(y\right)-1}\right)+\frac{\text{Li}_{2}\left(-e^{y-\left(x+z\right)}\right)+\text{Li}_{2}\left(-e^{y+\left(x+z\right)}\right)+2\text{Li}_{2}\left(e^{-y}\right)}{y}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{2}\left(x,y,z\right)=-\frac{1}{2}\left[\frac{\left(x+z\right)^{2}-x^{2}}{2y}+\log\left(\frac{\cosh\left(y\right)+\cosh\left(x+z\right)}{\cosh\left(y\right)+\cosh\left(x\right)}\right)+\frac{\text{Li}_{2}\left(-e^{y-\left(x+z\right)}\right)+\text{Li}_{2}\left(-e^{y+\left(x+z\right)}\right)-\text{Li}_{2}\left(-e^{y-x}\right)-\text{Li}_{2}\left(-e^{y+x}\right)}{y}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Result for the frequency dependent self energy 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)+n_{F}\left(\omega+\omega_{0}\right)+n_{F}\left(\omega_{0}-\omega\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)Y\left(\beta\omega,\alpha\pi\beta J\right)+n_{F}\left(\omega+\omega_{0}\right)Z_{1}\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{F}\left(\omega_{0}-\omega\right)Z_{1}\left(-\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}\right)Z_{2}\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}-2\omega\right)Z_{2}\left(-\beta\omega,\alpha\pi\beta J,-\beta\omega_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So that the single particle rate will be given by 
+\begin_inset Formula 
+\[
+\tau^{-1}\left(\boldsymbol{k}\right)=4\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)Y\left(\beta\epsilon_{\boldsymbol{k}},\alpha\pi\beta J\right)+n_{F}\left(\epsilon_{\boldsymbol{k}}+\omega_{0}\right)Z_{1}\left(\beta\epsilon_{\boldsymbol{k}},\alpha\pi\beta J,\beta\omega_{0}\right)+n_{F}\left(\omega_{0}-\epsilon_{\boldsymbol{k}}\right)Z_{1}\left(-\beta\epsilon_{\boldsymbol{k}},\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}\right)Z_{2}\left(\beta\epsilon_{\boldsymbol{k}},\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}-2\epsilon_{\boldsymbol{k}}\right)Z_{2}\left(-\beta\epsilon_{\boldsymbol{k}},\alpha\pi\beta J,-\beta\omega_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Alternate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\pi\Lambda_{\boldsymbol{k}}\int\frac{d\nu}{\pi}\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[2n_{B}\left(\omega_{0}\right)+n_{F}\left(\omega_{0}-\nu\right)+n_{F}\left(\nu+\omega_{0}\right)\right]\\
+ & =-\pi\Lambda_{\boldsymbol{k}}\int\frac{d\nu}{\pi}\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[2n_{B}\left(\omega_{0}\right)+1-n_{F}\left(\nu-\omega_{0}\right)+n_{F}\left(\nu+\omega_{0}\right)\right]\\
+\\
+ & =-\left(2n_{B}\left(\omega_{0}\right)+1\right)\Lambda_{\boldsymbol{k}}\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\\
+ & =-\Lambda_{\boldsymbol{k}}\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{F}\left(\nu+\omega_{0}\right)-n_{F}\left(\nu-\omega_{0}\right)\right]\\
+\\
+ & =-2\pi\kappa\alpha n_{B}\left(\omega_{0}\right)\Lambda_{\boldsymbol{k}}Y\left(\beta\omega,\alpha\beta J\right)\\
+ & -2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}Z\left(\beta\omega,\alpha\beta J,\beta\omega_{0}\right)\\
+\\
+ & =-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)Y\left(\beta\omega,\alpha\pi\beta J\right)+Z\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined 
+\begin_inset Formula 
+\begin{align*}
+\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\\
+=\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\int_{-\alpha\pi J}^{\alpha\pi J}d\nu\ \frac{\kappa\beta\nu}{J}\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\frac{\kappa\beta}{J}\int_{-\alpha\pi J}^{\alpha\pi J}d\nu\ \nu\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\\
+=\frac{\kappa}{\beta J}\int_{-\alpha\pi\beta J}^{\alpha\pi\beta J}d\nu\ \nu\left[\frac{1}{e^{\nu}-1}+\frac{1}{e^{\nu-\beta\omega}+1}\right]\\
+=\pi\kappa\alpha Y\left(\beta\omega,\alpha\pi\beta J\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+Y\left(x,y\right)=-\frac{y}{2}-\log\left[\left(e^{-y-x}+1\right)\left(e^{y-x}+1\right)\right]+\frac{\text{Li}_{2}\left(-e^{-y-x}\right)-\text{Li}_{2}\left(-e^{y-x}\right)-2\text{Li}_{2}\left(1-e^{y}\right)}{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+\int d\nu\ \chi''\left(\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\left[n_{F}\left(\nu+\omega_{0}\right)-n_{F}\left(\nu-\omega_{0}\right)\right]\\
+\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\left[n_{F}\left(\omega-\nu+\omega_{0}\right)-n_{F}\left(\omega-\nu-\omega_{0}\right)\right]\\
+\int d\nu\ \chi''\left(\nu\right)\left[n_{B}\left(\nu\right)+n_{F}\left(\nu-\omega\right)\right]\left[n_{F}\left(\omega+\omega_{0}-\nu\right)-n_{F}\left(\omega-\omega_{0}-\nu\right)\right]\\
+\frac{\kappa}{\beta J}\int_{-\alpha\pi\beta J}^{\alpha\pi\beta J}d\nu\ \nu\left[\frac{1}{e^{\nu}-1}+\frac{1}{e^{\nu-\beta\omega}+1}\right]\left[\frac{1}{e^{\beta\left(\omega+\omega_{0}\right)-\nu}+1}-\frac{1}{e^{\beta\left(\omega-\omega_{0}\right)-\nu}+1}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The relevant integrals are 
+\begin_inset Formula 
+\begin{align*}
+\pm\frac{\kappa\pi\alpha}{\tilde{J}}\int_{-\tilde{J}}^{\tilde{J}}d\nu\ \nu\frac{1}{e^{\nu}-1}\frac{1}{e^{\tilde{\omega}_{0\pm}-\nu}+1} & =\pm\frac{\kappa\pi\alpha}{\tilde{J}}\left(-\frac{6\tilde{J}^{2}+6\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+6\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+12\text{Li}_{2}\left(e^{-\tilde{J}}\right)+6\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+3\tilde{\omega}_{0\pm}^{2}-\pi^{2}}{6e^{\tilde{\omega}_{0\pm}}+6}\right)\\
+ & =\pm\frac{\kappa\pi\alpha}{\tilde{J}}\left(-\frac{\tilde{J}^{2}+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2}-\frac{\pi^{2}}{6}}{e^{\tilde{\omega}_{0\pm}}+1}\right)\\
+ & =\pm\left[-\frac{\kappa\pi\alpha}{\tilde{J}}n_{F}\left(\omega_{0\pm}\right)\left(\tilde{J}^{2}+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2}-\frac{\pi^{2}}{6}\right)\right]\\
+ & =\pm\left[-\kappa\pi\alpha n_{F}\left(\omega_{0\pm}\right)\left(\tilde{J}+\frac{\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+2\text{Li}_{2}\left(e^{-\tilde{J}}\right)}{\tilde{J}}+\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)-1}\right)+\frac{\tilde{\omega}_{0\pm}^{2}}{2\tilde{J}}-\frac{\pi^{2}}{6\tilde{J}}\right)\right]\\
+ & =\pm2\kappa\pi\alpha n_{F}\left(\omega_{0\pm}\right)Z_{1}\left(\beta\omega,\alpha\pi\beta J,\pm\beta\omega_{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula 
+\[
+\omega_{0\pm}=\omega\pm\omega_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+\pm\frac{\kappa\pi\alpha}{\tilde{J}}\int_{-\tilde{J}}^{\tilde{J}}d\nu\ \nu\frac{1}{e^{\nu+\tilde{\omega}}+1}\frac{1}{e^{\tilde{\omega}_{0\pm}-\nu}+1} & =\pm\frac{\kappa\pi\alpha}{\tilde{J}}\left(\frac{-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{1}{2}\left(\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}\right)}{1-e^{\tilde{\omega}_{0\pm}-\tilde{\omega}}}\right)\\
+ & =\pm\frac{\kappa\pi\alpha}{\tilde{J}}\left(\frac{-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)+\tilde{J}\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{1}{2}\left(\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}\right)}{1-e^{\tilde{\omega}_{0\pm}-\tilde{\omega}}}\right)\\
+ & =\pm\left[-\kappa\pi\alpha n_{B}\left(\left(\omega_{0}\pm\omega\right)-\omega\right)\left(\frac{\tilde{\omega}_{0\pm}^{2}-\tilde{\omega}^{2}}{2\tilde{J}}+\log\left(\frac{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}_{0\pm}\right)}{\cosh\left(\tilde{J}\right)+\cosh\left(\tilde{\omega}\right)}\right)+\frac{\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}_{0\pm}}\right)+\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}_{0\pm}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}-\tilde{\omega}}\right)-\text{Li}_{2}\left(-e^{\tilde{J}+\tilde{\omega}}\right)}{\tilde{J}}\right)\right]\\
+ & =\pm2\kappa\pi\alpha n_{B}\left(\left(\omega\pm\omega_{0}\right)-\omega\right)Z_{2}\left(\pm\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)\\
+ & =\pm2\kappa\pi\alpha n_{B}\left(\pm\omega_{0}\right)Z_{2}\left(\pm\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only reason we ha
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ is because when 
+\begin_inset Formula $\beta\omega$
+\end_inset
+
+ apears by itself and not in the combination 
+\begin_inset Formula $\omega_{0\pm}$
+\end_inset
+
+ it appears in an even function of its argument.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{1}\left(x,y,z\right)=-\frac{1}{2}\left[y+\frac{\left(x+z\right)^{2}}{2y}-\frac{\pi^{2}}{6y}+\log\left(\frac{\cosh\left(y\right)+\cosh\left(x+z\right)}{\cosh\left(y\right)-1}\right)+\frac{\text{Li}_{2}\left(-e^{y-\left(x+z\right)}\right)+\text{Li}_{2}\left(-e^{y+\left(x+z\right)}\right)+2\text{Li}_{2}\left(e^{-y}\right)}{y}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{2}\left(x,y,z\right)=-\frac{1}{2}\left[\frac{\left(x+z\right)^{2}-x^{2}}{2y}+\log\left(\frac{\cosh\left(y\right)+\cosh\left(x+z\right)}{\cosh\left(y\right)+\cosh\left(x\right)}\right)+\frac{\text{Li}_{2}\left(-e^{y-\left(x+z\right)}\right)+\text{Li}_{2}\left(-e^{y+\left(x+z\right)}\right)-\text{Li}_{2}\left(-e^{y-x}\right)-\text{Li}_{2}\left(-e^{y+x}\right)}{y}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)+n_{F}\left(\omega+\omega_{0}\right)+n_{F}\left(\omega_{0}-\omega\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-2\pi\kappa\alpha\Lambda_{\boldsymbol{k}}\left(n_{B}\left(\omega_{0}\right)Y\left(\beta\omega,\alpha\pi\beta J\right)+n_{F}\left(\omega+\omega_{0}\right)Z_{1}\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{F}\left(\omega_{0}-\omega\right)Z_{1}\left(-\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}\right)Z_{2}\left(\beta\omega,\alpha\pi\beta J,\beta\omega_{0}\right)+n_{B}\left(\omega_{0}-2\omega\right)Z_{2}\left(-\beta\omega,\alpha\pi\beta J,-\beta\omega_{0}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So that the single particle rate will be given by 
+\end_layout
+
+\end_body
+\end_document

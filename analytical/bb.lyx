@@ -1,0 +1,472 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\beta}\sum_{i\nu_{n}}D\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},i\omega_{n}-i\mu_{n}+iz_{n}-i\nu_{n}\right)S\left(\bm{q},i\nu_{n}\right) & =\frac{1}{\beta}\int\frac{d\nu}{\pi}\chi''\left(\bm{q},\nu\right)\sum_{i\nu_{n}}\frac{2\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}{\left(i\omega_{n}-i\mu_{n}+iz_{n}-i\nu_{n}\right)^{2}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}^{2}}\frac{1}{\nu-i\nu_{n}}\\
+ & =\frac{1}{\beta}\int\frac{d\nu}{\pi}\chi''\left(\bm{q},\nu\right)\left[\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-i\omega_{n}+i\mu_{n}-iz_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\frac{1}{i\nu_{n}-\nu}\right.\\
+ & \left.-\sum_{i\nu_{n}}\frac{1}{\left(i\omega_{n}-i\mu_{n}+iz_{n}-i\nu_{n}\right)+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\frac{1}{\nu-i\nu_{n}}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\nu_{n}-i\omega_{n}+i\mu_{n}-iz_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\frac{1}{i\nu_{n}-\nu} & =\int\frac{dz}{2\pi i}\frac{1}{z-\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\frac{1}{z-\nu}n_{B}\left(z\right)\\
+ & =\frac{1}{\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-\nu}n_{B}\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+\frac{1}{\nu-\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}n_{B}\left(\nu\right)\\
+ & =\frac{1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\nu\right)}{\nu-\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{B}\left(-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)=\frac{1}{e^{-}-1}=-\frac{e}{e-1}=-1-n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the fermionic Matsubara sum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\beta}\sum_{iz_{r}}\frac{1}{\nu-\left(i\omega_{n}-i\mu_{n}+iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\frac{1}{iz_{r}-\epsilon_{2}} & =\int_{\mathcal{C}_{1}}\frac{dz}{2\pi i}\frac{1}{\nu-\left(i\omega_{n}-i\mu_{n}+z-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\frac{1}{z-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =-\int_{\mathcal{C}_{3}}\frac{dz}{2\pi i}\frac{1}{i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{n}+z-\nu}\frac{1}{z-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =-\frac{1}{i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{n}+\epsilon_{2}-\nu}n_{F}\left(\epsilon_{2}\right)-\frac{1}{-\left(i\omega_{n}-i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-\epsilon_{2}}n_{F}\left(-\left(i\omega_{n}-i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right)\\
+ & =-\frac{1}{i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{n}+\epsilon_{2}-\nu}n_{F}\left(\epsilon_{2}\right)+\frac{1}{i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{n}-\nu+\epsilon_{2}}n_{F}\left(i\mu_{n}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\\
+ & =\frac{-n_{B}\left(\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{n}-\nu+\epsilon_{2}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Pi_{zz}\left(i\omega_{n}\right) & =\sum_{\bm{k}\bm{q}}\Gamma^{I}\left(\bm{k},\bm{q}\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\frac{\bm{q}}{2},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}-\frac{\bm{q}}{2},\epsilon_{2}\right)\left(1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\nu\right)\right)\left(n_{B}\left(\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{F}\left(\epsilon_{2}\right)\right)\chi''\left(\bm{q},\nu\right)\\
+ & \times\frac{1}{\beta}\sum_{i\mu_{n}}\frac{1}{-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+i\mu_{n}+\nu-\epsilon_{2}}\frac{1}{i\mu_{n}-\epsilon_{1}}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the second fermionic Matsubara sum 
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+i\mu_{n}+\nu-\epsilon_{2}}\frac{1}{i\mu_{n}-\epsilon_{1}} & =\int_{\mathcal{C}_{1}'}\frac{dz}{2\pi i}\frac{1}{-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+z+\nu-\epsilon_{2}}\frac{1}{z-\epsilon_{1}}n_{F}\left(z\right)\\
+ & =\int_{\mathcal{C}_{3}'}\frac{dz}{2\pi i}\frac{1}{-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+z+\nu-\epsilon_{2}}\frac{1}{z-\epsilon_{1}}n_{F}\left(z\right)\\
+ & =\frac{1}{-i\omega_{n}+\epsilon_{1}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}n_{F}\left(\epsilon_{1}\right)+\frac{1}{-\left(-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\nu-\epsilon_{2}\right)-\epsilon_{1}}n_{F}\left(-\left(-i\omega_{n}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\nu-\epsilon_{2}\right)\right)\\
+ & =\frac{n_{F}\left(\epsilon_{2}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}-\epsilon_{1}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\epsilon_{2}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Pi_{zz}\left(i\omega_{n}\right)=\frac{1}{\text{vol}}\sum_{\bm{k}\bm{q}}\Gamma^{I}\left(\bm{k},\bm{q}\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}+\frac{\bm{q}}{2},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}-\frac{\bm{q}}{2},\epsilon_{2}\right)\left(1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\nu\right)\right)\left(n_{B}\left(\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{F}\left(\epsilon_{2}\right)\right)\chi''\left(\bm{q},\nu\right)\frac{n_{F}\left(\epsilon_{2}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}-\epsilon_{1}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\epsilon_{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+this is essentially the same result as for the 11 current but with an extra
+ factor of 
+\begin_inset Formula $\left(1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\nu\right)\right)$
+\end_inset
+
+ and the replacement 
+\begin_inset Formula $i\omega_{n}\rightarrow i\omega_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Pi_{zz}\left(i\omega_{n}\right) & =\frac{1}{\text{vol}}\sum_{\bm{k}\bm{q}\bm{k}'}\Gamma^{I}\left(\bm{k},\bm{k}'\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\left(1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\omega-\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\epsilon_{2}\right)\right)\\
+ & \left(n_{B}\left(\omega-\epsilon_{1}+\epsilon_{2}\right)+n_{F}\left(\epsilon_{2}\right)\right)\chi''\left(\bm{q},\omega-\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}+\epsilon_{2}\right)\left(n_{F}\left(\epsilon_{1}-\omega\right)-n_{F}\left(\epsilon_{1}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\sigma & =\sum_{\bm{k}\bm{q}\bm{k}'}\Gamma^{I}\left(\bm{k},\bm{k}'\right)\int\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\left(1+n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{B}\left(\epsilon_{2}-\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right)\\
+ & \left(n_{B}\left(\epsilon_{2}-\epsilon_{1}\right)+n_{F}\left(\epsilon_{2}\right)\right)\chi''\left(\bm{q},\epsilon_{2}-\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\left(-\frac{\partial n_{f}}{\partial\epsilon_{1}}\right)\\
+\\
+ & +\sum_{\bm{k}\bm{q}\bm{k}'}\Gamma^{I}\left(\bm{k},\bm{k}'\right)\int\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\left(n_{B}\left(\epsilon_{2}-\epsilon_{1}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{B}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\right)\\
+ & \left(n_{B}\left(\epsilon_{2}-\epsilon_{1}\right)+n_{F}\left(\epsilon_{2}\right)\right)\chi''\left(\bm{q},\epsilon_{2}-\epsilon_{1}+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\left(-\frac{\partial n_{f}}{\partial\epsilon_{1}}\right)\\
+\\
+ & \sum_{\bm{k}}\int\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)\gamma\left(\boldsymbol{k},\epsilon_{2},\epsilon_{1}\right)\left(-\frac{\partial n_{f}}{\partial\epsilon_{1}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where in the last step we just added the 
+\begin_inset Formula $\omega_{q}\rightarrow-\omega_{q}$
+\end_inset
+
+ term.
+\end_layout
+
+\begin_layout Standard
+Evaluating other sums
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\omega_{n}-i\nu_{n}-\nu}\frac{1}{i\nu_{n}-\epsilon_{2}} & =\int_{\mathcal{C}_{3}'}\frac{dz}{2\pi i}\frac{1}{i\omega_{n}-z-\nu}\frac{1}{z-\epsilon_{2}}n_{f}\left(z\right)\\
+ & =\frac{1}{i\omega_{n}-\nu-\epsilon_{2}}n_{f}\left(i\omega_{n}-\nu\right)+\frac{1}{i\omega_{n}-\epsilon_{2}-\nu}n_{f}\left(\epsilon_{2}\right)\\
+ & =\frac{n_{f}\left(\epsilon_{2}\right)-n_{b}\left(-\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}\\
+ & =\frac{n_{f}\left(\epsilon_{2}\right)+n_{b}\left(\nu\right)+1}{i\omega_{n}-\nu-\epsilon_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\omega_{n}-i\nu_{n}-\nu}\frac{1}{i\nu_{n}-\epsilon_{2}} & =-\int_{\mathcal{C}_{3}'}\frac{dz}{2\pi i}\frac{1}{z-\left(i\omega_{n}-\nu\right)}\frac{1}{z-\epsilon_{2}}n_{f}\left(z\right)\\
+ & =-\frac{1}{\left(i\omega_{n}-\nu\right)-\epsilon_{2}}n_{f}\left(i\omega_{n}-\nu\right)-\frac{1}{\epsilon_{2}-\left(i\omega_{n}-\nu\right)}n_{f}\left(\epsilon_{2}\right)\\
+ & =-\frac{-n_{f}\left(\epsilon_{2}\right)-n_{b}\left(-\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}\\
+ & =\frac{n_{f}\left(\epsilon_{2}\right)+n_{b}\left(-\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}\\
+ & =\frac{n_{f}\left(\epsilon_{2}\right)+n_{b}\left(-\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{B}\left(-\zeta\right)=-1-n_{B}\left(\zeta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n_{F}\left(-\zeta\right)=1-n_{F}\left(\zeta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & =\frac{1-n_{F}\left(-\epsilon_{2}\right)+-1-n_{B}\left(\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}\\
+ & =-\frac{n_{F}\left(-\epsilon_{2}\right)+n_{B}\left(\nu\right)}{i\omega_{n}-\nu-\epsilon_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+second att
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sum_{i\nu_{n}}\frac{1}{i\mu_{n}-iz_{n}-i\nu_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\frac{1}{i\nu_{n}-\nu} & =\int_{\mathcal{C}_{1}'}\frac{dz}{2\pi i}\frac{1}{i\mu_{n}-iz_{n}-z-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\frac{1}{z-\nu}n_{b}\left(z\right)\\
+ & =-\int_{\mathcal{C}_{1}'}\frac{dz}{2\pi i}\frac{1}{z-\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\frac{1}{z-\nu}n_{b}\left(z\right)\\
+ & =-\left[\frac{1}{\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-\nu}n_{b}\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+\frac{1}{\nu-\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)}\right]n_{b}\left(\nu\right)\\
+ & =-\frac{n_{b}\left(-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{b}\left(\nu\right)}{\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-\nu}\\
+ & =\frac{1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\nu\right)}{\left(i\mu_{n}-iz_{n}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-\nu}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+continuing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & -\frac{1}{\beta}\sum_{iz_{r}}S\left(\bm{k}-\bm{k}',i\mu_{m}-iz_{r}\right)\mathcal{G}\left(\bm{k}',iz_{r}+i\omega_{n}\right)\\
+ & =-\int\frac{d\nu}{\pi}\chi''\left(\bm{k}-\bm{k}',\nu\right)\int\frac{d\epsilon_{2}}{2\pi}A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\frac{1}{\beta}\sum_{iz_{r}}\frac{1}{\nu-\left(i\mu_{m}-iz_{r}\right)}\frac{1}{iz_{r}+i\omega_{n}-\epsilon_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the fermionic Matsubara sum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\beta}\sum_{iz_{r}}\frac{1}{\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\left(i\mu_{m}-iz_{r}\right)}\frac{1}{iz_{r}+i\omega_{n}-\epsilon_{2}} & =\int_{\mathcal{C}_{1}}\frac{dz}{2\pi i}\frac{1}{z+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{m}}\frac{1}{z+i\omega_{n}-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =\int_{\mathcal{C}_{3}}\frac{dz}{2\pi i}\frac{1}{z+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{m}}\frac{1}{z+i\omega_{n}-\epsilon_{2}}n_{F}\left(z\right)\\
+ & =\frac{1}{\epsilon_{2}-i\omega_{n}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{m}}n_{F}\left(\epsilon_{2}-i\omega_{n}\right)+\frac{1}{-\left(\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{m}\right)+i\omega_{n}-\epsilon_{2}}n_{F}\left(-\left(\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-i\mu_{m}\right)\right)\\
+ & =-\frac{1}{i\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}n_{F}\left(\epsilon_{2}\right)+\frac{1}{i\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}n_{F}\left(i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)\\
+ & =\frac{-n_{B}\left(-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{2}\right)}{i\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inserting this back again into the current-current correlation function,
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Pi_{zz}\left(i\omega_{n}\right)=-\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\int\frac{d\nu}{\pi}\int\frac{d\epsilon_{2}}{2\pi}\int\frac{d\epsilon_{1}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}\chi''\left(\boldsymbol{q},\nu\right)A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\nu\right)\right)\frac{-n_{B}\left(-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{2}\right)}{\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}\frac{1}{i\mu_{r}-\epsilon_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Pi_{zz}\left(i\omega_{n}\right) & =\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\nu\right)\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\nu\right)\right)\left(n_{B}\left(-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{F}\left(\epsilon_{2}\right)\right)\\
+ & \times\frac{1}{\beta}\sum_{i\mu_{n}}\frac{1}{i\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}\frac{1}{i\mu_{r}-\epsilon_{1}}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluating the second fermionic Matsubara sum 
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\beta}\sum_{i\nu_{n}}\frac{1}{i\omega_{n}+i\mu_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}\frac{1}{i\mu_{r}-\epsilon_{1}} & =\int_{\mathcal{C}_{1}}\frac{dz}{2\pi i}\frac{1}{i\omega_{n}+z-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}\frac{1}{z-\epsilon_{1}}n_{F}\left(z\right)\\
+ & =-\int_{\mathcal{C}_{3}}\frac{dz}{2\pi i}\frac{1}{i\omega_{n}+z-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}\frac{1}{z-\epsilon_{1}}n_{F}\left(z\right)\\
+ & =\left[\frac{1}{i\omega_{n}+\epsilon_{1}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}}n_{F}\left(\epsilon_{1}\right)+\frac{1}{-\left(i\omega_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}\right)-\epsilon_{1}}n_{F}\left(-\left(i\omega_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}\right)\right)\right]\\
+ & =-\frac{n_{F}\left(\epsilon_{2}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Putting this back into 
+\begin_inset Formula $\Pi$
+\end_inset
+
+, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Pi_{zz}\left(i\omega_{n}\right)=-\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\nu\right)\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\nu\right)\right)\left(n_{B}\left(-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{F}\left(\epsilon_{2}\right)\right)\frac{n_{F}\left(\epsilon_{2}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{1}\right)}{i\omega_{n}-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analytically continuing to real frequencies and taking the imaginary part
+ and using the Sokhotski-Plemej formula: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\omega+\zeta\pm i\delta}=P\frac{1}{\omega+\zeta}\mp i\pi\delta\left(\omega+\zeta\right),
+\end{equation}
+
+\end_inset
+
+we get 
+\begin_inset Formula 
+\begin{align*}
+\text{Im}\Pi_{zz}\left(\omega\right) & =\pi\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\int\frac{d\nu}{\pi}\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\nu\right)\\
+ & \times\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\nu\right)\right)\left(n_{B}\left(-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{F}\left(\epsilon_{2}\right)\right)\left[n_{F}\left(\epsilon_{2}+\nu+\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)-n_{F}\left(\epsilon_{1}\right)\right]\delta\left(\omega-\nu-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}\right)\\
+\\
+ & =\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\omega-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}\right)\\
+ & \times\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\omega-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}\right)\right)\left(n_{B}\left(\epsilon_{2}-\omega-\epsilon_{1}\right)+n_{F}\left(\epsilon_{2}\right)\right)\left[n_{F}\left(\omega+\epsilon_{1}\right)-n_{F}\left(\epsilon_{1}\right)\right]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where in the second step we performed the integral over 
+\begin_inset Formula $\nu.$
+\end_inset
+
+ To calculate the optical conductivity we simply divide by the frequency
+ 
+\begin_inset Formula 
+\begin{align*}
+ & \text{Re}\sigma_{zz}\left(\omega\right)\\
+ & =\frac{\text{Im}\Pi_{zz}\left(\omega\right)}{\omega}\\
+ & =\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\omega-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}\right)\\
+ & \times\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\omega-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}+\epsilon_{1}\right)\right)\left(n_{B}\left(\epsilon_{2}-\omega-\epsilon_{1}\right)+n_{F}\left(\epsilon_{2}\right)\right)\frac{\left[n_{F}\left(\omega+\epsilon_{1}\right)-n_{F}\left(\epsilon_{1}\right)\right]}{\omega}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking the dc limit
+\begin_inset Formula 
+\begin{align*}
+ & =\sum_{\bm{k}\bm{k}'\boldsymbol{q}}\Gamma^{II}\left(\bm{k},\bm{k}'\right)\frac{d\epsilon_{1}}{2\pi}\frac{d\epsilon_{2}}{2\pi}\frac{\hbar}{2M\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}}A_{\text{Pd}}\left(\bm{k},\epsilon_{1}\right)A_{\text{Pd}}\left(\bm{k}',\epsilon_{2}\right)\chi''\left(\boldsymbol{q},\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}\right)\\
+ & \times\left(1+n_{b}\left(\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}\right)+n_{b}\left(\epsilon_{1}-\omega_{\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}}-\epsilon_{2}\right)\right)\left(n_{B}\left(\epsilon_{1}-\epsilon_{2}\right)+n_{F}\left(-\epsilon_{2}\right)\right)\left(-\frac{\partial n_{f}}{\partial\epsilon_{1}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

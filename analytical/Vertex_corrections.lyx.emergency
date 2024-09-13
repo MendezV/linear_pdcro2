@@ -1,0 +1,808 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Vertex corrections
+\end_layout
+
+\begin_layout Section
+General formalism applied to impurity scattering
+\end_layout
+
+\begin_layout Standard
+We start with the Hamiltonian 
+\begin_inset Formula 
+\[
+H=\sum_{\boldsymbol{k}}\varepsilon_{\boldsymbol{k}}c_{\boldsymbol{k}}^{\dagger}c_{\boldsymbol{k}}+\sum_{\boldsymbol{k}}V_{\boldsymbol{k}-\boldsymbol{k}'}c_{\boldsymbol{k}}^{\dagger}c_{\boldsymbol{k}'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the first born approximation and performing the impurity average,
+ the green's function becomes 
+\begin_inset Formula 
+\[
+\mathcal{G}\left(\boldsymbol{k},i\omega_{n}\right)=\frac{1}{i\omega_{n}-\varepsilon_{\boldsymbol{k}}+\frac{i}{2\tau\left(\boldsymbol{k}\right)}\text{sign}\omega_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the single particle lifetime is given by 
+\begin_inset Formula 
+\[
+\frac{1}{\tau\left(\boldsymbol{k}\right)}=\frac{2\pi}{\hbar}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}-\boldsymbol{k}'}\right|^{2}\delta\left(\varepsilon_{\boldsymbol{k}}-\varepsilon_{\boldsymbol{k}'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, with the current operator given by 
+\begin_inset Formula 
+\[
+\boldsymbol{J}_{\boldsymbol{q}}\left(i\omega_{n}\right)=\frac{1}{\beta}\sum_{\boldsymbol{k}}\sum_{i\nu_{n}}\boldsymbol{v}_{\boldsymbol{k}+\boldsymbol{q}/2}c_{\boldsymbol{k}}^{\dagger}\left(i\nu_{n}\right)c_{\boldsymbol{k}+\boldsymbol{q}}\left(i\nu_{n}+i\omega_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the current-current correlation function can be expressed as 
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{q}}^{xx}\left(i\omega_{n}\right)=-\int d\tilde{k}\Gamma_{x}^{0}\left(\tilde{k},\tilde{k}+\tilde{q}\right)\mathcal{G}\left(\tilde{k}\right)\mathcal{G}\left(\tilde{k}+\tilde{q}\right)\Gamma_{x}\left(\tilde{k}+\tilde{q},\tilde{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we have 
+\begin_inset Formula 
+\[
+\Gamma_{x}^{0}\left(\tilde{k},\tilde{k}+\tilde{q}\right)=v_{\boldsymbol{k}+\boldsymbol{q}/2}^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the dressed vertex function is given by 
+\begin_inset Formula 
+\[
+\Gamma_{x}\left(\tilde{k}+\tilde{q},\tilde{k}\right)=\Gamma_{x}^{0}\left(\tilde{k}+\tilde{q},\tilde{k}\right)+\int d\tilde{k}'\Lambda^{\text{irr}}\left(\tilde{k},\tilde{q},\tilde{k}'\right)\mathcal{G}\left(\tilde{k}+\tilde{k}'\right)\mathcal{G}\left(\tilde{k}+\tilde{q}+\tilde{k}'\right)\Gamma_{x}\left(\tilde{k}+\tilde{q}+\tilde{k}',\tilde{k}+\tilde{k}'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the first born approximation we choose
+\begin_inset Formula 
+\begin{align*}
+\Lambda^{\text{irr}}\left(\tilde{k},\tilde{q},\tilde{k}'\right) & =W\left(\tilde{k}'\right)\\
+ & =\left|V_{\boldsymbol{k}'}\right|^{2}\beta\delta_{ik_{n}',0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+to be consistent with the Ward Identity.
+ As such the vertex corrections take the form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma_{x}\left(\tilde{k}+\tilde{q},\tilde{k}\right)=\Gamma_{x}^{0}\left(\tilde{k}+\tilde{q},\tilde{k}\right)+\int d\tilde{k}'W\left(\tilde{k}'\right)\mathcal{G}\left(\tilde{k}+\tilde{k}'\right)\mathcal{G}\left(\tilde{k}+\tilde{q}+\tilde{k}'\right)\Gamma_{x}\left(\tilde{k}+\tilde{q}+\tilde{k}',\tilde{k}+\tilde{k}'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Having defined the vertex function the current-current correlation at zero
+ momentum is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi_{\boldsymbol{q}}^{xx}\left(i\omega_{n}\right)=-\frac{1}{\beta V}\sum_{ik_{n}\boldsymbol{k}}\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)\mathcal{G}\left(\boldsymbol{k},ik_{n}\right)\mathcal{G}\left(\boldsymbol{k},i\omega_{n}+ik_{n}\right)\Gamma_{x}\left(\boldsymbol{k},\boldsymbol{k},i\omega_{n}+ik_{n},ik_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this calculation we use the physical Greens function that is completely
+ analytic in the upper half plane and in the lower half plane but has a
+ branch cut.
+ We can now carry out the Matsubara summation 
+\begin_inset Formula 
+\begin{align*}
+S\left(i\omega_{n}\right)=\frac{1}{\beta}\sum_{ik_{n}}f\left(ik_{n},ik_{n}+i\omega_{n}\right) & =-\int_{\mathcal{C}}\frac{dz}{2\pi i}n_{f}\left(z\right)f\left(z,z+i\omega_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the first argument of 
+\begin_inset Formula $f\left(z,z+i\omega_{n}\right)$
+\end_inset
+
+ corresponds to the first green's function and to the second argument of
+ the vertex .
+ 
+\end_layout
+
+\begin_layout Standard
+Assuming all other contributions (the semicircles at infinity and the connection
+ at infinity of the two branch cuts), drop we have 
+\begin_inset Formula 
+\begin{align*}
+S\left(i\omega_{n}\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon+i\eta,\epsilon+i\eta+i\omega_{n}\right)-f\left(\epsilon-i\eta,\epsilon-i\eta+i\omega_{n}\right)\right)\\
+-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon-i\omega_{n}\right)\left(f\left(\epsilon-i\omega_{n}+i\eta,\epsilon+i\eta\right)-f\left(\epsilon-i\omega_{n}-i\eta,\epsilon-i\eta\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is real and the two branch cuts are at 
+\begin_inset Formula $\text{im}z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{im}z=-iq_{n}.$
+\end_inset
+
+ When the argument contains a finite imaginary part, we can drop the 
+\begin_inset Formula $i\eta$
+\end_inset
+
+ prescription and we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S\left(i\omega_{n}\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon+i\eta,\epsilon+i\omega_{n}\right)-f\left(\epsilon-i\eta,\epsilon+i\omega_{n}\right)\right)\\
+-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon-i\omega_{n}\right)\left(f\left(\epsilon-i\omega_{n},\epsilon+i\eta\right)-f\left(\epsilon-i\omega_{n},\epsilon-i\eta\right)\right)\\
+\\
+S\left(i\omega_{n}\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon+i\eta,\epsilon+i\omega_{n}\right)-f\left(\epsilon-i\eta,\epsilon+i\omega_{n}\right)\right)\\
+-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon-i\omega_{n},\epsilon+i\eta\right)-f\left(\epsilon-i\omega_{n},\epsilon-i\eta\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where in the second line we used the periodicity of the fermi function with
+ respect to bosonic matsubara frequencies.
+ 
+\end_layout
+
+\begin_layout Standard
+Performing analytic continuation, we have 
+\begin_inset Formula 
+\begin{align*}
+S\left(i\omega_{n}\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon+i\eta,\epsilon+\omega+i\eta\right)-f\left(\epsilon-i\eta,\epsilon+\omega+i\eta\right)\right)\\
+-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f\left(\epsilon-\omega-i\eta,\epsilon+i\eta\right)-f\left(\epsilon-\omega-i\eta,\epsilon-i\eta\right)\right)\\
+\\
+S^{R}\left(\omega\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f^{RR}\left(\epsilon,\epsilon+\omega\right)-f^{AR}\left(\epsilon,\epsilon+\omega\right)\right)\\
+-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}n_{f}\left(\epsilon\right)\left(f^{AR}\left(\epsilon-\omega,\epsilon\right)-f^{AA}\left(\epsilon-\omega,\epsilon\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can further make a change of variables in the second integral to bring
+ everything together by factoring 
+\begin_inset Formula $n_{F}\left(\epsilon\right),$
+\end_inset
+
+this leads to 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+S^{R}\left(\omega\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}\left(n_{f}\left(\epsilon\right)f^{RR}\left(\epsilon,\epsilon+\omega\right)-n_{f}\left(\epsilon\right)f^{AR}\left(\epsilon,\epsilon+\omega\right)+n_{f}\left(\epsilon+\omega\right)f^{AR}\left(\epsilon,\epsilon+\omega\right)-n_{f}\left(\epsilon+\omega\right)f^{AA}\left(\epsilon,\epsilon+\omega\right)\right)\\
+\\
+S^{R}\left(\omega\right)=-\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}\left(n_{f}\left(\epsilon\right)f^{RR}\left(\epsilon,\epsilon+\omega\right)+\left[n_{f}\left(\epsilon+\omega\right)-n_{f}\left(\epsilon\right)\right]f^{AR}\left(\epsilon,\epsilon+\omega\right)-n_{f}\left(\epsilon+\omega\right)f^{AA}\left(\epsilon,\epsilon+\omega\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now take the imaginary part using the fact that 
+\begin_inset Formula $\overline{f^{AA}\left(\epsilon,\epsilon+\omega\right)}=f^{RR}\left(\epsilon,\epsilon+\omega\right).$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\text{Im}S^{R}\left(\omega\right) & =-\text{Im}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi i}\left(n_{f}\left(\epsilon\right)f^{RR}\left(\epsilon,\epsilon+\omega\right)+\left[n_{f}\left(\epsilon+\omega\right)-n_{f}\left(\epsilon\right)\right]f^{AR}\left(\epsilon,\epsilon+\omega\right)-n_{f}\left(\epsilon+\omega\right)f^{AA}\left(\epsilon,\epsilon+\omega\right)\right)\\
+ & =-\text{Re}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi}\left(n_{f}\left(\epsilon\right)f^{RR}\left(\epsilon,\epsilon+\omega\right)+\left[n_{f}\left(\epsilon+\omega\right)-n_{f}\left(\epsilon\right)\right]f^{AR}\left(\epsilon,\epsilon+\omega\right)-n_{f}\left(\epsilon+\omega\right)f^{RR}\left(\epsilon,\epsilon+\omega\right)\right)\\
+ & =-\text{Re}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi}\left(+\left[n_{f}\left(\epsilon+\omega\right)-n_{f}\left(\epsilon\right)\right]\left(f^{AR}\left(\epsilon,\epsilon+\omega\right)-f^{RR}\left(\epsilon,\epsilon+\omega\right)\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the 
+\begin_inset Formula $\omega\rightarrow0$
+\end_inset
+
+ limit we have 
+\begin_inset Formula 
+\[
+\text{Im}S^{R}\left(\omega\right)=\text{Re}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi}\left(\omega\left(-\frac{\partial n_{f}\left(\epsilon\right)}{\partial\epsilon}\right)\left(f^{AR}\left(\epsilon,\epsilon\right)-f^{RR}\left(\epsilon,\epsilon\right)\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the degenerate limit for the fermions, we get 
+\begin_inset Formula 
+\begin{align*}
+\text{Im}S^{R}\left(\omega\right) & =\omega\text{Re}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi}\left(\delta\left(\epsilon\right)\left(f^{AR}\left(\epsilon,\epsilon\right)-f^{RR}\left(\epsilon,\epsilon\right)\right)\right)\\
+ & =\frac{\omega}{2\pi}\text{Re}\left(f^{AR}\left(0,0\right)-f^{RR}\left(0,0\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we have 
+\begin_inset Formula 
+\begin{align*}
+\sigma^{xx} & =-e^{2}\lim_{\omega\rightarrow0}\lim_{\boldsymbol{q}\rightarrow0}\frac{\Pi_{\boldsymbol{q}}^{xx}\left(\omega\right)}{\omega}\\
+ & =\text{Re}\frac{e^{2}}{2\pi}\frac{1}{V}\sum_{\boldsymbol{k}}\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)\left[G_{A}\left(\boldsymbol{k},0\right)G_{R}\left(\boldsymbol{k},0\right)\Gamma_{x}^{RA}\left(\boldsymbol{k},\boldsymbol{k},0,0\right)-G_{R}\left(\boldsymbol{k},0\right)G_{R}\left(\boldsymbol{k},0\right)\Gamma_{x}^{RR}\left(\boldsymbol{k},\boldsymbol{k},0,0\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if we include spin degeneracy, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma^{xx} & =-e^{2}\lim_{\omega\rightarrow0}\lim_{\boldsymbol{q}\rightarrow0}\frac{\Pi_{\boldsymbol{q}}^{xx}\left(\omega\right)}{\omega}\\
+ & =2\text{Re}\frac{e^{2}}{2\pi}\frac{1}{V}\sum_{\boldsymbol{k}}\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)\left[G_{A}\left(\boldsymbol{k},0\right)G_{R}\left(\boldsymbol{k},0\right)\Gamma_{x}^{RA}\left(\boldsymbol{k},\boldsymbol{k},0,0\right)-G_{R}\left(\boldsymbol{k},0\right)G_{R}\left(\boldsymbol{k},0\right)\Gamma_{x}^{RR}\left(\boldsymbol{k},\boldsymbol{k},0,0\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice the three minus signs (the bubble, the definition of the conductivity,
+ and the fermionic matsubara sum).
+ 
+\end_layout
+
+\begin_layout Section
+Vertex corrections in the 1BA
+\end_layout
+
+\begin_layout Standard
+In the first born approximation we will solve the vertex equation which
+ will then enter the conductivity calculation above.
+ Considering the 
+\begin_inset Formula $\boldsymbol{q}\rightarrow0$
+\end_inset
+
+ limit from the outset, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{x}\left(\boldsymbol{k},\boldsymbol{k},i\omega_{n}+ik_{n},ik_{n}\right) & =\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)+\frac{1}{\beta V}\sum_{ik_{n}'\boldsymbol{k}'}W\left(\boldsymbol{k}'\right)\delta_{ik_{n}',0}\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',ik_{n}+ik_{n}'\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n}+ik_{n}'\right)\Gamma_{x}\left(\boldsymbol{k}+\boldsymbol{k}',\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n}+ik_{n}',ik_{n}+ik_{n}'\right)\\
+ & =\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'}\right|^{2}\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n}\right)\Gamma_{x}\left(\boldsymbol{k}+\boldsymbol{k}',\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n},ik_{n}\right)\\
+ & =\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}\mathcal{G}\left(\boldsymbol{k}',ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\omega_{n}+ik_{n}\right)\Gamma_{x}\left(\boldsymbol{k}',\boldsymbol{k}',i\omega_{n}+ik_{n},ik_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We assume the vertex function has the structure 
+\begin_inset Formula 
+\[
+\boldsymbol{\Gamma}\left(\boldsymbol{k},\epsilon\right)=\frac{\boldsymbol{k}}{m}\gamma\left(\boldsymbol{k},\epsilon\right).
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\boldsymbol{k}}{m}\gamma\left(\boldsymbol{k},\boldsymbol{k},i\omega_{n}+ik_{n},ik_{n}\right)=\frac{\boldsymbol{k}}{m}+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}\mathcal{G}\left(\boldsymbol{k}',ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\omega_{n}+ik_{n}\right)\frac{\boldsymbol{k}'}{m}\gamma\left(\boldsymbol{k}',\boldsymbol{k}',i\omega_{n}+ik_{n},ik_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall, taking the dot product with 
+\begin_inset Formula $\boldsymbol{k}/k^{2}$
+\end_inset
+
+ we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma\left(\boldsymbol{k},\boldsymbol{k},i\omega_{n}+ik_{n},ik_{n}\right)=1+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}\mathcal{G}\left(\boldsymbol{k}',ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}',i\omega_{n}+ik_{n}\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\gamma\left(\boldsymbol{k}',\boldsymbol{k}',i\omega_{n}+ik_{n},ik_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We are interested in the functions 
+\begin_inset Formula $\gamma^{RA}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma^{RR}$
+\end_inset
+
+ that appear in the conductivity, we can take the retarded first argument
+ and leave the second argument as either retarded or advanced, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma^{RX}\left(\boldsymbol{k},\boldsymbol{k},\omega+\epsilon,\epsilon\right)=1+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}G_{A}\left(\boldsymbol{k}',\epsilon\right)G_{R}\left(\boldsymbol{k}',\omega+\epsilon\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\gamma^{RX}\left(\boldsymbol{k}',\boldsymbol{k}',\omega+\epsilon,\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the limit 
+\begin_inset Formula $\omega\rightarrow0$
+\end_inset
+
+ we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma^{RX}\left(\boldsymbol{k},\boldsymbol{k},\epsilon,\epsilon\right)=1+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}G_{X}\left(\boldsymbol{k}',\epsilon\right)G_{R}\left(\boldsymbol{k}',\epsilon\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\gamma^{RX}\left(\boldsymbol{k}',\boldsymbol{k}',\epsilon,\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we consider the product 
+\begin_inset Formula $G_{X}\left(\boldsymbol{k}',\epsilon\right)G_{R}\left(\boldsymbol{k}',\epsilon\right)$
+\end_inset
+
+ for both values of 
+\begin_inset Formula $X$
+\end_inset
+
+ sepratedly.
+ First, for 
+\begin_inset Formula $X=A$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{align*}
+G_{A}\left(\boldsymbol{k},\omega\right)G_{R}\left(\boldsymbol{k},\omega\right) & =\left|G_{R}\left(\boldsymbol{k},\omega\right)\right|^{2}\\
+ & =\left|\frac{1}{\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}\left(\boldsymbol{k},\omega\right)}\right|^{2}\\
+ & =\frac{1}{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}\\
+ & =\frac{1}{-2\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}\frac{-2\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}\\
+ & =\frac{1}{-2\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}A\left(\boldsymbol{k},\omega\right)\\
+ & =\tau\left(\boldsymbol{k},\omega\right)A\left(\boldsymbol{k},\omega\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the case of low impurity density (weak impurity scattering), we can approxima
+te the spectral function as the free electron spectral function so that
+ 
+\begin_inset Formula 
+\[
+G_{A}\left(\boldsymbol{k},\epsilon\right)G_{R}\left(\boldsymbol{k},\epsilon\right)=\tau2\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}}\right).
+\]
+
+\end_inset
+
+ At the same time, we can analyze the case where 
+\begin_inset Formula $X=R.$
+\end_inset
+
+ In this case, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+G_{R}\left(\boldsymbol{k},\epsilon\right)G_{R}\left(\boldsymbol{k},\epsilon\right) & =\left(\frac{1}{\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)-i\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}\right)^{2}\\
+ & =\left(\frac{\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)+i\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}\right)^{2}\\
+ & =\frac{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+2i\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)\Sigma^{R}''\left(\boldsymbol{k},\omega\right)-\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}{\left(\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}\right)^{2}}\\
+ & =\frac{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}-\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}{\left[\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}\right]^{2}}+\frac{2i\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)\Sigma^{R}''\left(\boldsymbol{k},\omega\right)}{\left[\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}\right]^{2}}\\
+ & =\frac{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}-\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}{\left[\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}\right]^{2}}-i\frac{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)A\left(\boldsymbol{k},\omega\right)}{\left(\omega-\varepsilon_{\boldsymbol{k}}-\Sigma^{R}'\left(\boldsymbol{k},\omega\right)\right)^{2}+\left(\Sigma^{R}''\left(\boldsymbol{k},\omega\right)\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This contribution can be neglected so that we get only contributions from
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma^{RA}\left(\boldsymbol{k},\boldsymbol{k},\epsilon,\epsilon\right)=1+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}\tau2\pi\delta\left(\epsilon-\varepsilon_{\boldsymbol{k}'}\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\gamma^{RX}\left(\boldsymbol{k}',\boldsymbol{k}',\epsilon,\epsilon\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we measure the energy with respect to the fermi level with momenta on
+ the fermi level
+\begin_inset Formula 
+\[
+\gamma^{RA}\left(\boldsymbol{k},\boldsymbol{k},\varepsilon_{F},\varepsilon_{F}\right)=1+\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}\tau2\pi\delta\left(\varepsilon_{F}-\varepsilon_{\boldsymbol{k}'}\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\gamma^{RX}\left(\boldsymbol{k}',\boldsymbol{k}',\varepsilon_{F},\varepsilon_{F}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the delta function implies that the magnitude of 
+\begin_inset Formula $\boldsymbol{k}'$
+\end_inset
+
+ is 
+\begin_inset Formula $k_{F}$
+\end_inset
+
+ , then the integration gets rid of the angular dependence and the remaining
+ vertex function is a constant
+\end_layout
+
+\begin_layout Standard
+so that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\gamma^{RA} & =\frac{1}{1-\tau\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}2\pi\delta\left(\varepsilon_{F}-\varepsilon_{\boldsymbol{k}'}\right)\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}}\\
+ & =\frac{1}{1+\tau\left(\tau_{tr}^{-1}\left(\varepsilon_{F}\right)-\tau^{-1}\left(\varepsilon_{F}\right)\right)}\\
+ & =\frac{1}{1+\tau_{tr}^{-1}\left(\varepsilon_{F}\right)\tau\left(\varepsilon_{F}\right)-1}\\
+ & =\frac{\tau_{tr}}{\tau}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we identified 
+\begin_inset Formula 
+\[
+\tau_{tr}^{-1}\left(\varepsilon_{F}\right)=\frac{1}{V}\sum_{\boldsymbol{k}'}\left|V_{\boldsymbol{k}'-\boldsymbol{k}}\right|^{2}2\pi\delta\left(\varepsilon_{F}-\varepsilon_{\boldsymbol{k}'}\right)\left(1-\frac{\boldsymbol{k}'\cdot\boldsymbol{k}}{k^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plugging this into the equation for the conductivity, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma^{xx} & =\text{Re}\frac{e^{2}}{2\pi}\frac{1}{V}\sum_{\boldsymbol{k}}\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)G_{A}\left(\boldsymbol{k},0\right)G_{R}\left(\boldsymbol{k},0\right)\Gamma_{x}^{RA}\left(\boldsymbol{k},\boldsymbol{k},0,0\right)\\
+ & =\frac{1}{V}\frac{e^{2}}{2\pi}\sum_{\boldsymbol{k}}\frac{k_{x}}{m}\tau2\pi\delta\left(\varepsilon_{\boldsymbol{k}}\right)\frac{k_{x}}{m}\frac{\tau_{tr}}{\tau}\\
+ & =e^{2}\tau_{tr}\frac{1}{V}\sum_{\boldsymbol{k}}v_{x}^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Carrying out the integral
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{V}\sum_{\boldsymbol{k}}v_{x}^{2}\delta\left(\varepsilon_{\boldsymbol{k}}\right)=\frac{n}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that we get in the end 
+\begin_inset Formula 
+\[
+\sigma^{xx}=\frac{ne^{2}\tau_{tr}}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Electron-phonon problem
+\end_layout
+
+\begin_layout Standard
+The initial part of the calculation is identical in both problems, where
+ the conductivity is given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma^{xx}=-e^{2}\lim_{\omega\rightarrow0}\lim_{\boldsymbol{q}\rightarrow0}\frac{\Pi_{\boldsymbol{q}}^{xx}\left(\omega\right)}{\omega}=2e^{2}\text{Re}\frac{1}{V}\sum_{\boldsymbol{k}}\int_{-\infty}^{\infty}\frac{d\epsilon}{2\pi}\left(-\frac{\partial n_{f}\left(\epsilon\right)}{\partial\epsilon}\right)\Gamma_{x}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)\left[\left|G_{R}\left(\boldsymbol{k},\epsilon\right)\right|^{2}\Gamma_{x}^{RA}\left(\boldsymbol{k},\boldsymbol{k},\epsilon,\epsilon\right)-G_{R}\left(\boldsymbol{k},\epsilon\right)^{2}\Gamma_{x}^{RR}\left(\boldsymbol{k},\boldsymbol{k},\epsilon,\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The challenge, however, is to determine the solution to the vertex equation
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\Gamma}\left(\boldsymbol{k},\boldsymbol{k},i\omega_{n}+ik_{n},ik_{n}\right) & =\boldsymbol{\Gamma}^{0}\left(\boldsymbol{k},\boldsymbol{k}\right)+\frac{1}{\beta V}\sum_{\lambda}\sum_{ik_{n}'\boldsymbol{k}'}\left|M_{\boldsymbol{k}'}^{\lambda}\right|^{2}D_{\lambda}\left(\boldsymbol{k}',ik_{n}'\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',ik_{n}\right)\mathcal{G}\left(\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n}\right)\boldsymbol{\Gamma}\left(\boldsymbol{k}+\boldsymbol{k}',\boldsymbol{k}+\boldsymbol{k}',i\omega_{n}+ik_{n},ik_{n}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the electron-phonon matrix element is given by 
+\begin_inset Formula 
+\[
+\left|M_{\boldsymbol{k}'}^{\lambda}\right|^{2}=\frac{D^{2}k^{\prime2}\hbar}{2M\omega_{\lambda\boldsymbol{k}'}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before proceeding to the approximate solution of the vertex equation we
+ can simplify the general expression for the conductivity.
+ We consider the Ward identy, derived by schriffer and relating to the conservat
+ion of charge 
+\begin_inset Formula 
+\[
+iq_{0}\Gamma_{0}\left(\tilde{k}+\tilde{q},\tilde{k}\right)-i\boldsymbol{q}\cdot\boldsymbol{\Gamma}\left(\tilde{k}+\tilde{q},\tilde{k}\right)=-\mathcal{G}^{-1}\left(\tilde{k}+\tilde{q}\right)+\mathcal{G}^{-1}\left(\tilde{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+taking both retarded arguments, we have 
+\begin_inset Formula 
+\[
+i\boldsymbol{q}\cdot\boldsymbol{\Gamma}^{RR}\left(\tilde{k}+\tilde{q},\tilde{k}\right)-iq_{0}\Gamma_{0}^{RR}\left(\tilde{k}+\tilde{q},\tilde{k}\right)=-iq_{0}-\xi_{\boldsymbol{k}+\boldsymbol{q}}+\xi_{\boldsymbol{k}}+\Sigma^{R}\left(\tilde{k}+\tilde{q}\right)-\Sigma^{R}\left(\tilde{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then taking 
+\begin_inset Formula $\boldsymbol{q}=0$
+\end_inset
+
+ we have in matsubara frequencies
+\begin_inset Formula 
+\[
+iq_{0}\Gamma_{0}^{RR}\left(\boldsymbol{k},\boldsymbol{k},q_{0}+\nu,\nu\right)=iq_{0}-\left(\Sigma^{R}\left(\boldsymbol{k},q_{0}+\nu\right)-\Sigma^{R}\left(\boldsymbol{k},\nu\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula 
+\[
+\Gamma\left(\boldsymbol{k},\boldsymbol{k},i\omega+i\nu,i\nu\right)=1-\frac{\Sigma\left(\boldsymbol{k},i\omega+i\nu\right)-\Sigma\left(\boldsymbol{k},i\nu\right)}{i\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

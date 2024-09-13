@@ -1,0 +1,791 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Simplifications when the interaction is a constant
+\end_layout
+
+\begin_layout Section
+Updated Hamiltonian
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{ij}g_{kj}\left[1-\lambda(X_{ij}+X_{kj})\right]p_{i\alpha}^{\dagger}(\vec{S}_{j}\cdot\vec{\sigma}_{\alpha\beta})p_{k\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we fourier transform the Hamiltonian using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{i\alpha}^{\dagger}=\frac{1}{\sqrt{N}}\sum_{\bm{k}}e^{-i\bm{k}\bm{R}_{i}}p_{\boldsymbol{k}\alpha}^{\dagger}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\vec{S}_{j}=\frac{1}{\sqrt{N}}\sum_{\bm{q}}e^{-i\bm{q}\bm{R}_{j}}\vec{S}_{\boldsymbol{q}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first term in the interaction Hamiltonian, we have 
+\begin_inset Formula 
+\[
+H_{\text{int}}=H_{\text{int}}^{I}+H_{\text{int}}^{II}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}}^{I} & =\frac{1}{N^{3/2}}\frac{4}{U}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{i0}g_{k0}e^{-i\bm{q}\bm{R}_{j}-i\bm{k}\left(\bm{R}_{j}+\bm{R}_{i}\right)+i\bm{k}'\left(\bm{R}_{j}+\bm{R}_{k}\right)}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =\frac{1}{\sqrt{N}}\sum_{ik}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =\frac{1}{\sqrt{N}}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}g\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we defined the form factor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4}{U}g_{i0}g_{k0}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+g\left(\boldsymbol{k},\boldsymbol{k}'\right)=\sum_{ik}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we do the same for the phonon part 
+\begin_inset Formula 
+\begin{align*}
+H_{\text{int}}^{II} & =-\lambda\frac{1}{N^{2}}\frac{4}{U}\sum_{\bm{k}\bm{k}'\bm{q}\boldsymbol{q}'}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}g_{ij}g_{kj}\left(X_{i}\left(\boldsymbol{q}'\right)+X_{k}\left(\boldsymbol{q}'\right)\right)e^{-i\bm{q}\bm{R}_{j}-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}-i\bm{q}'\bm{R}_{j}}p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & =-\frac{\lambda}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{ik\\
+\alpha\beta
+}
+}g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)\left(X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)+X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we assume that the 
+\begin_inset Formula $g_{kj}$
+\end_inset
+
+ are independent of 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{\text{int}}=\frac{4g^{2}}{U}\sum_{\substack{\langle i,j,k\rangle\\
+\alpha\beta
+}
+}\left[1-\lambda(X_{ij}+X_{kj})\right]p_{i\alpha}^{\dagger}(\vec{S}_{j}\cdot\vec{\sigma}_{\alpha\beta})p_{k\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+defining 
+\begin_inset Formula 
+\[
+g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which has the property (which works even with the position dependent hybridizati
+ons)
+\begin_inset Formula 
+\[
+g_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\overline{g_{ji}\left(\boldsymbol{k}',\boldsymbol{k}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we have 
+\begin_inset Formula 
+\begin{align*}
+-\frac{\lambda}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{ik\\
+\alpha\beta
+}
+}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)+\overline{g_{ki}\left(\boldsymbol{k},\boldsymbol{k}'\right)}X_{k}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+-\frac{\lambda}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{ik\\
+\alpha\beta
+}
+}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+-\frac{\lambda}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{\substack{ik\\
+\alpha\beta
+}
+}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+-\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined 
+\begin_inset Formula 
+\begin{align*}
+\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =-\lambda\sum_{k}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}\right)\\
+ & =-\frac{4g^{2}\lambda}{U}\sum_{k}e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{k}}+e^{-i\bm{k}\bm{R}_{k}+i\bm{k}'\bm{R}_{i}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the property 
+\begin_inset Formula 
+\[
+\overline{\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)}=\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+just to check that no obvious mistake was made I test for hermiticity 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\overline{\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)}\overline{X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)}p_{\boldsymbol{k}'\beta}^{\dagger}\left[\overline{\vec{S}_{\boldsymbol{q}}}\cdot\overline{\vec{\sigma}_{\alpha\beta}}\right]p_{\boldsymbol{k}\alpha} & \text{hermitean conj}\\
+\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\overline{\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)}X_{i}\left(\boldsymbol{k}'+\boldsymbol{q}-\boldsymbol{k}\right)p_{\boldsymbol{k}'\beta}^{\dagger}\left[\vec{S}_{-\boldsymbol{q}}\cdot\vec{\sigma}_{\beta\alpha}\right]p_{\boldsymbol{k}\alpha} & \text{FT of X and S}\\
+\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\overline{\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)}X_{i}\left(\boldsymbol{k}'-\boldsymbol{q}-\boldsymbol{k}\right)p_{\boldsymbol{k}'\beta}^{\dagger}\left[\vec{S}_{+\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}\alpha} & \boldsymbol{q}\rightarrow-\boldsymbol{q}\\
+\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\lambda_{i}\left(\boldsymbol{k}',\boldsymbol{k}\right)X_{i}\left(\boldsymbol{k}'-\boldsymbol{q}-\boldsymbol{k}\right)p_{\boldsymbol{k}'\beta}^{\dagger}\left[\vec{S}_{+\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}\alpha} & \text{symmetry }\alpha_{i}\\
+\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Overall we have the 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+V_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta} & =\frac{1}{\sqrt{N}}\sum_{\bm{q}}\left(g\left(\boldsymbol{k},\boldsymbol{k}'\right)\delta\left(\boldsymbol{q}-\boldsymbol{k}+\boldsymbol{k}'\right)+\frac{1}{\sqrt{N}}\sum_{i}\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)\right)\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]\\
+ & =U_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}+W_{\boldsymbol{k}\boldsymbol{k}'}^{\alpha\beta}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The interaction hamiltonian being:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+H_{\text{int}} & =\frac{1}{\sqrt{N}}\sum_{\substack{\bm{k}\bm{k}'\\
+\alpha\beta
+}
+}g\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{k}-\boldsymbol{k}'}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\\
+ & +\frac{1}{N}\sum_{\bm{k}\bm{k}'\bm{q}}\sum_{i\alpha\beta}\lambda_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left[\vec{S}_{\boldsymbol{q}}\cdot\vec{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For this case where we only have coupling along the 
+\begin_inset Formula $z$
+\end_inset
+
+ direction only, the Hamiltonian would take the form factors given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lambda_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =-\lambda\sum_{k}\left(g_{ik}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\overline{g_{ik}\left(\boldsymbol{k}',\boldsymbol{k}\right)}\right)\\
+ & =-\frac{4g^{2}\lambda}{U}\sum_{k}e^{-ik_{z}+i\bm{k}'\bm{R}_{k}}+e^{-i\bm{k}\bm{R}_{k}+ik_{z}'}\\
+ & =-\frac{4g^{2}\lambda}{U}e^{-ik_{z}+ik_{z}'}+e^{-ik_{z}'+ik_{z}'}\\
+ & -\frac{4g^{2}\lambda}{U}e^{-ik_{z}-ik_{z}'}+e^{+ik_{z}'+ik_{z}'}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+g\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}\left[2\cos\left(k_{z}a_{z}\right)\right]\left[2\cos\left(k_{z}'a_{z}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+and 
+\begin_inset Formula 
+\begin{align*}
+\lambda_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =\lambda_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda g\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Updated current
+\end_layout
+
+\begin_layout Standard
+In real space we had 
+\begin_inset Formula 
+\begin{equation}
+\bm{J}_{N}=-i\sum_{ij\sigma}t_{ij}\left(\bm{R}_{i}-\bm{R}_{j}\right)p_{i\sigma}^{\dagger}p_{j\sigma}-i\sum_{ilj\beta\alpha}2\frac{g_{il}g_{jl}}{U}\left[1-\lambda\left(X_{il}+X_{jl}\right)\right]\left(\bm{R}_{i}-\bm{R}_{j}\right)p_{i\alpha}^{\dagger}\left(\bm{S}_{l}\cdot\bm{\sigma}_{\alpha\beta}\right)p_{j\beta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In fourier space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\bm{J}_{N}^{1}\left(\omega_{n}\right) & =\sum_{\boldsymbol{k}\sigma i\nu_{n}}\boldsymbol{v}_{\boldsymbol{k}}p_{\boldsymbol{k}\sigma}^{\dagger}\left(i\nu_{n}\right)p_{\boldsymbol{k}\sigma}\left(\omega_{n}+\nu_{n}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the second part of the current operator
+\begin_inset Formula 
+\begin{align}
+\bm{J}_{N}^{2}\left(\omega_{n}\right) & =\boldsymbol{J}_{N}^{21}\left(\omega_{n}\right)+\boldsymbol{J}_{N}^{22}\left(\omega_{n}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{J}_{N}^{21}\left(\omega_{n}\right)=\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\alpha\beta\\
+i\nu_{l},i\nu_{n}
+\end{array}}\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{k}-\boldsymbol{k}'}\left(i\nu_{l}-i\nu_{n}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{J}_{N}^{22}\left(\omega_{n}\right) & =\sum_{\begin{array}{c}
+\boldsymbol{k}\boldsymbol{k}'\boldsymbol{q}\alpha\beta i\\
+i\nu_{l},i\mu_{m},i\nu_{n}
+\end{array}}\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)X_{i}\left(\boldsymbol{k}-\boldsymbol{k}'-\boldsymbol{q},i\nu_{l}-i\mu_{m}-i\nu_{n}\right)p_{\boldsymbol{k}\alpha}^{\dagger}\left(i\nu_{l}\right)\left[\bm{S}_{\boldsymbol{q}}\left(i\mu_{m}\right)\cdot\bm{\sigma}_{\alpha\beta}\right]p_{\boldsymbol{k}'\beta}\left(i\nu_{n}+i\omega_{n}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we defined
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-i2\frac{g_{i0}g_{j0}}{U}\left(\bm{R}_{i}-\bm{R}_{j}\right)e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\sum_{ij}\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-\lambda\sum_{j}\left(\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)+\boldsymbol{g}_{ji}\left(\boldsymbol{k},\boldsymbol{k}'\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+Now consider the case where the hybridization is position independent.
+ In that case, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=-i2\frac{g^{2}}{U}\left(\bm{R}_{i}-\bm{R}_{j}\right)e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the property (which works even with the position dependent hybridizations)
+\begin_inset Formula 
+\[
+\boldsymbol{g}_{ij}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\overline{\boldsymbol{g}_{ji}\left(\boldsymbol{k}',\boldsymbol{k}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}\sum_{ij}\left(\bm{R}_{j}-\bm{R}_{i}\right)\frac{e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}}{2i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}\lambda}{U}\sum_{j}\left(\bm{R}_{i}-\bm{R}_{j}\right)\frac{\left(e^{-i\bm{k}\bm{R}_{i}+i\bm{k}'\bm{R}_{j}}-e^{-i\bm{k}\bm{R}_{j}+i\bm{k}'\bm{R}_{i}}\right)}{2i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the case where we have only one mode connecting each adjacent layer verticall
+y, we have 
+\begin_inset Formula $\boldsymbol{R}_{i}=\pm a_{z}\hat{z}$
+\end_inset
+
+ which gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)=\frac{4g^{2}}{U}\left(2a_{z}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then, we consider the two posibilities for 
+\begin_inset Formula $\boldsymbol{\Lambda}_{i}\left(\boldsymbol{k},\boldsymbol{k}'\right)$
+\end_inset
+
+, which would be 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\boldsymbol{\Lambda}_{+}\left(\boldsymbol{k},\boldsymbol{k}'\right) & =-\frac{4g^{2}\lambda}{U}\left(2a_{z}\right)\hat{z}\sin\left(k_{z}a_{z}+k_{z}'a_{z}\right)\\
+ & =\boldsymbol{\Lambda}_{-}\left(\boldsymbol{k},\boldsymbol{k}'\right).\\
+ & =-\lambda\boldsymbol{f}\left(\boldsymbol{k},\boldsymbol{k}'\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the factor of 
+\begin_inset Formula $\left(2a_{z}\right)$
+\end_inset
+
+ is the effective lattice constant through which the electron is hopping.
+ The form factors above reproduce the case of a particle hopping in a 1d
+ chain when we remove the bosonic components of the current, in which case
+ 
+\begin_inset Formula $\boldsymbol{k}=\boldsymbol{k}'$
+\end_inset
+
+ .
+ Also the form factors have the right relative sign an prefactor between
+ them.
+ The right coupling constant also appears in the form factors with factors
+ of 4 included.
+ 
+\end_layout
+
+\begin_layout Standard
+If we work in the regime where 
+\begin_inset Formula 
+\[
+\frac{4g^{2}}{U}\gg\frac{4g^{2}}{U}\lambda\left(\frac{\hbar}{M\omega_{0}}\right)^{1/2}\gg\left(\frac{4g^{2}}{U}\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

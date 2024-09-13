@@ -1,0 +1,364 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},\epsilon-\omega-\nu\right)\chi''\left(\boldsymbol{p},\nu\right)\left[n_{B}\left(\epsilon-\omega-\nu\right)+n_{F}\left(\epsilon\right)\right]\left[n_{B}\left(\nu\right)+n_{F}\left(\omega+\nu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Changing variables 
+\begin_inset Formula $\omega+\nu=u$
+\end_inset
+
+, 
+\begin_inset Formula $d\nu=u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},\epsilon-\nu\right)\chi''\left(\boldsymbol{p},\nu-\omega\right)\left[n_{B}\left(\epsilon-\nu\right)+n_{F}\left(\epsilon\right)\right]\left[n_{B}\left(\nu-\omega\right)+n_{F}\left(\nu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+reorganizing using the symmetry properties of the occupation functions and
+ the spectral functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\sum_{\ell}\left|\lambda_{\ell}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B_{\ell}\left(\boldsymbol{q},\nu-\epsilon\right)\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the same phonon dispersion for all branches
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right) & =-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\int\frac{d\nu}{\pi}\int\frac{d\epsilon}{\pi}\left|\tilde{\lambda}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B\left(\boldsymbol{q},\nu-\epsilon\right)\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\\
+ & =-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|\tilde{\lambda}\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p},\epsilon\right)B\left(\boldsymbol{q},\nu-\epsilon\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Performing 
+\begin_inset Formula $\boldsymbol{k}+\boldsymbol{q}+\boldsymbol{p}\rightarrow\boldsymbol{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Sigma_{ME}''\left(\boldsymbol{k},\omega\right)=-\frac{1}{N^{2}}\sum_{\boldsymbol{q}\boldsymbol{p}}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\omega-\nu\right)\left[n_{B}\left(\omega-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{p},\epsilon\right)B\left(\boldsymbol{q},\nu-\epsilon\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Asumptions start 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau\left(\boldsymbol{k}\right)=\sum_{\boldsymbol{q}\boldsymbol{p}}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\epsilon_{\boldsymbol{k}}-\nu\right)\left[n_{B}\left(\epsilon_{\boldsymbol{k}}-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{p},\epsilon\right)B\left(\boldsymbol{q},\nu-\epsilon\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assuming that 
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{\partial f}{\partial\epsilon_{\boldsymbol{k}}}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\epsilon_{\boldsymbol{k}}-\nu\right)\left[n_{B}\left(\epsilon_{\boldsymbol{k}}-\nu\right)+n_{F}\left(-\nu\right)\right]\int\frac{d\epsilon}{\pi}A\left(\boldsymbol{p},\epsilon\right)B\left(\boldsymbol{q},\nu-\epsilon\right)\left[n_{B}\left(\nu-\epsilon\right)+n_{F}\left(-\epsilon\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now taking the integral over the electron spectral function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{\partial f}{\partial\epsilon_{\boldsymbol{k}}}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\epsilon_{\boldsymbol{k}}-\nu\right)\left[n_{B}\left(\epsilon_{\boldsymbol{k}}-\nu\right)+n_{F}\left(-\nu\right)\right]B\left(\boldsymbol{q},\nu-\epsilon_{\boldsymbol{p}}\right)\left[n_{B}\left(\nu-\epsilon_{\boldsymbol{p}}\right)+n_{F}\left(-\epsilon_{\boldsymbol{p}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we want to check whether this is symmetric with respect to the interchange
+ of 
+\begin_inset Formula $\boldsymbol{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{k}$
+\end_inset
+
+.
+ From our previous calculations, we have 
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\nu-\epsilon_{\boldsymbol{k}}\right)B\left(\boldsymbol{q},\nu-\epsilon_{\boldsymbol{p}}\right)n_{B}\left(\nu-\epsilon_{\boldsymbol{k}}\right)n_{F}\left(\epsilon_{\boldsymbol{k}}\right)\left(1-n_{F}\left(\nu\right)\right)\left[n_{B}\left(\nu-\epsilon_{\boldsymbol{p}}\right)+n_{F}\left(-\epsilon_{\boldsymbol{p}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This form is vaguely intuitive as it is the convolution of the transition
+ rate for scattering off of spins convolved with the one for phonons.
+ Now we change variables so that the dispersion only appears in a single
+ spectral function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)B\left(\boldsymbol{q},\nu\right)n_{B}\left(\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)n_{F}\left(\epsilon_{\boldsymbol{k}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{p}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{p}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we interchange the momenta 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{k},\boldsymbol{p}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{k}-\boldsymbol{p}-\boldsymbol{q},\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)B\left(\boldsymbol{q},\nu\right)n_{B}\left(\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)n_{F}\left(\epsilon_{\boldsymbol{p}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{k}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{k}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the symmetry of 
+\begin_inset Formula $\chi''$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ in the momentum argument, the symmetry of the bare vertex, and changing
+ the sum over 
+\begin_inset Formula $\boldsymbol{q}$
+\end_inset
+
+ we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)B\left(\boldsymbol{q},\nu\right)n_{B}\left(\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)n_{F}\left(\epsilon_{\boldsymbol{p}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{k}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{k}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using the antisymmetry of 
+\begin_inset Formula $\chi''$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},-\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)B\left(\boldsymbol{q},-\nu\right)n_{B}\left(\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)n_{F}\left(\epsilon_{\boldsymbol{p}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{k}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{k}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Changing variables, we then have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)B\left(\boldsymbol{q},\nu\right)n_{B}\left(-\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)n_{F}\left(\epsilon_{\boldsymbol{p}}\right)\left(1-n_{F}\left(-\nu+\epsilon_{\boldsymbol{k}}\right)\right)\left[n_{B}\left(-\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{k}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, we only need to verify that 
+\begin_inset Formula 
+\begin{align*}
+n_{B}\left(-\nu+\epsilon_{\boldsymbol{k}}-\epsilon_{\boldsymbol{p}}\right)n_{F}\left(\epsilon_{\boldsymbol{p}}\right)\left(1-n_{F}\left(-\nu+\epsilon_{\boldsymbol{k}}\right)\right)\left[n_{B}\left(-\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{k}}\right)\right] & =\\
+n_{B}\left(\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)n_{F}\left(\epsilon_{\boldsymbol{k}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{p}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{p}}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the proof of the symmetry of 
+\begin_inset Formula $P_{\boldsymbol{k}\boldsymbol{p}}$
+\end_inset
+
+ would be complete.
+ Since mathematica says this is true, we gain confidence that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\boldsymbol{k}\boldsymbol{p}}=\frac{1}{kT}\left|\tilde{\lambda}\left(\boldsymbol{p},\boldsymbol{k}\right)\right|^{2}\sum_{\boldsymbol{q}}\int\frac{d\nu}{\pi}\chi''\left(\boldsymbol{p}-\boldsymbol{k}-\boldsymbol{q},\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)B\left(\boldsymbol{q},\nu\right)n_{B}\left(\nu+\epsilon_{\boldsymbol{p}}-\epsilon_{\boldsymbol{k}}\right)n_{F}\left(\epsilon_{\boldsymbol{k}}\right)\left(1-n_{F}\left(\nu+\epsilon_{\boldsymbol{p}}\right)\right)\left[n_{B}\left(\nu\right)+n_{F}\left(-\epsilon_{\boldsymbol{p}}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is the correct expression for the transition probability in Boltzmann theory.
+\end_layout
+
+\end_body
+\end_document
